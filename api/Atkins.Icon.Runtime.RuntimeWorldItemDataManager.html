@@ -1,0 +1,1136 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class RuntimeWorldItemDataManager
+   | Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class RuntimeWorldItemDataManager
+   | Documentation ">
+    <meta name="generator" content="docfx 2.51.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Atkins.Icon.Runtime.RuntimeWorldItemDataManager">
+  
+  
+  <h1 id="Atkins_Icon_Runtime_RuntimeWorldItemDataManager" data-uid="Atkins.Icon.Runtime.RuntimeWorldItemDataManager" class="text-break">Class RuntimeWorldItemDataManager
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><a class="xref" href="Atkins.Core.UnitySingleton-1.html">UnitySingleton</a>&lt;<a class="xref" href="Atkins.Icon.Runtime.RuntimeWorldItemDataManager.html">RuntimeWorldItemDataManager</a>&gt;</div>
+    <div class="level2"><span class="xref">RuntimeWorldItemDataManager</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Atkins.Core.Utils.IFinishedLoad.html">IFinishedLoad</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Atkins.Core.UnitySingleton-1.html#Atkins_Core_UnitySingleton_1_Instance">UnitySingleton&lt;RuntimeWorldItemDataManager&gt;.Instance</a>
+    </div>
+    <div>
+      <a class="xref" href="Atkins.Core.UnitySingleton-1.html#Atkins_Core_UnitySingleton_1_ValidateInstance_System_Boolean_">UnitySingleton&lt;RuntimeWorldItemDataManager&gt;.ValidateInstance(Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Atkins.Core.UnitySingleton-1.html#Atkins_Core_UnitySingleton_1_Exists">UnitySingleton&lt;RuntimeWorldItemDataManager&gt;.Exists</a>
+    </div>
+    <div>
+      <a class="xref" href="Atkins.Core.UnitySingleton-1.html#Atkins_Core_UnitySingleton_1_OnDestroy">UnitySingleton&lt;RuntimeWorldItemDataManager&gt;.OnDestroy()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Atkins.Icon.Runtime.html">Atkins.Icon.Runtime</a></h6>
+  <h6><strong>Assembly</strong>: Atkins.Icon.Runtime.dll</h6>
+  <h5 id="Atkins_Icon_Runtime_RuntimeWorldItemDataManager_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ExecutionOrder(100)]
+public class RuntimeWorldItemDataManager : UnitySingleton&lt;RuntimeWorldItemDataManager&gt;, IFinishedLoad</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/ICON?path=Runtime/Scripts/RuntimeObjects/RuntimeWorldItemDataManager.cs&amp;version=GBmaster&amp;line=58">View Source</a>
+  </span>
+  <h4 id="Atkins_Icon_Runtime_RuntimeWorldItemDataManager_commentHealthAndSafetyMarker" data-uid="Atkins.Icon.Runtime.RuntimeWorldItemDataManager.commentHealthAndSafetyMarker">commentHealthAndSafetyMarker</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GameObject commentHealthAndSafetyMarker</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">GameObject</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/ICON?path=Runtime/Scripts/RuntimeObjects/RuntimeWorldItemDataManager.cs&amp;version=GBmaster&amp;line=57">View Source</a>
+  </span>
+  <h4 id="Atkins_Icon_Runtime_RuntimeWorldItemDataManager_commentNoteMarker" data-uid="Atkins.Icon.Runtime.RuntimeWorldItemDataManager.commentNoteMarker">commentNoteMarker</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GameObject commentNoteMarker</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">GameObject</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/ICON?path=Runtime/Scripts/RuntimeObjects/RuntimeWorldItemDataManager.cs&amp;version=GBmaster&amp;line=49">View Source</a>
+  </span>
+  <h4 id="Atkins_Icon_Runtime_RuntimeWorldItemDataManager_DefaultPosition" data-uid="Atkins.Icon.Runtime.RuntimeWorldItemDataManager.DefaultPosition">DefaultPosition</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Vector3 DefaultPosition</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vector3</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/ICON?path=Runtime/Scripts/RuntimeObjects/RuntimeWorldItemDataManager.cs&amp;version=GBmaster&amp;line=50">View Source</a>
+  </span>
+  <h4 id="Atkins_Icon_Runtime_RuntimeWorldItemDataManager_DefaultRotation" data-uid="Atkins.Icon.Runtime.RuntimeWorldItemDataManager.DefaultRotation">DefaultRotation</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Vector3 DefaultRotation</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vector3</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/ICON?path=Runtime/Scripts/RuntimeObjects/RuntimeWorldItemDataManager.cs&amp;version=GBmaster&amp;line=51">View Source</a>
+  </span>
+  <h4 id="Atkins_Icon_Runtime_RuntimeWorldItemDataManager_DefaultScale" data-uid="Atkins.Icon.Runtime.RuntimeWorldItemDataManager.DefaultScale">DefaultScale</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Vector3 DefaultScale</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vector3</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/ICON?path=Runtime/Scripts/RuntimeObjects/RuntimeWorldItemDataManager.cs&amp;version=GBmaster&amp;line=56">View Source</a>
+  </span>
+  <h4 id="Atkins_Icon_Runtime_RuntimeWorldItemDataManager_documentMarker" data-uid="Atkins.Icon.Runtime.RuntimeWorldItemDataManager.documentMarker">documentMarker</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GameObject documentMarker</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">GameObject</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/ICON?path=Runtime/Scripts/RuntimeObjects/RuntimeWorldItemDataManager.cs&amp;version=GBmaster&amp;line=53">View Source</a>
+  </span>
+  <h4 id="Atkins_Icon_Runtime_RuntimeWorldItemDataManager_lightMarker" data-uid="Atkins.Icon.Runtime.RuntimeWorldItemDataManager.lightMarker">lightMarker</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GameObject lightMarker</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">GameObject</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/ICON?path=Runtime/Scripts/RuntimeObjects/RuntimeWorldItemDataManager.cs&amp;version=GBmaster&amp;line=47">View Source</a>
+  </span>
+  <h4 id="Atkins_Icon_Runtime_RuntimeWorldItemDataManager_modelsSpawned" data-uid="Atkins.Icon.Runtime.RuntimeWorldItemDataManager.modelsSpawned">modelsSpawned</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Transform modelsSpawned</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Transform</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/ICON?path=Runtime/Scripts/RuntimeObjects/RuntimeWorldItemDataManager.cs&amp;version=GBmaster&amp;line=54">View Source</a>
+  </span>
+  <h4 id="Atkins_Icon_Runtime_RuntimeWorldItemDataManager_paintingMarker" data-uid="Atkins.Icon.Runtime.RuntimeWorldItemDataManager.paintingMarker">paintingMarker</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GameObject paintingMarker</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">GameObject</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/ICON?path=Runtime/Scripts/RuntimeObjects/RuntimeWorldItemDataManager.cs&amp;version=GBmaster&amp;line=55">View Source</a>
+  </span>
+  <h4 id="Atkins_Icon_Runtime_RuntimeWorldItemDataManager_photosphereMarker" data-uid="Atkins.Icon.Runtime.RuntimeWorldItemDataManager.photosphereMarker">photosphereMarker</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GameObject photosphereMarker</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">GameObject</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/ICON?path=Runtime/Scripts/RuntimeObjects/RuntimeWorldItemDataManager.cs&amp;version=GBmaster&amp;line=321">View Source</a>
+  </span>
+  <a id="Atkins_Icon_Runtime_RuntimeWorldItemDataManager_AddModelToCache_" data-uid="Atkins.Icon.Runtime.RuntimeWorldItemDataManager.AddModelToCache*"></a>
+  <h4 id="Atkins_Icon_Runtime_RuntimeWorldItemDataManager_AddModelToCache_GameObject_System_String_" data-uid="Atkins.Icon.Runtime.RuntimeWorldItemDataManager.AddModelToCache(GameObject,System.String)">AddModelToCache(GameObject, String)</h4>
+  <div class="markdown level1 summary"><p>Adds the loaded model to a cache to quickly retrieve later if needed</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AddModelToCache(GameObject go, string id)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">GameObject</span></td>
+        <td><span class="parametername">go</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/ICON?path=Runtime/Scripts/RuntimeObjects/RuntimeWorldItemDataManager.cs&amp;version=GBmaster&amp;line=177">View Source</a>
+  </span>
+  <a id="Atkins_Icon_Runtime_RuntimeWorldItemDataManager_AddToDeleteStack_" data-uid="Atkins.Icon.Runtime.RuntimeWorldItemDataManager.AddToDeleteStack*"></a>
+  <h4 id="Atkins_Icon_Runtime_RuntimeWorldItemDataManager_AddToDeleteStack_LiteDB_LiteDbData_" data-uid="Atkins.Icon.Runtime.RuntimeWorldItemDataManager.AddToDeleteStack(LiteDB.LiteDbData)">AddToDeleteStack(LiteDbData)</h4>
+  <div class="markdown level1 summary"><p>Add a piece of data to the delete stack to clean up when </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AddToDeleteStack(LiteDbData data)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">LiteDB.LiteDbData</span></td>
+        <td><span class="parametername">data</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/ICON?path=Runtime/Scripts/RuntimeObjects/RuntimeWorldItemDataManager.cs&amp;version=GBmaster&amp;line=62">View Source</a>
+  </span>
+  <a id="Atkins_Icon_Runtime_RuntimeWorldItemDataManager_Awake_" data-uid="Atkins.Icon.Runtime.RuntimeWorldItemDataManager.Awake*"></a>
+  <h4 id="Atkins_Icon_Runtime_RuntimeWorldItemDataManager_Awake" data-uid="Atkins.Icon.Runtime.RuntimeWorldItemDataManager.Awake">Awake()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void Awake()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Atkins.Core.UnitySingleton&lt;Atkins.Icon.Runtime.RuntimeWorldItemDataManager&gt;.Awake()</span></div>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/ICON?path=Runtime/Scripts/RuntimeObjects/RuntimeWorldItemDataManager.cs&amp;version=GBmaster&amp;line=517">View Source</a>
+  </span>
+  <a id="Atkins_Icon_Runtime_RuntimeWorldItemDataManager_CheckIfDocFileIsStillNeeded_" data-uid="Atkins.Icon.Runtime.RuntimeWorldItemDataManager.CheckIfDocFileIsStillNeeded*"></a>
+  <h4 id="Atkins_Icon_Runtime_RuntimeWorldItemDataManager_CheckIfDocFileIsStillNeeded_LiteDB_LiteDbDocument_" data-uid="Atkins.Icon.Runtime.RuntimeWorldItemDataManager.CheckIfDocFileIsStillNeeded(LiteDB.LiteDbDocument)">CheckIfDocFileIsStillNeeded(LiteDbDocument)</h4>
+  <div class="markdown level1 summary"><p>when a material is no longer needed, check to see if the litedbimage texture is still needed and clean up if it is not</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void CheckIfDocFileIsStillNeeded(LiteDbDocument liteDbDocument)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">LiteDB.LiteDbDocument</span></td>
+        <td><span class="parametername">liteDbDocument</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/ICON?path=Runtime/Scripts/RuntimeObjects/RuntimeWorldItemDataManager.cs&amp;version=GBmaster&amp;line=444">View Source</a>
+  </span>
+  <a id="Atkins_Icon_Runtime_RuntimeWorldItemDataManager_CheckIfImageFileIsStillNeeded_" data-uid="Atkins.Icon.Runtime.RuntimeWorldItemDataManager.CheckIfImageFileIsStillNeeded*"></a>
+  <h4 id="Atkins_Icon_Runtime_RuntimeWorldItemDataManager_CheckIfImageFileIsStillNeeded_LiteDB_LiteDbImage_" data-uid="Atkins.Icon.Runtime.RuntimeWorldItemDataManager.CheckIfImageFileIsStillNeeded(LiteDB.LiteDbImage)">CheckIfImageFileIsStillNeeded(LiteDbImage)</h4>
+  <div class="markdown level1 summary"><p>when a material is no longer needed, check to see if the litedbimage texture is still needed and clean up if it is not</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void CheckIfImageFileIsStillNeeded(LiteDbImage liteDbImage)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">LiteDB.LiteDbImage</span></td>
+        <td><span class="parametername">liteDbImage</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/ICON?path=Runtime/Scripts/RuntimeObjects/RuntimeWorldItemDataManager.cs&amp;version=GBmaster&amp;line=602">View Source</a>
+  </span>
+  <a id="Atkins_Icon_Runtime_RuntimeWorldItemDataManager_CheckIfMaterialIsStillNeeded_" data-uid="Atkins.Icon.Runtime.RuntimeWorldItemDataManager.CheckIfMaterialIsStillNeeded*"></a>
+  <h4 id="Atkins_Icon_Runtime_RuntimeWorldItemDataManager_CheckIfMaterialIsStillNeeded_LiteDB_LiteDbMaterial_" data-uid="Atkins.Icon.Runtime.RuntimeWorldItemDataManager.CheckIfMaterialIsStillNeeded(LiteDB.LiteDbMaterial)">CheckIfMaterialIsStillNeeded(LiteDbMaterial)</h4>
+  <div class="markdown level1 summary"><p>check if a material is still needed and if it is not then delete it from a database</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void CheckIfMaterialIsStillNeeded(LiteDbMaterial material)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">LiteDB.LiteDbMaterial</span></td>
+        <td><span class="parametername">material</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/ICON?path=Runtime/Scripts/RuntimeObjects/RuntimeWorldItemDataManager.cs&amp;version=GBmaster&amp;line=186">View Source</a>
+  </span>
+  <a id="Atkins_Icon_Runtime_RuntimeWorldItemDataManager_DeleteRuntimeModel_" data-uid="Atkins.Icon.Runtime.RuntimeWorldItemDataManager.DeleteRuntimeModel*"></a>
+  <h4 id="Atkins_Icon_Runtime_RuntimeWorldItemDataManager_DeleteRuntimeModel_Atkins_Icon_Runtime_RuntimeWorldObject_" data-uid="Atkins.Icon.Runtime.RuntimeWorldItemDataManager.DeleteRuntimeModel(Atkins.Icon.Runtime.RuntimeWorldObject)">DeleteRuntimeModel(RuntimeWorldObject)</h4>
+  <div class="markdown level1 summary"><p>Deletes the model from the scene and database</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void DeleteRuntimeModel(RuntimeWorldObject worldObject)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Atkins.Icon.Runtime.RuntimeWorldObject.html">RuntimeWorldObject</a></td>
+        <td><span class="parametername">worldObject</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/ICON?path=Runtime/Scripts/RuntimeObjects/RuntimeWorldItemDataManager.cs&amp;version=GBmaster&amp;line=158">View Source</a>
+  </span>
+  <a id="Atkins_Icon_Runtime_RuntimeWorldItemDataManager_FinalizeRuntimeObject_" data-uid="Atkins.Icon.Runtime.RuntimeWorldItemDataManager.FinalizeRuntimeObject*"></a>
+  <h4 id="Atkins_Icon_Runtime_RuntimeWorldItemDataManager_FinalizeRuntimeObject_Atkins_Icon_Runtime_RuntimeWorldObject_Atkins_Icon_Runtime_Data_RuntimeItem_GameObject_" data-uid="Atkins.Icon.Runtime.RuntimeWorldItemDataManager.FinalizeRuntimeObject(Atkins.Icon.Runtime.RuntimeWorldObject,Atkins.Icon.Runtime.Data.RuntimeItem,GameObject)">FinalizeRuntimeObject(RuntimeWorldObject, RuntimeItem, GameObject)</h4>
+  <div class="markdown level1 summary"><p>finalise the runtime Item</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void FinalizeRuntimeObject(RuntimeWorldObject runtimeWorldObject, RuntimeItem data, GameObject go)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Atkins.Icon.Runtime.RuntimeWorldObject.html">RuntimeWorldObject</a></td>
+        <td><span class="parametername">runtimeWorldObject</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Atkins.Icon.Runtime.Data.RuntimeItem.html">RuntimeItem</a></td>
+        <td><span class="parametername">data</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">GameObject</span></td>
+        <td><span class="parametername">go</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/ICON?path=Runtime/Scripts/RuntimeObjects/RuntimeWorldItemDataManager.cs&amp;version=GBmaster&amp;line=399">View Source</a>
+  </span>
+  <a id="Atkins_Icon_Runtime_RuntimeWorldItemDataManager_GetDbModel_" data-uid="Atkins.Icon.Runtime.RuntimeWorldItemDataManager.GetDbModel*"></a>
+  <h4 id="Atkins_Icon_Runtime_RuntimeWorldItemDataManager_GetDbModel_ObjectId_" data-uid="Atkins.Icon.Runtime.RuntimeWorldItemDataManager.GetDbModel(ObjectId)">GetDbModel(ObjectId)</h4>
+  <div class="markdown level1 summary"><p>return the model from a model ID</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static LiteDbModel GetDbModel(ObjectId liteDbModelId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ObjectId</span></td>
+        <td><span class="parametername">liteDbModelId</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">LiteDB.LiteDbModel</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/ICON?path=Runtime/Scripts/RuntimeObjects/RuntimeWorldItemDataManager.cs&amp;version=GBmaster&amp;line=557">View Source</a>
+  </span>
+  <a id="Atkins_Icon_Runtime_RuntimeWorldItemDataManager_GetMaterial_" data-uid="Atkins.Icon.Runtime.RuntimeWorldItemDataManager.GetMaterial*"></a>
+  <h4 id="Atkins_Icon_Runtime_RuntimeWorldItemDataManager_GetMaterial_ObjectId_" data-uid="Atkins.Icon.Runtime.RuntimeWorldItemDataManager.GetMaterial(ObjectId)">GetMaterial(ObjectId)</h4>
+  <div class="markdown level1 summary"><p>Gets the material for a given ID</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static LiteDbMaterial GetMaterial(ObjectId id)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ObjectId</span></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">LiteDB.LiteDbMaterial</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/ICON?path=Runtime/Scripts/RuntimeObjects/RuntimeWorldItemDataManager.cs&amp;version=GBmaster&amp;line=332">View Source</a>
+  </span>
+  <a id="Atkins_Icon_Runtime_RuntimeWorldItemDataManager_GetModelFromCache_" data-uid="Atkins.Icon.Runtime.RuntimeWorldItemDataManager.GetModelFromCache*"></a>
+  <h4 id="Atkins_Icon_Runtime_RuntimeWorldItemDataManager_GetModelFromCache_System_String_" data-uid="Atkins.Icon.Runtime.RuntimeWorldItemDataManager.GetModelFromCache(System.String)">GetModelFromCache(String)</h4>
+  <div class="markdown level1 summary"><p>Returns a model from an ID.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static object GetModelFromCache(string fileId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">fileId</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/ICON?path=Runtime/Scripts/RuntimeObjects/RuntimeWorldItemDataManager.cs&amp;version=GBmaster&amp;line=484">View Source</a>
+  </span>
+  <a id="Atkins_Icon_Runtime_RuntimeWorldItemDataManager_GetOrCreateDbDocument_" data-uid="Atkins.Icon.Runtime.RuntimeWorldItemDataManager.GetOrCreateDbDocument*"></a>
+  <h4 id="Atkins_Icon_Runtime_RuntimeWorldItemDataManager_GetOrCreateDbDocument_System_String_" data-uid="Atkins.Icon.Runtime.RuntimeWorldItemDataManager.GetOrCreateDbDocument(System.String)">GetOrCreateDbDocument(String)</h4>
+  <div class="markdown level1 summary"><p>Get model information from the database, if it does not exist then will create one</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static LiteDbDocument GetOrCreateDbDocument(string fileLocation)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">fileLocation</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">LiteDB.LiteDbDocument</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/ICON?path=Runtime/Scripts/RuntimeObjects/RuntimeWorldItemDataManager.cs&amp;version=GBmaster&amp;line=411">View Source</a>
+  </span>
+  <a id="Atkins_Icon_Runtime_RuntimeWorldItemDataManager_GetOrCreateDbImage_" data-uid="Atkins.Icon.Runtime.RuntimeWorldItemDataManager.GetOrCreateDbImage*"></a>
+  <h4 id="Atkins_Icon_Runtime_RuntimeWorldItemDataManager_GetOrCreateDbImage_System_String_" data-uid="Atkins.Icon.Runtime.RuntimeWorldItemDataManager.GetOrCreateDbImage(System.String)">GetOrCreateDbImage(String)</h4>
+  <div class="markdown level1 summary"><p>Get model information from the database, if it does not exist then will create one</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static LiteDbImage GetOrCreateDbImage(string fileLocation)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">fileLocation</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">LiteDB.LiteDbImage</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/ICON?path=Runtime/Scripts/RuntimeObjects/RuntimeWorldItemDataManager.cs&amp;version=GBmaster&amp;line=567">View Source</a>
+  </span>
+  <a id="Atkins_Icon_Runtime_RuntimeWorldItemDataManager_GetOrCreateDbMaterial_" data-uid="Atkins.Icon.Runtime.RuntimeWorldItemDataManager.GetOrCreateDbMaterial*"></a>
+  <h4 id="Atkins_Icon_Runtime_RuntimeWorldItemDataManager_GetOrCreateDbMaterial_LiteDB_LiteDbMaterial_" data-uid="Atkins.Icon.Runtime.RuntimeWorldItemDataManager.GetOrCreateDbMaterial(LiteDB.LiteDbMaterial)">GetOrCreateDbMaterial(LiteDbMaterial)</h4>
+  <div class="markdown level1 summary"><p>Gets a material from properties and creates it if needed</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static LiteDbMaterial GetOrCreateDbMaterial(LiteDbMaterial material)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">LiteDB.LiteDbMaterial</span></td>
+        <td><span class="parametername">material</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">LiteDB.LiteDbMaterial</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/ICON?path=Runtime/Scripts/RuntimeObjects/RuntimeWorldItemDataManager.cs&amp;version=GBmaster&amp;line=342">View Source</a>
+  </span>
+  <a id="Atkins_Icon_Runtime_RuntimeWorldItemDataManager_GetOrCreateDbModel_" data-uid="Atkins.Icon.Runtime.RuntimeWorldItemDataManager.GetOrCreateDbModel*"></a>
+  <h4 id="Atkins_Icon_Runtime_RuntimeWorldItemDataManager_GetOrCreateDbModel_System_String_" data-uid="Atkins.Icon.Runtime.RuntimeWorldItemDataManager.GetOrCreateDbModel(System.String)">GetOrCreateDbModel(String)</h4>
+  <div class="markdown level1 summary"><p>Get model information from the database, if it does not exist then will create one</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static LiteDbModel GetOrCreateDbModel(string modelFileLocation)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">modelFileLocation</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">LiteDB.LiteDbModel</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/ICON?path=Runtime/Scripts/RuntimeObjects/RuntimeWorldItemDataManager.cs&amp;version=GBmaster&amp;line=304">View Source</a>
+  </span>
+  <a id="Atkins_Icon_Runtime_RuntimeWorldItemDataManager_GetPaintingPrimitive_" data-uid="Atkins.Icon.Runtime.RuntimeWorldItemDataManager.GetPaintingPrimitive*"></a>
+  <h4 id="Atkins_Icon_Runtime_RuntimeWorldItemDataManager_GetPaintingPrimitive" data-uid="Atkins.Icon.Runtime.RuntimeWorldItemDataManager.GetPaintingPrimitive">GetPaintingPrimitive()</h4>
+  <div class="markdown level1 summary"><p>Get the painting tool primitive</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static GameObject GetPaintingPrimitive()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">GameObject</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/ICON?path=Runtime/Scripts/RuntimeObjects/RuntimeWorldItemDataManager.cs&amp;version=GBmaster&amp;line=224">View Source</a>
+  </span>
+  <a id="Atkins_Icon_Runtime_RuntimeWorldItemDataManager_InstantiateModelFromCache_" data-uid="Atkins.Icon.Runtime.RuntimeWorldItemDataManager.InstantiateModelFromCache*"></a>
+  <h4 id="Atkins_Icon_Runtime_RuntimeWorldItemDataManager_InstantiateModelFromCache_System_String_" data-uid="Atkins.Icon.Runtime.RuntimeWorldItemDataManager.InstantiateModelFromCache(System.String)">InstantiateModelFromCache(String)</h4>
+  <div class="markdown level1 summary"><p>Instantiate a prefab from the model pool</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static GameObject InstantiateModelFromCache(string fileId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">fileId</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">GameObject</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/ICON?path=Runtime/Scripts/RuntimeObjects/RuntimeWorldItemDataManager.cs&amp;version=GBmaster&amp;line=78">View Source</a>
+  </span>
+  <a id="Atkins_Icon_Runtime_RuntimeWorldItemDataManager_OnFinishedLoading_" data-uid="Atkins.Icon.Runtime.RuntimeWorldItemDataManager.OnFinishedLoading*"></a>
+  <h4 id="Atkins_Icon_Runtime_RuntimeWorldItemDataManager_OnFinishedLoading" data-uid="Atkins.Icon.Runtime.RuntimeWorldItemDataManager.OnFinishedLoading">OnFinishedLoading()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnFinishedLoading()</code></pre>
+  </div>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/ICON?path=Runtime/Scripts/RuntimeObjects/RuntimeWorldItemDataManager.cs&amp;version=GBmaster&amp;line=233">View Source</a>
+  </span>
+  <a id="Atkins_Icon_Runtime_RuntimeWorldItemDataManager_SaveAllRuntimeItems_" data-uid="Atkins.Icon.Runtime.RuntimeWorldItemDataManager.SaveAllRuntimeItems*"></a>
+  <h4 id="Atkins_Icon_Runtime_RuntimeWorldItemDataManager_SaveAllRuntimeItems" data-uid="Atkins.Icon.Runtime.RuntimeWorldItemDataManager.SaveAllRuntimeItems">SaveAllRuntimeItems()</h4>
+  <div class="markdown level1 summary"><p>Save all the models in the scene</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SaveAllRuntimeItems()</code></pre>
+  </div>
+  <h3 id="events">Events
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/ICON?path=Runtime/Scripts/RuntimeObjects/RuntimeWorldItemDataManager.cs&amp;version=GBmaster&amp;line=32">View Source</a>
+  </span>
+  <h4 id="Atkins_Icon_Runtime_RuntimeWorldItemDataManager_OnObjectCreated" data-uid="Atkins.Icon.Runtime.RuntimeWorldItemDataManager.OnObjectCreated">OnObjectCreated</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static event RuntimeImportEvent OnObjectCreated</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Atkins.Icon.Runtime.RuntimeImportEvent.html">RuntimeImportEvent</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/ICON?path=Runtime/Scripts/RuntimeObjects/RuntimeWorldItemDataManager.cs&amp;version=GBmaster&amp;line=33">View Source</a>
+  </span>
+  <h4 id="Atkins_Icon_Runtime_RuntimeWorldItemDataManager_OnObjectDestroy" data-uid="Atkins.Icon.Runtime.RuntimeWorldItemDataManager.OnObjectDestroy">OnObjectDestroy</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static event RuntimeImportEvent OnObjectDestroy</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Atkins.Icon.Runtime.RuntimeImportEvent.html">RuntimeImportEvent</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Atkins.Core.Utils.IFinishedLoad.html">IFinishedLoad</a>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Atkins.Core.Extensions.Extensions.html#Atkins_Core_Extensions_Extensions_GetDescription__1___0_">Extensions.GetDescription&lt;T&gt;(T)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://dev.azure.com/atkins-global/ICON/_git/ICON?path=Runtime/Scripts/RuntimeObjects/RuntimeWorldItemDataManager.cs&amp;version=GBmaster&amp;line=29" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Documentation
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

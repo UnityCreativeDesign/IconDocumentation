@@ -1,0 +1,492 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class AbstractPointSetController
+   | Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class AbstractPointSetController
+   | Documentation ">
+    <meta name="generator" content="docfx 2.51.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Atkins.Atom.AbstractPointSetController">
+  
+  
+  <h1 id="Atkins_Atom_AbstractPointSetController" data-uid="Atkins.Atom.AbstractPointSetController" class="text-break">Class AbstractPointSetController
+  </h1>
+  <div class="markdown level0 summary"><p>A PointSetController enables loading and rendering several point clouds at once using an AbstractRenderer.
+Everytime you want to use an AbstractRenderer it is recommended to use an AbstractPointSetController, even if you
+have only one cloud.
+The configured options of the point set controller (for example point budget) work for all point clouds attached to
+this set.
+Every pointcloud has its own controller (for example a DynamicLoaderController), which has to register itself at
+the PointSetController via the methods RegisterController, UpdateBoundingBox and AddRootNode.
+The only current implementation of this class is PointCloudSetRealTimeController.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><span class="xref">AbstractPointSetController</span></div>
+      <div class="level2"><a class="xref" href="Atkins.Atom.PointCloudSetRealTimeController.html">PointCloudSetRealTimeController</a></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Atkins.Atom.html">Atkins.Atom</a></h6>
+  <h6><strong>Assembly</strong>: Atkins.Atom.dll</h6>
+  <h5 id="Atkins_Atom_AbstractPointSetController_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class AbstractPointSetController : MonoBehaviour</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/ATOM?path=Scripts/Point Controller/AbstractPointSetController.cs&amp;version=GBmaster&amp;line=58">View Source</a>
+  </span>
+  <h4 id="Atkins_Atom_AbstractPointSetController_cloudType" data-uid="Atkins.Atom.AbstractPointSetController.cloudType">cloudType</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CloudType cloudType</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Atkins.Atom.CloudType.html">CloudType</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/ATOM?path=Scripts/Point Controller/AbstractPointSetController.cs&amp;version=GBmaster&amp;line=43">View Source</a>
+  </span>
+  <h4 id="Atkins_Atom_AbstractPointSetController_moveCenterToTransformPosition" data-uid="Atkins.Atom.AbstractPointSetController.moveCenterToTransformPosition">moveCenterToTransformPosition</h4>
+  <div class="markdown level1 summary"><p>Whether the center of the cloud should be moved to the position of this component</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool moveCenterToTransformPosition</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/ATOM?path=Scripts/Point Controller/AbstractPointSetController.cs&amp;version=GBmaster&amp;line=63">View Source</a>
+  </span>
+  <a id="Atkins_Atom_AbstractPointSetController_PointRenderer_" data-uid="Atkins.Atom.AbstractPointSetController.PointRenderer*"></a>
+  <h4 id="Atkins_Atom_AbstractPointSetController_PointRenderer" data-uid="Atkins.Atom.AbstractPointSetController.PointRenderer">PointRenderer</h4>
+  <div class="markdown level1 summary"><p>The Renderer (value may not be null at setting)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IAbstractRenderer PointRenderer { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Atkins.Atom.IAbstractRenderer.html">IAbstractRenderer</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/ATOM?path=Scripts/Point Controller/AbstractPointSetController.cs&amp;version=GBmaster&amp;line=141">View Source</a>
+  </span>
+  <a id="Atkins_Atom_AbstractPointSetController_AddRootNode_" data-uid="Atkins.Atom.AbstractPointSetController.AddRootNode*"></a>
+  <h4 id="Atkins_Atom_AbstractPointSetController_AddRootNode_Atkins_Atom_Node_" data-uid="Atkins.Atom.AbstractPointSetController.AddRootNode(Atkins.Atom.Node)">AddRootNode(Node)</h4>
+  <div class="markdown level1 summary"><p>Adds a root node to the renderer. Should be called by the PC-Controller, which also has to call RegisterController
+and UpdateBoundingBox.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddRootNode(Node node)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Atkins.Atom.Node.html">Node</a></td>
+        <td><span class="parametername">node</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/ATOM?path=Scripts/Point Controller/AbstractPointSetController.cs&amp;version=GBmaster&amp;line=153">View Source</a>
+  </span>
+  <a id="Atkins_Atom_AbstractPointSetController_CheckReady_" data-uid="Atkins.Atom.AbstractPointSetController.CheckReady*"></a>
+  <h4 id="Atkins_Atom_AbstractPointSetController_CheckReady" data-uid="Atkins.Atom.AbstractPointSetController.CheckReady">CheckReady()</h4>
+  <div class="markdown level1 summary"><p>Returns true, iff all the nodes are registered, have been moved to the center (if required) and the renderer is
+loaded.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool CheckReady()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/ATOM?path=Scripts/Point Controller/AbstractPointSetController.cs&amp;version=GBmaster&amp;line=203">View Source</a>
+  </span>
+  <a id="Atkins_Atom_AbstractPointSetController_GetPointCount_" data-uid="Atkins.Atom.AbstractPointSetController.GetPointCount*"></a>
+  <h4 id="Atkins_Atom_AbstractPointSetController_GetPointCount" data-uid="Atkins.Atom.AbstractPointSetController.GetPointCount">GetPointCount()</h4>
+  <div class="markdown level1 summary"><p>Returns the point count</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public uint GetPointCount()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint32">UInt32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/ATOM?path=Scripts/Point Controller/AbstractPointSetController.cs&amp;version=GBmaster&amp;line=52">View Source</a>
+  </span>
+  <a id="Atkins_Atom_AbstractPointSetController_GetTotalPointCount_" data-uid="Atkins.Atom.AbstractPointSetController.GetTotalPointCount*"></a>
+  <h4 id="Atkins_Atom_AbstractPointSetController_GetTotalPointCount" data-uid="Atkins.Atom.AbstractPointSetController.GetTotalPointCount">GetTotalPointCount()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public uint GetTotalPointCount()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint32">UInt32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/ATOM?path=Scripts/Point Controller/AbstractPointSetController.cs&amp;version=GBmaster&amp;line=94">View Source</a>
+  </span>
+  <a id="Atkins_Atom_AbstractPointSetController_Initialize_" data-uid="Atkins.Atom.AbstractPointSetController.Initialize*"></a>
+  <h4 id="Atkins_Atom_AbstractPointSetController_Initialize" data-uid="Atkins.Atom.AbstractPointSetController.Initialize">Initialize()</h4>
+  <div class="markdown level1 summary"><p>Override this instead of Start!! Make sure to set the PointRenderer in here!!!</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void Initialize()</code></pre>
+  </div>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/ATOM?path=Scripts/Point Controller/AbstractPointSetController.cs&amp;version=GBmaster&amp;line=194">View Source</a>
+  </span>
+  <a id="Atkins_Atom_AbstractPointSetController_OnApplicationQuit_" data-uid="Atkins.Atom.AbstractPointSetController.OnApplicationQuit*"></a>
+  <h4 id="Atkins_Atom_AbstractPointSetController_OnApplicationQuit" data-uid="Atkins.Atom.AbstractPointSetController.OnApplicationQuit">OnApplicationQuit()</h4>
+  <div class="markdown level1 summary"><p>Shuts down the renderer</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnApplicationQuit()</code></pre>
+  </div>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/ATOM?path=Scripts/Point Controller/AbstractPointSetController.cs&amp;version=GBmaster&amp;line=76">View Source</a>
+  </span>
+  <a id="Atkins_Atom_AbstractPointSetController_OnFinishedLoading_" data-uid="Atkins.Atom.AbstractPointSetController.OnFinishedLoading*"></a>
+  <h4 id="Atkins_Atom_AbstractPointSetController_OnFinishedLoading" data-uid="Atkins.Atom.AbstractPointSetController.OnFinishedLoading">OnFinishedLoading()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnFinishedLoading()</code></pre>
+  </div>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/ATOM?path=Scripts/Point Controller/AbstractPointSetController.cs&amp;version=GBmaster&amp;line=105">View Source</a>
+  </span>
+  <a id="Atkins_Atom_AbstractPointSetController_RegisterController_" data-uid="Atkins.Atom.AbstractPointSetController.RegisterController*"></a>
+  <h4 id="Atkins_Atom_AbstractPointSetController_RegisterController_Atkins_Atom_AbstractLoader_" data-uid="Atkins.Atom.AbstractPointSetController.RegisterController(Atkins.Atom.AbstractLoader)">RegisterController(AbstractLoader)</h4>
+  <div class="markdown level1 summary"><p>Registers a PointCloud-Controller (See DynamicLoaderController). This should be done in the start-method of the
+pc-controller and is neccessary for the bounding-box-recalculation.
+The whole cloud will be moved and rendered as soon as for every registererd controller the bounding box was given
+via UpdateBoundingBox.
+Should be called only once for every controller</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RegisterController(AbstractLoader controller)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Atkins.Atom.AbstractLoader.html">AbstractLoader</a></td>
+        <td><span class="parametername">controller</span></td>
+        <td><p>not null</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/ATOM?path=Scripts/Point Controller/AbstractPointSetController.cs&amp;version=GBmaster&amp;line=47">View Source</a>
+  </span>
+  <a id="Atkins_Atom_AbstractPointSetController_SetTotalPointCount_" data-uid="Atkins.Atom.AbstractPointSetController.SetTotalPointCount*"></a>
+  <h4 id="Atkins_Atom_AbstractPointSetController_SetTotalPointCount_System_UInt32_" data-uid="Atkins.Atom.AbstractPointSetController.SetTotalPointCount(System.UInt32)">SetTotalPointCount(UInt32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetTotalPointCount(uint total)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint32">UInt32</a></td>
+        <td><span class="parametername">total</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/ATOM?path=Scripts/Point Controller/AbstractPointSetController.cs&amp;version=GBmaster&amp;line=119">View Source</a>
+  </span>
+  <a id="Atkins_Atom_AbstractPointSetController_UpdateBoundingBox_" data-uid="Atkins.Atom.AbstractPointSetController.UpdateBoundingBox*"></a>
+  <h4 id="Atkins_Atom_AbstractPointSetController_UpdateBoundingBox_Atkins_Atom_AbstractLoader_Atkins_Atom_BoundingBox_" data-uid="Atkins.Atom.AbstractPointSetController.UpdateBoundingBox(Atkins.Atom.AbstractLoader,Atkins.Atom.BoundingBox)">UpdateBoundingBox(AbstractLoader, BoundingBox)</h4>
+  <div class="markdown level1 summary"><p>Sets the bounding box of a given Cloud-Controller, which has been registered via RegisterController first.
+If the bounding box should be moved (moveToOrigin), this method does not terminate until the movement has happened
+(via update),
+so this method should not be called in the main thread.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdateBoundingBox(AbstractLoader controller, BoundingBox boundingBox)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Atkins.Atom.AbstractLoader.html">AbstractLoader</a></td>
+        <td><span class="parametername">controller</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Atkins.Atom.BoundingBox.html">BoundingBox</a></td>
+        <td><span class="parametername">boundingBox</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Atkins.Core.Extensions.Extensions.html#Atkins_Core_Extensions_Extensions_GetDescription__1___0_">Extensions.GetDescription&lt;T&gt;(T)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://dev.azure.com/atkins-global/ICON/_git/ATOM?path=Scripts/Point Controller/AbstractPointSetController.cs&amp;version=GBmaster&amp;line=27" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Documentation
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

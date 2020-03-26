@@ -1,0 +1,1158 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class VrManager
+   | Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class VrManager
+   | Documentation ">
+    <meta name="generator" content="docfx 2.51.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Atkins.Vr.VrManager">
+  
+  
+  <h1 id="Atkins_Vr_VrManager" data-uid="Atkins.Vr.VrManager" class="text-break">Class VrManager
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><a class="xref" href="Atkins.Core.UnitySingleton-1.html">UnitySingleton</a>&lt;<a class="xref" href="Atkins.Vr.VrManager.html">VrManager</a>&gt;</div>
+    <div class="level2"><span class="xref">VrManager</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Atkins.Core.UnitySingleton-1.html#Atkins_Core_UnitySingleton_1_Instance">UnitySingleton&lt;VrManager&gt;.Instance</a>
+    </div>
+    <div>
+      <a class="xref" href="Atkins.Core.UnitySingleton-1.html#Atkins_Core_UnitySingleton_1_ValidateInstance_System_Boolean_">UnitySingleton&lt;VrManager&gt;.ValidateInstance(Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Atkins.Core.UnitySingleton-1.html#Atkins_Core_UnitySingleton_1_Exists">UnitySingleton&lt;VrManager&gt;.Exists</a>
+    </div>
+    <div>
+      <a class="xref" href="Atkins.Core.UnitySingleton-1.html#Atkins_Core_UnitySingleton_1_OnDestroy">UnitySingleton&lt;VrManager&gt;.OnDestroy()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Atkins.Vr.html">Atkins.Vr</a></h6>
+  <h6><strong>Assembly</strong>: Atkins.Vr.dll</h6>
+  <h5 id="Atkins_Vr_VrManager_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class VrManager : UnitySingleton&lt;VrManager&gt;</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/VR?path=Scripts/VrManager.cs&amp;version=GBmaster&amp;line=234">View Source</a>
+  </span>
+  <h4 id="Atkins_Vr_VrManager_followerObjectPrefab" data-uid="Atkins.Vr.VrManager.followerObjectPrefab">followerObjectPrefab</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GameObject followerObjectPrefab</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">GameObject</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/VR?path=Scripts/VrManager.cs&amp;version=GBmaster&amp;line=271">View Source</a>
+  </span>
+  <h4 id="Atkins_Vr_VrManager_linkVrCameraView" data-uid="Atkins.Vr.VrManager.linkVrCameraView">linkVrCameraView</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool linkVrCameraView</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/VR?path=Scripts/VrManager.cs&amp;version=GBmaster&amp;line=270">View Source</a>
+  </span>
+  <h4 id="Atkins_Vr_VrManager_linkVrCameraViewpointMovement" data-uid="Atkins.Vr.VrManager.linkVrCameraViewpointMovement">linkVrCameraViewpointMovement</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool linkVrCameraViewpointMovement</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/VR?path=Scripts/VrManager.cs&amp;version=GBmaster&amp;line=319">View Source</a>
+  </span>
+  <h4 id="Atkins_Vr_VrManager_onAwake" data-uid="Atkins.Vr.VrManager.onAwake">onAwake</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static UnityAction onAwake</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityAction</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/VR?path=Scripts/VrManager.cs&amp;version=GBmaster&amp;line=268">View Source</a>
+  </span>
+  <h4 id="Atkins_Vr_VrManager_preTeleport" data-uid="Atkins.Vr.VrManager.preTeleport">preTeleport</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static PreTeleport preTeleport</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Atkins.Vr.PreTeleport.html">PreTeleport</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/VR?path=Scripts/VrManager.cs&amp;version=GBmaster&amp;line=170">View Source</a>
+  </span>
+  <h4 id="Atkins_Vr_VrManager_toolAncher" data-uid="Atkins.Vr.VrManager.toolAncher">toolAncher</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Transform toolAncher</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Transform</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/VR?path=Scripts/VrManager.cs&amp;version=GBmaster&amp;line=273">View Source</a>
+  </span>
+  <h4 id="Atkins_Vr_VrManager_vrikFollow" data-uid="Atkins.Vr.VrManager.vrikFollow">vrikFollow</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Follow vrikFollow</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Atkins.Core.Utils.Follow.html">Follow</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/VR?path=Scripts/VrManager.cs&amp;version=GBmaster&amp;line=43">View Source</a>
+  </span>
+  <a id="Atkins_Vr_VrManager_ControllerType_" data-uid="Atkins.Vr.VrManager.ControllerType*"></a>
+  <h4 id="Atkins_Vr_VrManager_ControllerType" data-uid="Atkins.Vr.VrManager.ControllerType">ControllerType</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static SDK_BaseController.ControllerType ControllerType { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">VRTK.SDK_BaseController.ControllerType</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/VR?path=Scripts/VrManager.cs&amp;version=GBmaster&amp;line=250">View Source</a>
+  </span>
+  <a id="Atkins_Vr_VrManager_Follower_" data-uid="Atkins.Vr.VrManager.Follower*"></a>
+  <h4 id="Atkins_Vr_VrManager_Follower" data-uid="Atkins.Vr.VrManager.Follower">Follower</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static FollowCanvas Follower { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Atkins.Vr.FollowCanvas.html">FollowCanvas</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/VR?path=Scripts/VrManager.cs&amp;version=GBmaster&amp;line=237">View Source</a>
+  </span>
+  <a id="Atkins_Vr_VrManager_FollowerObject_" data-uid="Atkins.Vr.VrManager.FollowerObject*"></a>
+  <h4 id="Atkins_Vr_VrManager_FollowerObject" data-uid="Atkins.Vr.VrManager.FollowerObject">FollowerObject</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static GameObject FollowerObject { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">GameObject</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/VR?path=Scripts/VrManager.cs&amp;version=GBmaster&amp;line=72">View Source</a>
+  </span>
+  <a id="Atkins_Vr_VrManager_GenericPointer_" data-uid="Atkins.Vr.VrManager.GenericPointer*"></a>
+  <h4 id="Atkins_Vr_VrManager_GenericPointer" data-uid="Atkins.Vr.VrManager.GenericPointer">GenericPointer</h4>
+  <div class="markdown level1 summary"><p>Static reference to the teleport pointer</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static GenericPointer GenericPointer { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Atkins.Vr.GenericPointer.html">GenericPointer</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/VR?path=Scripts/VrManager.cs&amp;version=GBmaster&amp;line=121">View Source</a>
+  </span>
+  <a id="Atkins_Vr_VrManager_Headset_" data-uid="Atkins.Vr.VrManager.Headset*"></a>
+  <h4 id="Atkins_Vr_VrManager_Headset" data-uid="Atkins.Vr.VrManager.Headset">Headset</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static GameObject Headset { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">GameObject</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/VR?path=Scripts/VrManager.cs&amp;version=GBmaster&amp;line=45">View Source</a>
+  </span>
+  <a id="Atkins_Vr_VrManager_IsOculus_" data-uid="Atkins.Vr.VrManager.IsOculus*"></a>
+  <h4 id="Atkins_Vr_VrManager_IsOculus" data-uid="Atkins.Vr.VrManager.IsOculus">IsOculus</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsOculus { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/VR?path=Scripts/VrManager.cs&amp;version=GBmaster&amp;line=199">View Source</a>
+  </span>
+  <a id="Atkins_Vr_VrManager_LeftControllerEvents_" data-uid="Atkins.Vr.VrManager.LeftControllerEvents*"></a>
+  <h4 id="Atkins_Vr_VrManager_LeftControllerEvents" data-uid="Atkins.Vr.VrManager.LeftControllerEvents">LeftControllerEvents</h4>
+  <div class="markdown level1 summary"><p>Left hand controller events</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static VRTK_ControllerEvents LeftControllerEvents { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">VRTK.VRTK_ControllerEvents</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/VR?path=Scripts/VrManager.cs&amp;version=GBmaster&amp;line=157">View Source</a>
+  </span>
+  <a id="Atkins_Vr_VrManager_LeftHand_" data-uid="Atkins.Vr.VrManager.LeftHand*"></a>
+  <h4 id="Atkins_Vr_VrManager_LeftHand" data-uid="Atkins.Vr.VrManager.LeftHand">LeftHand</h4>
+  <div class="markdown level1 summary"><p>Left Hand Game Object</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static GameObject LeftHand { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">GameObject</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/VR?path=Scripts/VrManager.cs&amp;version=GBmaster&amp;line=30">View Source</a>
+  </span>
+  <a id="Atkins_Vr_VrManager_MenuPointer_" data-uid="Atkins.Vr.VrManager.MenuPointer*"></a>
+  <h4 id="Atkins_Vr_VrManager_MenuPointer" data-uid="Atkins.Vr.VrManager.MenuPointer">MenuPointer</h4>
+  <div class="markdown level1 summary"><p>static reference to the menu pointer</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static VrMenuPointer MenuPointer { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Atkins.Vr.VrMenuPointer.html">VrMenuPointer</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/VR?path=Scripts/VrManager.cs&amp;version=GBmaster&amp;line=106">View Source</a>
+  </span>
+  <a id="Atkins_Vr_VrManager_PlayArea_" data-uid="Atkins.Vr.VrManager.PlayArea*"></a>
+  <h4 id="Atkins_Vr_VrManager_PlayArea" data-uid="Atkins.Vr.VrManager.PlayArea">PlayArea</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static GameObject PlayArea { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">GameObject</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/VR?path=Scripts/VrManager.cs&amp;version=GBmaster&amp;line=217">View Source</a>
+  </span>
+  <a id="Atkins_Vr_VrManager_RightControllerEvents_" data-uid="Atkins.Vr.VrManager.RightControllerEvents*"></a>
+  <h4 id="Atkins_Vr_VrManager_RightControllerEvents" data-uid="Atkins.Vr.VrManager.RightControllerEvents">RightControllerEvents</h4>
+  <div class="markdown level1 summary"><p>Right hand controller events</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static VRTK_ControllerEvents RightControllerEvents { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">VRTK.VRTK_ControllerEvents</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/VR?path=Scripts/VrManager.cs&amp;version=GBmaster&amp;line=177">View Source</a>
+  </span>
+  <a id="Atkins_Vr_VrManager_RightHand_" data-uid="Atkins.Vr.VrManager.RightHand*"></a>
+  <h4 id="Atkins_Vr_VrManager_RightHand" data-uid="Atkins.Vr.VrManager.RightHand">RightHand</h4>
+  <div class="markdown level1 summary"><p>Right Hand Gameobject</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static GameObject RightHand { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">GameObject</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/VR?path=Scripts/VrManager.cs&amp;version=GBmaster&amp;line=91">View Source</a>
+  </span>
+  <a id="Atkins_Vr_VrManager_Setup_" data-uid="Atkins.Vr.VrManager.Setup*"></a>
+  <h4 id="Atkins_Vr_VrManager_Setup" data-uid="Atkins.Vr.VrManager.Setup">Setup</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static VRTK_SDKSetup Setup { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">VRTK.VRTK_SDKSetup</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/VR?path=Scripts/VrManager.cs&amp;version=GBmaster&amp;line=54">View Source</a>
+  </span>
+  <a id="Atkins_Vr_VrManager_TeleportPointer_" data-uid="Atkins.Vr.VrManager.TeleportPointer*"></a>
+  <h4 id="Atkins_Vr_VrManager_TeleportPointer" data-uid="Atkins.Vr.VrManager.TeleportPointer">TeleportPointer</h4>
+  <div class="markdown level1 summary"><p>Static reference to the teleport pointer</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TeleportPointer TeleportPointer { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Atkins.Vr.TeleportPointer.html">TeleportPointer</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/VR?path=Scripts/VrManager.cs&amp;version=GBmaster&amp;line=136">View Source</a>
+  </span>
+  <a id="Atkins_Vr_VrManager_VrCamera_" data-uid="Atkins.Vr.VrManager.VrCamera*"></a>
+  <h4 id="Atkins_Vr_VrManager_VrCamera" data-uid="Atkins.Vr.VrManager.VrCamera">VrCamera</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Camera VrCamera { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Camera</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/VR?path=Scripts/VrManager.cs&amp;version=GBmaster&amp;line=302">View Source</a>
+  </span>
+  <a id="Atkins_Vr_VrManager_AddVrLoadedEvent_" data-uid="Atkins.Vr.VrManager.AddVrLoadedEvent*"></a>
+  <h4 id="Atkins_Vr_VrManager_AddVrLoadedEvent_Atkins_Vr_OnVrLoaded_" data-uid="Atkins.Vr.VrManager.AddVrLoadedEvent(Atkins.Vr.OnVrLoaded)">AddVrLoadedEvent(OnVrLoaded)</h4>
+  <div class="markdown level1 summary"><p>Add an event for when vr is loaded and invoke right away if already loaded</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AddVrLoadedEvent(OnVrLoaded e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Atkins.Vr.OnVrLoaded.html">OnVrLoaded</a></td>
+        <td><span class="parametername">e</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/VR?path=Scripts/VrManager.cs&amp;version=GBmaster&amp;line=321">View Source</a>
+  </span>
+  <a id="Atkins_Vr_VrManager_Awake_" data-uid="Atkins.Vr.VrManager.Awake*"></a>
+  <h4 id="Atkins_Vr_VrManager_Awake" data-uid="Atkins.Vr.VrManager.Awake">Awake()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void Awake()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Atkins.Core.UnitySingleton&lt;Atkins.Vr.VrManager&gt;.Awake()</span></div>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/VR?path=Scripts/VrManager.cs&amp;version=GBmaster&amp;line=285">View Source</a>
+  </span>
+  <a id="Atkins_Vr_VrManager_Build_" data-uid="Atkins.Vr.VrManager.Build*"></a>
+  <h4 id="Atkins_Vr_VrManager_Build_System_Boolean_" data-uid="Atkins.Vr.VrManager.Build(System.Boolean)">Build(Boolean)</h4>
+  <div class="markdown level1 summary"><p>Build and set up all the components needed for vr</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Build(bool enableVr)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">enableVr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/VR?path=Scripts/VrManager.cs&amp;version=GBmaster&amp;line=360">View Source</a>
+  </span>
+  <a id="Atkins_Vr_VrManager_OnLoadedSetupChanged_" data-uid="Atkins.Vr.VrManager.OnLoadedSetupChanged*"></a>
+  <h4 id="Atkins_Vr_VrManager_OnLoadedSetupChanged" data-uid="Atkins.Vr.VrManager.OnLoadedSetupChanged">OnLoadedSetupChanged()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public VRTK_SDKManager.LoadedSetupChangeEventHandler OnLoadedSetupChanged()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">VRTK.VRTK_SDKManager.LoadedSetupChangeEventHandler</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/VR?path=Scripts/VrManager.cs&amp;version=GBmaster&amp;line=352">View Source</a>
+  </span>
+  <a id="Atkins_Vr_VrManager_OnTeleportPlayer_" data-uid="Atkins.Vr.VrManager.OnTeleportPlayer*"></a>
+  <h4 id="Atkins_Vr_VrManager_OnTeleportPlayer_Atkins_Core_Player_PlayerSource_Vector3_Vector3_" data-uid="Atkins.Vr.VrManager.OnTeleportPlayer(Atkins.Core.Player.PlayerSource,Vector3,Vector3)">OnTeleportPlayer(PlayerSource, Vector3, Vector3)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void OnTeleportPlayer(PlayerSource usertype, Vector3 position, Vector3 rotation)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Atkins.Core.Player.PlayerSource.html">PlayerSource</a></td>
+        <td><span class="parametername">usertype</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Vector3</span></td>
+        <td><span class="parametername">position</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Vector3</span></td>
+        <td><span class="parametername">rotation</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/VR?path=Scripts/VrManager.cs&amp;version=GBmaster&amp;line=313">View Source</a>
+  </span>
+  <a id="Atkins_Vr_VrManager_RemoveVrLoadedEvent_" data-uid="Atkins.Vr.VrManager.RemoveVrLoadedEvent*"></a>
+  <h4 id="Atkins_Vr_VrManager_RemoveVrLoadedEvent_Atkins_Vr_OnVrLoaded_" data-uid="Atkins.Vr.VrManager.RemoveVrLoadedEvent(Atkins.Vr.OnVrLoaded)">RemoveVrLoadedEvent(OnVrLoaded)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void RemoveVrLoadedEvent(OnVrLoaded e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Atkins.Vr.OnVrLoaded.html">OnVrLoaded</a></td>
+        <td><span class="parametername">e</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/VR?path=Scripts/VrManager.cs&amp;version=GBmaster&amp;line=443">View Source</a>
+  </span>
+  <a id="Atkins_Vr_VrManager_TeleportVrPlayer_" data-uid="Atkins.Vr.VrManager.TeleportVrPlayer*"></a>
+  <h4 id="Atkins_Vr_VrManager_TeleportVrPlayer_Transform_" data-uid="Atkins.Vr.VrManager.TeleportVrPlayer(Transform)">TeleportVrPlayer(Transform)</h4>
+  <div class="markdown level1 summary"><a class="xref" href="Atkins.Vr.VrManager.html#Atkins_Vr_VrManager_TeleportVrPlayer_Vector3_Vector3_">TeleportVrPlayer(Vector3, Vector3)</a>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void TeleportVrPlayer(Transform t)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Transform</span></td>
+        <td><span class="parametername">t</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/VR?path=Scripts/VrManager.cs&amp;version=GBmaster&amp;line=453">View Source</a>
+  </span>
+  <a id="Atkins_Vr_VrManager_TeleportVrPlayer_" data-uid="Atkins.Vr.VrManager.TeleportVrPlayer*"></a>
+  <h4 id="Atkins_Vr_VrManager_TeleportVrPlayer_Vector3_Vector3_" data-uid="Atkins.Vr.VrManager.TeleportVrPlayer(Vector3,Vector3)">TeleportVrPlayer(Vector3, Vector3)</h4>
+  <div class="markdown level1 summary"><p>Teleport the vr player to set location, forces angle to be flatterened</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void TeleportVrPlayer(Vector3 position, Vector3 rotation)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vector3</span></td>
+        <td><span class="parametername">position</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Vector3</span></td>
+        <td><span class="parametername">rotation</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/VR?path=Scripts/VrManager.cs&amp;version=GBmaster&amp;line=431">View Source</a>
+  </span>
+  <a id="Atkins_Vr_VrManager_TeleportVrPlayerIfLinked_" data-uid="Atkins.Vr.VrManager.TeleportVrPlayerIfLinked*"></a>
+  <h4 id="Atkins_Vr_VrManager_TeleportVrPlayerIfLinked_Transform_" data-uid="Atkins.Vr.VrManager.TeleportVrPlayerIfLinked(Transform)">TeleportVrPlayerIfLinked(Transform)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void TeleportVrPlayerIfLinked(Transform t)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Transform</span></td>
+        <td><span class="parametername">t</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/VR?path=Scripts/VrManager.cs&amp;version=GBmaster&amp;line=411">View Source</a>
+  </span>
+  <a id="Atkins_Vr_VrManager_ToggleViewVr_" data-uid="Atkins.Vr.VrManager.ToggleViewVr*"></a>
+  <h4 id="Atkins_Vr_VrManager_ToggleViewVr_System_Boolean_" data-uid="Atkins.Vr.VrManager.ToggleViewVr(System.Boolean)">ToggleViewVr(Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ToggleViewVr(bool isActive)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">isActive</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/VR?path=Scripts/VrManager.cs&amp;version=GBmaster&amp;line=391">View Source</a>
+  </span>
+  <a id="Atkins_Vr_VrManager_ToggleVrLink_" data-uid="Atkins.Vr.VrManager.ToggleVrLink*"></a>
+  <h4 id="Atkins_Vr_VrManager_ToggleVrLink_System_Boolean_" data-uid="Atkins.Vr.VrManager.ToggleVrLink(System.Boolean)">ToggleVrLink(Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ToggleVrLink(bool isActive)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">isActive</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="events">Events
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/VR?path=Scripts/VrManager.cs&amp;version=GBmaster&amp;line=275">View Source</a>
+  </span>
+  <h4 id="Atkins_Vr_VrManager_OnLinkVrStateChange" data-uid="Atkins.Vr.VrManager.OnLinkVrStateChange">OnLinkVrStateChange</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static event LinkVrStateChange OnLinkVrStateChange</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Atkins.Vr.LinkVrStateChange.html">LinkVrStateChange</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/VR?path=Scripts/VrManager.cs&amp;version=GBmaster&amp;line=276">View Source</a>
+  </span>
+  <h4 id="Atkins_Vr_VrManager_OnLinkVrViewStateChange" data-uid="Atkins.Vr.VrManager.OnLinkVrViewStateChange">OnLinkVrViewStateChange</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static event LinkVrStateChange OnLinkVrViewStateChange</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Atkins.Vr.LinkVrStateChange.html">LinkVrStateChange</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/VR?path=Scripts/VrManager.cs&amp;version=GBmaster&amp;line=279">View Source</a>
+  </span>
+  <h4 id="Atkins_Vr_VrManager_OnVrLoaded" data-uid="Atkins.Vr.VrManager.OnVrLoaded">OnVrLoaded</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static event OnVrLoaded OnVrLoaded</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Atkins.Vr.OnVrLoaded.html">OnVrLoaded</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Atkins.Core.Extensions.Extensions.html#Atkins_Core_Extensions_Extensions_GetDescription__1___0_">Extensions.GetDescription&lt;T&gt;(T)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://dev.azure.com/atkins-global/ICON/_git/VR?path=Scripts/VrManager.cs&amp;version=GBmaster&amp;line=21" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Documentation
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

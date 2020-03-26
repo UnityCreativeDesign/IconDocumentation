@@ -1,0 +1,956 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class Node
+   | Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class Node
+   | Documentation ">
+    <meta name="generator" content="docfx 2.51.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Atkins.Atom.Node">
+  
+  
+  <h1 id="Atkins_Atom_Node" data-uid="Atkins.Atom.Node" class="text-break">Class Node
+  </h1>
+  <div class="markdown level0 summary"><p>Resembles a node of the nested octree.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><span class="xref">Node</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Atkins.Atom.html">Atkins.Atom</a></h6>
+  <h6><strong>Assembly</strong>: Atkins.Atom.dll</h6>
+  <h5 id="Atkins_Atom_Node_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class Node : IEnumerable&lt;Node&gt;, IEnumerable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/ATOM?path=Scripts/Node.cs&amp;version=GBmaster&amp;line=57">View Source</a>
+  </span>
+  <a id="Atkins_Atom_Node__ctor_" data-uid="Atkins.Atom.Node.#ctor*"></a>
+  <h4 id="Atkins_Atom_Node__ctor_System_String_Atkins_Atom_PointCloudMetaData_Atkins_Atom_BoundingBox_Atkins_Atom_Node_" data-uid="Atkins.Atom.Node.#ctor(System.String,Atkins.Atom.PointCloudMetaData,Atkins.Atom.BoundingBox,Atkins.Atom.Node)">Node(String, PointCloudMetaData, BoundingBox, Node)</h4>
+  <div class="markdown level1 summary"><p>Creates a new node object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Node(string name, PointCloudMetaData metaData, BoundingBox boundingBox, Node parent)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>The path of the node in the tree. For example &quot;023&quot; for the forth child of the third child of the
+first child of the root node.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Atkins.Atom.PointCloudMetaData.html">PointCloudMetaData</a></td>
+        <td><span class="parametername">metaData</span></td>
+        <td><p>The meta data of the point cloud, to identify which cloud this node belongs to.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Atkins.Atom.BoundingBox.html">BoundingBox</a></td>
+        <td><span class="parametername">boundingBox</span></td>
+        <td><p>The bounding box of this node.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Atkins.Atom.Node.html">Node</a></td>
+        <td><span class="parametername">parent</span></td>
+        <td><p>The parent node. May be null if this is the root node.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/ATOM?path=Scripts/Node.cs&amp;version=GBmaster&amp;line=31">View Source</a>
+  </span>
+  <h4 id="Atkins_Atom_Node_children" data-uid="Atkins.Atom.Node.children">children</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly Node[] children</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Atkins.Atom.Node.html">Node</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/ATOM?path=Scripts/Node.cs&amp;version=GBmaster&amp;line=75">View Source</a>
+  </span>
+  <a id="Atkins_Atom_Node_BoundingBox_" data-uid="Atkins.Atom.Node.BoundingBox*"></a>
+  <h4 id="Atkins_Atom_Node_BoundingBox" data-uid="Atkins.Atom.Node.BoundingBox">BoundingBox</h4>
+  <div class="markdown level1 summary"><p>The BoundingBox of the node (readonly)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BoundingBox BoundingBox { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Atkins.Atom.BoundingBox.html">BoundingBox</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/ATOM?path=Scripts/Node.cs&amp;version=GBmaster&amp;line=90">View Source</a>
+  </span>
+  <a id="Atkins_Atom_Node_MetaData_" data-uid="Atkins.Atom.Node.MetaData*"></a>
+  <h4 id="Atkins_Atom_Node_MetaData" data-uid="Atkins.Atom.Node.MetaData">MetaData</h4>
+  <div class="markdown level1 summary"><p>The metadata identifying which pointcloud this node belongs to</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PointCloudMetaData MetaData { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Atkins.Atom.PointCloudMetaData.html">PointCloudMetaData</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/ATOM?path=Scripts/Node.cs&amp;version=GBmaster&amp;line=70">View Source</a>
+  </span>
+  <a id="Atkins_Atom_Node_Name_" data-uid="Atkins.Atom.Node.Name*"></a>
+  <h4 id="Atkins_Atom_Node_Name" data-uid="Atkins.Atom.Node.Name">Name</h4>
+  <div class="markdown level1 summary"><p>The name of the node, which is the path of the node in the tree. For example &quot;023&quot; for the forth child of the third
+child of the first child of the root node.
+(readonly)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Name { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/ATOM?path=Scripts/Node.cs&amp;version=GBmaster&amp;line=80">View Source</a>
+  </span>
+  <a id="Atkins_Atom_Node_Parent_" data-uid="Atkins.Atom.Node.Parent*"></a>
+  <h4 id="Atkins_Atom_Node_Parent" data-uid="Atkins.Atom.Node.Parent">Parent</h4>
+  <div class="markdown level1 summary"><p>The parent of this node (may be null, if this is a root node)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Node Parent { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Atkins.Atom.Node.html">Node</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/ATOM?path=Scripts/Node.cs&amp;version=GBmaster&amp;line=85">View Source</a>
+  </span>
+  <a id="Atkins_Atom_Node_PointCount_" data-uid="Atkins.Atom.Node.PointCount*"></a>
+  <h4 id="Atkins_Atom_Node_PointCount" data-uid="Atkins.Atom.Node.PointCount">PointCount</h4>
+  <div class="markdown level1 summary"><p>Number of points given the last time SetPoints was called. Or -1 if it hasn&apos;t been called yet</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int PointCount { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/ATOM?path=Scripts/Node.cs&amp;version=GBmaster&amp;line=180">View Source</a>
+  </span>
+  <a id="Atkins_Atom_Node_CreateAllGameObjects_" data-uid="Atkins.Atom.Node.CreateAllGameObjects*"></a>
+  <h4 id="Atkins_Atom_Node_CreateAllGameObjects_Atkins_Atom_MeshConfiguration_" data-uid="Atkins.Atom.Node.CreateAllGameObjects(Atkins.Atom.MeshConfiguration)">CreateAllGameObjects(MeshConfiguration)</h4>
+  <div class="markdown level1 summary"><p>Creates GameObjects for this node and all its (grand-)children. Useable for displaying a whole point cloud at once.
+Vertices and Colors have to be set before calling this function (via SetPoints) for this object and all its
+children! This function has to be called from the main thread!</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CreateAllGameObjects(MeshConfiguration configuration)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Atkins.Atom.MeshConfiguration.html">MeshConfiguration</a></td>
+        <td><span class="parametername">configuration</span></td>
+        <td><p>The MeshConfiguration which should be used for creating the Game Objects</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/ATOM?path=Scripts/Node.cs&amp;version=GBmaster&amp;line=192">View Source</a>
+  </span>
+  <a id="Atkins_Atom_Node_CreateAsSingleGameObject_" data-uid="Atkins.Atom.Node.CreateAsSingleGameObject*"></a>
+  <h4 id="Atkins_Atom_Node_CreateAsSingleGameObject_Atkins_Atom_MeshConfiguration_" data-uid="Atkins.Atom.Node.CreateAsSingleGameObject(Atkins.Atom.MeshConfiguration)">CreateAsSingleGameObject(MeshConfiguration)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CreateAsSingleGameObject(MeshConfiguration configuration)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Atkins.Atom.MeshConfiguration.html">MeshConfiguration</a></td>
+        <td><span class="parametername">configuration</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/ATOM?path=Scripts/Node.cs&amp;version=GBmaster&amp;line=164">View Source</a>
+  </span>
+  <a id="Atkins_Atom_Node_CreateBoundingBoxGameObject_" data-uid="Atkins.Atom.Node.CreateBoundingBoxGameObject*"></a>
+  <h4 id="Atkins_Atom_Node_CreateBoundingBoxGameObject" data-uid="Atkins.Atom.Node.CreateBoundingBoxGameObject">CreateBoundingBoxGameObject()</h4>
+  <div class="markdown level1 summary"><p>Creates a transparent box game object with the shape of the bounding box of this node. The color is determined by
+the hashcode of this node.
+Used for debugging purposes only.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GameObject CreateBoundingBoxGameObject()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">GameObject</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/ATOM?path=Scripts/Node.cs&amp;version=GBmaster&amp;line=124">View Source</a>
+  </span>
+  <a id="Atkins_Atom_Node_CreateGameObjects_" data-uid="Atkins.Atom.Node.CreateGameObjects*"></a>
+  <h4 id="Atkins_Atom_Node_CreateGameObjects_Atkins_Atom_MeshConfiguration_" data-uid="Atkins.Atom.Node.CreateGameObjects(Atkins.Atom.MeshConfiguration)">CreateGameObjects(MeshConfiguration)</h4>
+  <div class="markdown level1 summary"><p>Creates the Game Object(s) containing the points of this node.
+Vertices and Colors have to be set before calling this function (via SetPoints)! This function has to be called
+from the main thread!</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CreateGameObjects(MeshConfiguration configuration)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Atkins.Atom.MeshConfiguration.html">MeshConfiguration</a></td>
+        <td><span class="parametername">configuration</span></td>
+        <td><p>The MeshConfiguration which should be used for creating the Game Objects</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/ATOM?path=Scripts/Node.cs&amp;version=GBmaster&amp;line=214">View Source</a>
+  </span>
+  <a id="Atkins_Atom_Node_DeactivateGameObjects_" data-uid="Atkins.Atom.Node.DeactivateGameObjects*"></a>
+  <h4 id="Atkins_Atom_Node_DeactivateGameObjects" data-uid="Atkins.Atom.Node.DeactivateGameObjects">DeactivateGameObjects()</h4>
+  <div class="markdown level1 summary"><p>Deactivates the GameObjects of this node. Has to be called from the main thread.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DeactivateGameObjects()</code></pre>
+  </div>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/ATOM?path=Scripts/Node.cs&amp;version=GBmaster&amp;line=410">View Source</a>
+  </span>
+  <a id="Atkins_Atom_Node_DistanceToLine_" data-uid="Atkins.Atom.Node.DistanceToLine*"></a>
+  <h4 id="Atkins_Atom_Node_DistanceToLine_Ray_Vector3_" data-uid="Atkins.Atom.Node.DistanceToLine(Ray,Vector3)">DistanceToLine(Ray, Vector3)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float DistanceToLine(Ray ray, Vector3 point)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Ray</span></td>
+        <td><span class="parametername">ray</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Vector3</span></td>
+        <td><span class="parametername">point</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/ATOM?path=Scripts/Node.cs&amp;version=GBmaster&amp;line=251">View Source</a>
+  </span>
+  <a id="Atkins_Atom_Node_ForgetPoints_" data-uid="Atkins.Atom.Node.ForgetPoints*"></a>
+  <h4 id="Atkins_Atom_Node_ForgetPoints" data-uid="Atkins.Atom.Node.ForgetPoints">ForgetPoints()</h4>
+  <div class="markdown level1 summary"><p>Deletes the loaded vertex- and color-information (to release the used memory). The point count stays saved however.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ForgetPoints()</code></pre>
+  </div>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/ATOM?path=Scripts/Node.cs&amp;version=GBmaster&amp;line=290">View Source</a>
+  </span>
+  <a id="Atkins_Atom_Node_GetChild_" data-uid="Atkins.Atom.Node.GetChild*"></a>
+  <h4 id="Atkins_Atom_Node_GetChild_System_Int32_" data-uid="Atkins.Atom.Node.GetChild(System.Int32)">GetChild(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Node GetChild(int index)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">index</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Atkins.Atom.Node.html">Node</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/ATOM?path=Scripts/Node.cs&amp;version=GBmaster&amp;line=98">View Source</a>
+  </span>
+  <a id="Atkins_Atom_Node_GetEnumerator_" data-uid="Atkins.Atom.Node.GetEnumerator*"></a>
+  <h4 id="Atkins_Atom_Node_GetEnumerator" data-uid="Atkins.Atom.Node.GetEnumerator">GetEnumerator()</h4>
+  <div class="markdown level1 summary"><p>Returns an enumerator with which it is possible to enumerate through the children of the node (not including
+null-values)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerator&lt;Node&gt; GetEnumerator()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1">IEnumerator</a>&lt;<a class="xref" href="Atkins.Atom.Node.html">Node</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/ATOM?path=Scripts/Node.cs&amp;version=GBmaster&amp;line=113">View Source</a>
+  </span>
+  <a id="Atkins_Atom_Node_GetLevel_" data-uid="Atkins.Atom.Node.GetLevel*"></a>
+  <h4 id="Atkins_Atom_Node_GetLevel" data-uid="Atkins.Atom.Node.GetLevel">GetLevel()</h4>
+  <div class="markdown level1 summary"><p>Returns how deep in the tree this node is. 0 means it is the root node, 1 means it is a child of the root node and
+so on...</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetLevel()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><p>the level in the tree (&gt;=0)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/ATOM?path=Scripts/Node.cs&amp;version=GBmaster&amp;line=365">View Source</a>
+  </span>
+  <a id="Atkins_Atom_Node_GetNearbyPositions_" data-uid="Atkins.Atom.Node.GetNearbyPositions*"></a>
+  <h4 id="Atkins_Atom_Node_GetNearbyPositions_Ray__System_Single__System_Collections_Generic_List_Vector3__" data-uid="Atkins.Atom.Node.GetNearbyPositions(Ray@,System.Single@,System.Collections.Generic.List{Vector3})">GetNearbyPositions(ref Ray, ref Single, List&lt;Vector3&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void GetNearbyPositions(ref Ray ray, ref float maxDistance, List&lt;Vector3&gt; collidingWith)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Ray</span></td>
+        <td><span class="parametername">ray</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">maxDistance</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<span class="xref">Vector3</span>&gt;</td>
+        <td><span class="parametername">collidingWith</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/ATOM?path=Scripts/Node.cs&amp;version=GBmaster&amp;line=300">View Source</a>
+  </span>
+  <a id="Atkins_Atom_Node_HasChild_" data-uid="Atkins.Atom.Node.HasChild*"></a>
+  <h4 id="Atkins_Atom_Node_HasChild_System_Int32_" data-uid="Atkins.Atom.Node.HasChild(System.Int32)">HasChild(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasChild(int index)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">index</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/ATOM?path=Scripts/Node.cs&amp;version=GBmaster&amp;line=268">View Source</a>
+  </span>
+  <a id="Atkins_Atom_Node_HasGameObjects_" data-uid="Atkins.Atom.Node.HasGameObjects*"></a>
+  <h4 id="Atkins_Atom_Node_HasGameObjects" data-uid="Atkins.Atom.Node.HasGameObjects">HasGameObjects()</h4>
+  <div class="markdown level1 summary"><p>Returns true, iff this object has GameObjects.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasGameObjects()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/ATOM?path=Scripts/Node.cs&amp;version=GBmaster&amp;line=260">View Source</a>
+  </span>
+  <a id="Atkins_Atom_Node_HasPointsToRender_" data-uid="Atkins.Atom.Node.HasPointsToRender*"></a>
+  <h4 id="Atkins_Atom_Node_HasPointsToRender" data-uid="Atkins.Atom.Node.HasPointsToRender">HasPointsToRender()</h4>
+  <div class="markdown level1 summary"><p>Returns true, iff vertices and colors are set</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasPointsToRender()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/ATOM?path=Scripts/Node.cs&amp;version=GBmaster&amp;line=201">View Source</a>
+  </span>
+  <a id="Atkins_Atom_Node_RemoveGameObjects_" data-uid="Atkins.Atom.Node.RemoveGameObjects*"></a>
+  <h4 id="Atkins_Atom_Node_RemoveGameObjects_Atkins_Atom_MeshConfiguration_" data-uid="Atkins.Atom.Node.RemoveGameObjects(Atkins.Atom.MeshConfiguration)">RemoveGameObjects(MeshConfiguration)</h4>
+  <div class="markdown level1 summary"><p>Removes the GameObjects of this node. Has to be called from the main thread.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveGameObjects(MeshConfiguration config)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Atkins.Atom.MeshConfiguration.html">MeshConfiguration</a></td>
+        <td><span class="parametername">config</span></td>
+        <td><p>The MeshConfiguration which should be used for removing the Game Objects</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/ATOM?path=Scripts/Node.cs&amp;version=GBmaster&amp;line=279">View Source</a>
+  </span>
+  <a id="Atkins_Atom_Node_SetChild_" data-uid="Atkins.Atom.Node.SetChild*"></a>
+  <h4 id="Atkins_Atom_Node_SetChild_System_Int32_Atkins_Atom_Node_" data-uid="Atkins.Atom.Node.SetChild(System.Int32,Atkins.Atom.Node)">SetChild(Int32, Node)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetChild(int index, Node node)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">index</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Atkins.Atom.Node.html">Node</a></td>
+        <td><span class="parametername">node</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/ATOM?path=Scripts/Node.cs&amp;version=GBmaster&amp;line=230">View Source</a>
+  </span>
+  <a id="Atkins_Atom_Node_SetPoints_" data-uid="Atkins.Atom.Node.SetPoints*"></a>
+  <h4 id="Atkins_Atom_Node_SetPoints_Vector3___Color___System_Single___" data-uid="Atkins.Atom.Node.SetPoints(Vector3[],Color[],System.Single[])">SetPoints(Vector3[], Color[], Single[])</h4>
+  <div class="markdown level1 summary"><p>Sets the point data. Throws an exception if gameobjects already exist or vertices or colors are null or their
+length do not match.
+Also sets the point count.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetPoints(Vector3[] vertices, Color[] colors, float[] intensities)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vector3</span>[]</td>
+        <td><span class="parametername">vertices</span></td>
+        <td><p>Position-Data</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Color</span>[]</td>
+        <td><span class="parametername">colors</span></td>
+        <td><p>Color-Data (has to have the same length as vertices)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a>[]</td>
+        <td><span class="parametername">intensities</span></td>
+        <td><p>The intensity values</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/ATOM?path=Scripts/Node.cs&amp;version=GBmaster&amp;line=309">View Source</a>
+  </span>
+  <a id="Atkins_Atom_Node_ToString_" data-uid="Atkins.Atom.Node.ToString*"></a>
+  <h4 id="Atkins_Atom_Node_ToString" data-uid="Atkins.Atom.Node.ToString">ToString()</h4>
+  <div class="markdown level1 summary"><p>Returns a string representation of the Node (for example &quot;Node: r123&quot;)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a></div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Atkins.Core.Extensions.Extensions.html#Atkins_Core_Extensions_Extensions_ForEachAsync__1_System_Collections_Generic_IEnumerable___0__System_Int32_System_Func___0_System_Threading_Tasks_Task__System_IProgress___0__">Extensions.ForEachAsync&lt;T&gt;(IEnumerable&lt;T&gt;, Int32, Func&lt;T, Task&gt;, IProgress&lt;T&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Atkins.Core.Extensions.Extensions.html#Atkins_Core_Extensions_Extensions_ForEachAsync__1_System_Collections_Generic_IEnumerable___0__System_Int32_System_Func___0_System_Int32_System_Threading_Tasks_Task__System_IProgress___0__">Extensions.ForEachAsync&lt;T&gt;(IEnumerable&lt;T&gt;, Int32, Func&lt;T, Int32, Task&gt;, IProgress&lt;T&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Atkins.Core.Extensions.Extensions.html#Atkins_Core_Extensions_Extensions_GetDescription__1___0_">Extensions.GetDescription&lt;T&gt;(T)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://dev.azure.com/atkins-global/ICON/_git/ATOM?path=Scripts/Node.cs&amp;version=GBmaster&amp;line=28" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Documentation
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

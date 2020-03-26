@@ -1,0 +1,852 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class BoundingBox
+   | Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class BoundingBox
+   | Documentation ">
+    <meta name="generator" content="docfx 2.51.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Atkins.Atom.BoundingBox">
+  
+  
+  <h1 id="Atkins_Atom_BoundingBox" data-uid="Atkins.Atom.BoundingBox" class="text-break">Class BoundingBox
+  </h1>
+  <div class="markdown level0 summary"><p>An Axis-Aligned Bounding Box for a Node. Note that the values of the bounding box are not final, but might be
+changed.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><span class="xref">BoundingBox</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Atkins.Atom.html">Atkins.Atom</a></h6>
+  <h6><strong>Assembly</strong>: Atkins.Atom.dll</h6>
+  <h5 id="Atkins_Atom_BoundingBox_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Serializable]
+public class BoundingBox</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/ATOM?path=Scripts/BoundingBox.cs&amp;version=GBmaster&amp;line=46">View Source</a>
+  </span>
+  <a id="Atkins_Atom_BoundingBox__ctor_" data-uid="Atkins.Atom.BoundingBox.#ctor*"></a>
+  <h4 id="Atkins_Atom_BoundingBox__ctor" data-uid="Atkins.Atom.BoundingBox.#ctor">BoundingBox()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BoundingBox()</code></pre>
+  </div>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/ATOM?path=Scripts/BoundingBox.cs&amp;version=GBmaster&amp;line=67">View Source</a>
+  </span>
+  <a id="Atkins_Atom_BoundingBox__ctor_" data-uid="Atkins.Atom.BoundingBox.#ctor*"></a>
+  <h4 id="Atkins_Atom_BoundingBox__ctor_Atkins_Atom_Vector3d_Atkins_Atom_Vector3d_" data-uid="Atkins.Atom.BoundingBox.#ctor(Atkins.Atom.Vector3d,Atkins.Atom.Vector3d)">BoundingBox(Vector3d, Vector3d)</h4>
+  <div class="markdown level1 summary"><p>Creates a new Bounding Box with the given Parameters</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BoundingBox(Vector3d min, Vector3d max)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Atkins.Atom.Vector3d.html">Vector3d</a></td>
+        <td><span class="parametername">min</span></td>
+        <td><p>Vector containing lx, ly and lz</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Atkins.Atom.Vector3d.html">Vector3d</a></td>
+        <td><span class="parametername">max</span></td>
+        <td><p>Vector containing ux, uy and uz</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/ATOM?path=Scripts/BoundingBox.cs&amp;version=GBmaster&amp;line=51">View Source</a>
+  </span>
+  <a id="Atkins_Atom_BoundingBox__ctor_" data-uid="Atkins.Atom.BoundingBox.#ctor*"></a>
+  <h4 id="Atkins_Atom_BoundingBox__ctor_System_Double_System_Double_System_Double_System_Double_System_Double_System_Double_" data-uid="Atkins.Atom.BoundingBox.#ctor(System.Double,System.Double,System.Double,System.Double,System.Double,System.Double)">BoundingBox(Double, Double, Double, Double, Double, Double)</h4>
+  <div class="markdown level1 summary"><p>Creates a new Bounding Box with the given parameters</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BoundingBox(double lx, double ly, double lz, double ux, double uy, double uz)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td><span class="parametername">lx</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td><span class="parametername">ly</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td><span class="parametername">lz</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td><span class="parametername">ux</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td><span class="parametername">uy</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td><span class="parametername">uz</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/ATOM?path=Scripts/BoundingBox.cs&amp;version=GBmaster&amp;line=19">View Source</a>
+  </span>
+  <h4 id="Atkins_Atom_BoundingBox_lx" data-uid="Atkins.Atom.BoundingBox.lx">lx</h4>
+  <div class="markdown level1 summary"><p>Lower X-Coordinate. Do not set manually after constructing! Use the property instead!</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double lx</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/ATOM?path=Scripts/BoundingBox.cs&amp;version=GBmaster&amp;line=24">View Source</a>
+  </span>
+  <h4 id="Atkins_Atom_BoundingBox_ly" data-uid="Atkins.Atom.BoundingBox.ly">ly</h4>
+  <div class="markdown level1 summary"><p>Lower Y-Coordinate. Do not set manually after constructing! Use the property instead!</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double ly</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/ATOM?path=Scripts/BoundingBox.cs&amp;version=GBmaster&amp;line=29">View Source</a>
+  </span>
+  <h4 id="Atkins_Atom_BoundingBox_lz" data-uid="Atkins.Atom.BoundingBox.lz">lz</h4>
+  <div class="markdown level1 summary"><p>Lower Z-Coordinate. Do not set manually after constructing! Use the property instead!</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double lz</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/ATOM?path=Scripts/BoundingBox.cs&amp;version=GBmaster&amp;line=34">View Source</a>
+  </span>
+  <h4 id="Atkins_Atom_BoundingBox_ux" data-uid="Atkins.Atom.BoundingBox.ux">ux</h4>
+  <div class="markdown level1 summary"><p>Upper X-Coordinate. Do not set manually after constructing! Use the property instead!</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double ux</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/ATOM?path=Scripts/BoundingBox.cs&amp;version=GBmaster&amp;line=39">View Source</a>
+  </span>
+  <h4 id="Atkins_Atom_BoundingBox_uy" data-uid="Atkins.Atom.BoundingBox.uy">uy</h4>
+  <div class="markdown level1 summary"><p>Upper Y-Coordinate. Do not set manually after constructing! Use the property instead!</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double uy</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/ATOM?path=Scripts/BoundingBox.cs&amp;version=GBmaster&amp;line=44">View Source</a>
+  </span>
+  <h4 id="Atkins_Atom_BoundingBox_uz" data-uid="Atkins.Atom.BoundingBox.uz">uz</h4>
+  <div class="markdown level1 summary"><p>Upper Z-Coordinate. Do not set manually after constructing! Use the property instead!</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double uz</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/ATOM?path=Scripts/BoundingBox.cs&amp;version=GBmaster&amp;line=81">View Source</a>
+  </span>
+  <a id="Atkins_Atom_BoundingBox_Lx_" data-uid="Atkins.Atom.BoundingBox.Lx*"></a>
+  <h4 id="Atkins_Atom_BoundingBox_Lx" data-uid="Atkins.Atom.BoundingBox.Lx">Lx</h4>
+  <div class="markdown level1 summary"><p>Lower X-Value</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double Lx { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/ATOM?path=Scripts/BoundingBox.cs&amp;version=GBmaster&amp;line=95">View Source</a>
+  </span>
+  <a id="Atkins_Atom_BoundingBox_Ly_" data-uid="Atkins.Atom.BoundingBox.Ly*"></a>
+  <h4 id="Atkins_Atom_BoundingBox_Ly" data-uid="Atkins.Atom.BoundingBox.Ly">Ly</h4>
+  <div class="markdown level1 summary"><p>Lower Y-Value</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double Ly { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/ATOM?path=Scripts/BoundingBox.cs&amp;version=GBmaster&amp;line=109">View Source</a>
+  </span>
+  <a id="Atkins_Atom_BoundingBox_Lz_" data-uid="Atkins.Atom.BoundingBox.Lz*"></a>
+  <h4 id="Atkins_Atom_BoundingBox_Lz" data-uid="Atkins.Atom.BoundingBox.Lz">Lz</h4>
+  <div class="markdown level1 summary"><p>Lower Z-Value</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double Lz { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/ATOM?path=Scripts/BoundingBox.cs&amp;version=GBmaster&amp;line=123">View Source</a>
+  </span>
+  <a id="Atkins_Atom_BoundingBox_Ux_" data-uid="Atkins.Atom.BoundingBox.Ux*"></a>
+  <h4 id="Atkins_Atom_BoundingBox_Ux" data-uid="Atkins.Atom.BoundingBox.Ux">Ux</h4>
+  <div class="markdown level1 summary"><p>Upper X-Value</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double Ux { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/ATOM?path=Scripts/BoundingBox.cs&amp;version=GBmaster&amp;line=137">View Source</a>
+  </span>
+  <a id="Atkins_Atom_BoundingBox_Uy_" data-uid="Atkins.Atom.BoundingBox.Uy*"></a>
+  <h4 id="Atkins_Atom_BoundingBox_Uy" data-uid="Atkins.Atom.BoundingBox.Uy">Uy</h4>
+  <div class="markdown level1 summary"><p>Upper Y-Value</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double Uy { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/ATOM?path=Scripts/BoundingBox.cs&amp;version=GBmaster&amp;line=151">View Source</a>
+  </span>
+  <a id="Atkins_Atom_BoundingBox_Uz_" data-uid="Atkins.Atom.BoundingBox.Uz*"></a>
+  <h4 id="Atkins_Atom_BoundingBox_Uz" data-uid="Atkins.Atom.BoundingBox.Uz">Uz</h4>
+  <div class="markdown level1 summary"><p>Upper Z-Value</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double Uz { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/ATOM?path=Scripts/BoundingBox.cs&amp;version=GBmaster&amp;line=247">View Source</a>
+  </span>
+  <a id="Atkins_Atom_BoundingBox_Center_" data-uid="Atkins.Atom.BoundingBox.Center*"></a>
+  <h4 id="Atkins_Atom_BoundingBox_Center" data-uid="Atkins.Atom.BoundingBox.Center">Center()</h4>
+  <div class="markdown level1 summary"><p>Returns the center of the box</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3d Center()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Atkins.Atom.Vector3d.html">Vector3d</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/ATOM?path=Scripts/BoundingBox.cs&amp;version=GBmaster&amp;line=255">View Source</a>
+  </span>
+  <a id="Atkins_Atom_BoundingBox_GetBoundsObject_" data-uid="Atkins.Atom.BoundingBox.GetBoundsObject*"></a>
+  <h4 id="Atkins_Atom_BoundingBox_GetBoundsObject" data-uid="Atkins.Atom.BoundingBox.GetBoundsObject">GetBoundsObject()</h4>
+  <div class="markdown level1 summary"><p>Returns the Bounds-Object (Unity-Class for BoundingBoxes)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Bounds GetBoundsObject()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Bounds</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/ATOM?path=Scripts/BoundingBox.cs&amp;version=GBmaster&amp;line=162">View Source</a>
+  </span>
+  <a id="Atkins_Atom_BoundingBox_Init_" data-uid="Atkins.Atom.BoundingBox.Init*"></a>
+  <h4 id="Atkins_Atom_BoundingBox_Init" data-uid="Atkins.Atom.BoundingBox.Init">Init()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Init()</code></pre>
+  </div>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/ATOM?path=Scripts/BoundingBox.cs&amp;version=GBmaster&amp;line=239">View Source</a>
+  </span>
+  <a id="Atkins_Atom_BoundingBox_Max_" data-uid="Atkins.Atom.BoundingBox.Max*"></a>
+  <h4 id="Atkins_Atom_BoundingBox_Max" data-uid="Atkins.Atom.BoundingBox.Max">Max()</h4>
+  <div class="markdown level1 summary"><p>Returns the highest corner of the bounding box</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3d Max()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Atkins.Atom.Vector3d.html">Vector3d</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/ATOM?path=Scripts/BoundingBox.cs&amp;version=GBmaster&amp;line=231">View Source</a>
+  </span>
+  <a id="Atkins_Atom_BoundingBox_Min_" data-uid="Atkins.Atom.BoundingBox.Min*"></a>
+  <h4 id="Atkins_Atom_BoundingBox_Min" data-uid="Atkins.Atom.BoundingBox.Min">Min()</h4>
+  <div class="markdown level1 summary"><p>Returns the lowest corner of the bounding box</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3d Min()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Atkins.Atom.Vector3d.html">Vector3d</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/ATOM?path=Scripts/BoundingBox.cs&amp;version=GBmaster&amp;line=201">View Source</a>
+  </span>
+  <a id="Atkins_Atom_BoundingBox_MoveAlong_" data-uid="Atkins.Atom.BoundingBox.MoveAlong*"></a>
+  <h4 id="Atkins_Atom_BoundingBox_MoveAlong_Atkins_Atom_Vector3d_" data-uid="Atkins.Atom.BoundingBox.MoveAlong(Atkins.Atom.Vector3d)">MoveAlong(Vector3d)</h4>
+  <div class="markdown level1 summary"><p>Moves the box along the given vector</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void MoveAlong(Vector3d vector)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Atkins.Atom.Vector3d.html">Vector3d</a></td>
+        <td><span class="parametername">vector</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/ATOM?path=Scripts/BoundingBox.cs&amp;version=GBmaster&amp;line=185">View Source</a>
+  </span>
+  <a id="Atkins_Atom_BoundingBox_MoveToOrigin_" data-uid="Atkins.Atom.BoundingBox.MoveToOrigin*"></a>
+  <h4 id="Atkins_Atom_BoundingBox_MoveToOrigin" data-uid="Atkins.Atom.BoundingBox.MoveToOrigin">MoveToOrigin()</h4>
+  <div class="markdown level1 summary"><p>Moves the boxes, so its center is in the origin</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void MoveToOrigin()</code></pre>
+  </div>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/ATOM?path=Scripts/BoundingBox.cs&amp;version=GBmaster&amp;line=215">View Source</a>
+  </span>
+  <a id="Atkins_Atom_BoundingBox_Radius_" data-uid="Atkins.Atom.BoundingBox.Radius*"></a>
+  <h4 id="Atkins_Atom_BoundingBox_Radius" data-uid="Atkins.Atom.BoundingBox.Radius">Radius()</h4>
+  <div class="markdown level1 summary"><p>Returns the radius of the circumscribed sphere (half the length of the diagonal)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double Radius()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/ATOM?path=Scripts/BoundingBox.cs&amp;version=GBmaster&amp;line=223">View Source</a>
+  </span>
+  <a id="Atkins_Atom_BoundingBox_Size_" data-uid="Atkins.Atom.BoundingBox.Size*"></a>
+  <h4 id="Atkins_Atom_BoundingBox_Size" data-uid="Atkins.Atom.BoundingBox.Size">Size()</h4>
+  <div class="markdown level1 summary"><p>Returns the width (x-length), length(y-length) and height (z-length) of the box</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3d Size()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Atkins.Atom.Vector3d.html">Vector3d</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/ATOM?path=Scripts/BoundingBox.cs&amp;version=GBmaster&amp;line=171">View Source</a>
+  </span>
+  <a id="Atkins_Atom_BoundingBox_SwitchYz_" data-uid="Atkins.Atom.BoundingBox.SwitchYz*"></a>
+  <h4 id="Atkins_Atom_BoundingBox_SwitchYz" data-uid="Atkins.Atom.BoundingBox.SwitchYz">SwitchYz()</h4>
+  <div class="markdown level1 summary"><p>Switches the Y and Z coordinates of the bounding box. This might be neccessary because of different coordinate
+systems</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SwitchYz()</code></pre>
+  </div>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/ATOM?path=Scripts/BoundingBox.cs&amp;version=GBmaster&amp;line=260">View Source</a>
+  </span>
+  <a id="Atkins_Atom_BoundingBox_ToString_" data-uid="Atkins.Atom.BoundingBox.ToString*"></a>
+  <h4 id="Atkins_Atom_BoundingBox_ToString" data-uid="Atkins.Atom.BoundingBox.ToString">ToString()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a></div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Atkins.Core.Extensions.Extensions.html#Atkins_Core_Extensions_Extensions_GetDescription__1___0_">Extensions.GetDescription&lt;T&gt;(T)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://dev.azure.com/atkins-global/ICON/_git/ATOM?path=Scripts/BoundingBox.cs&amp;version=GBmaster&amp;line=10" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Documentation
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

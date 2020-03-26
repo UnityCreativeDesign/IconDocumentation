@@ -1,0 +1,675 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class HeapPriorityQueue&lt;I, T&gt;
+   | Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class HeapPriorityQueue&lt;I, T&gt;
+   | Documentation ">
+    <meta name="generator" content="docfx 2.51.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Atkins.Atom.HeapPriorityQueue`2">
+  
+  
+  <h1 id="Atkins_Atom_HeapPriorityQueue_2" data-uid="Atkins.Atom.HeapPriorityQueue`2" class="text-break">Class HeapPriorityQueue&lt;I, T&gt;
+  </h1>
+  <div class="markdown level0 summary"><p>A priority queue implemented with a Max Heap. This queue is threadsafe. Each function locks over a mutex-object</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><a class="xref" href="Atkins.Atom.PriorityQueue-2.html">PriorityQueue</a>&lt;I, T&gt;</div>
+    <div class="level2"><span class="xref">HeapPriorityQueue&lt;I, T&gt;</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Atkins.Atom.PriorityQueue-2.html#Atkins_Atom_PriorityQueue_2_Enqueue__1__0_">PriorityQueue&lt;I, T&gt;.Enqueue(T, I)</a>
+    </div>
+    <div>
+      <a class="xref" href="Atkins.Atom.PriorityQueue-2.html#Atkins_Atom_PriorityQueue_2_Dequeue">PriorityQueue&lt;I, T&gt;.Dequeue()</a>
+    </div>
+    <div>
+      <a class="xref" href="Atkins.Atom.PriorityQueue-2.html#Atkins_Atom_PriorityQueue_2_Dequeue__0__">PriorityQueue&lt;I, T&gt;.Dequeue(I)</a>
+    </div>
+    <div>
+      <a class="xref" href="Atkins.Atom.PriorityQueue-2.html#Atkins_Atom_PriorityQueue_2_MaxPriority">PriorityQueue&lt;I, T&gt;.MaxPriority()</a>
+    </div>
+    <div>
+      <a class="xref" href="Atkins.Atom.PriorityQueue-2.html#Atkins_Atom_PriorityQueue_2_Peek">PriorityQueue&lt;I, T&gt;.Peek()</a>
+    </div>
+    <div>
+      <a class="xref" href="Atkins.Atom.PriorityQueue-2.html#Atkins_Atom_PriorityQueue_2_Remove__1__0_">PriorityQueue&lt;I, T&gt;.Remove(T, I)</a>
+    </div>
+    <div>
+      <a class="xref" href="Atkins.Atom.PriorityQueue-2.html#Atkins_Atom_PriorityQueue_2_Remove__1_">PriorityQueue&lt;I, T&gt;.Remove(T)</a>
+    </div>
+    <div>
+      <a class="xref" href="Atkins.Atom.PriorityQueue-2.html#Atkins_Atom_PriorityQueue_2_Clear">PriorityQueue&lt;I, T&gt;.Clear()</a>
+    </div>
+    <div>
+      <a class="xref" href="Atkins.Atom.PriorityQueue-2.html#Atkins_Atom_PriorityQueue_2_IsEmpty">PriorityQueue&lt;I, T&gt;.IsEmpty()</a>
+    </div>
+    <div>
+      <a class="xref" href="Atkins.Atom.PriorityQueue-2.html#Atkins_Atom_PriorityQueue_2_Count">PriorityQueue&lt;I, T&gt;.Count</a>
+    </div>
+    <div>
+      <a class="xref" href="Atkins.Atom.PriorityQueue-2.html#Atkins_Atom_PriorityQueue_2_GetEnumerator">PriorityQueue&lt;I, T&gt;.GetEnumerator()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Atkins.Atom.html">Atkins.Atom</a></h6>
+  <h6><strong>Assembly</strong>: Atkins.Atom.dll</h6>
+  <h5 id="Atkins_Atom_HeapPriorityQueue_2_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class HeapPriorityQueue&lt;I, T&gt; : PriorityQueue&lt;I, T&gt;, IEnumerable&lt;T&gt;, IEnumerable where I : IComparable&lt;I&gt;</code></pre>
+  </div>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">I</span></td>
+        <td><p>Priority-Type</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>Value-Type</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/ATOM?path=Scripts/HeapPriorityQueue.cs&amp;version=GBmaster&amp;line=21">View Source</a>
+  </span>
+  <a id="Atkins_Atom_HeapPriorityQueue_2__ctor_" data-uid="Atkins.Atom.HeapPriorityQueue`2.#ctor*"></a>
+  <h4 id="Atkins_Atom_HeapPriorityQueue_2__ctor" data-uid="Atkins.Atom.HeapPriorityQueue`2.#ctor">HeapPriorityQueue()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public HeapPriorityQueue()</code></pre>
+  </div>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/ATOM?path=Scripts/HeapPriorityQueue.cs&amp;version=GBmaster&amp;line=39">View Source</a>
+  </span>
+  <a id="Atkins_Atom_HeapPriorityQueue_2__ctor_" data-uid="Atkins.Atom.HeapPriorityQueue`2.#ctor*"></a>
+  <h4 id="Atkins_Atom_HeapPriorityQueue_2__ctor_Atkins_Atom_HeapPriorityQueue__0__1__" data-uid="Atkins.Atom.HeapPriorityQueue`2.#ctor(Atkins.Atom.HeapPriorityQueue{`0,`1})">HeapPriorityQueue(HeapPriorityQueue&lt;I, T&gt;)</h4>
+  <div class="markdown level1 summary"><p>Copy Constructor</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public HeapPriorityQueue(HeapPriorityQueue&lt;I, T&gt; original)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Atkins.Atom.HeapPriorityQueue-2.html">HeapPriorityQueue</a>&lt;I, T&gt;</td>
+        <td><span class="parametername">original</span></td>
+        <td><p>not null</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/ATOM?path=Scripts/HeapPriorityQueue.cs&amp;version=GBmaster&amp;line=26">View Source</a>
+  </span>
+  <a id="Atkins_Atom_HeapPriorityQueue_2__ctor_" data-uid="Atkins.Atom.HeapPriorityQueue`2.#ctor*"></a>
+  <h4 id="Atkins_Atom_HeapPriorityQueue_2__ctor_System_Int32_" data-uid="Atkins.Atom.HeapPriorityQueue`2.#ctor(System.Int32)">HeapPriorityQueue(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public HeapPriorityQueue(int capacity)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">capacity</span></td>
+        <td><p>Initial array length</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/ATOM?path=Scripts/HeapPriorityQueue.cs&amp;version=GBmaster&amp;line=19">View Source</a>
+  </span>
+  <h4 id="Atkins_Atom_HeapPriorityQueue_2_locker" data-uid="Atkins.Atom.HeapPriorityQueue`2.locker">locker</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected object locker</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/ATOM?path=Scripts/HeapPriorityQueue.cs&amp;version=GBmaster&amp;line=56">View Source</a>
+  </span>
+  <a id="Atkins_Atom_HeapPriorityQueue_2_Count_" data-uid="Atkins.Atom.HeapPriorityQueue`2.Count*"></a>
+  <h4 id="Atkins_Atom_HeapPriorityQueue_2_Count" data-uid="Atkins.Atom.HeapPriorityQueue`2.Count">Count</h4>
+  <div class="markdown level1 summary"><p>Number of Elements inserted in the Heap</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int Count { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Atkins.Atom.PriorityQueue&lt;I, T&gt;.Count</span></div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/ATOM?path=Scripts/HeapPriorityQueue.cs&amp;version=GBmaster&amp;line=112">View Source</a>
+  </span>
+  <a id="Atkins_Atom_HeapPriorityQueue_2_Clear_" data-uid="Atkins.Atom.HeapPriorityQueue`2.Clear*"></a>
+  <h4 id="Atkins_Atom_HeapPriorityQueue_2_Clear" data-uid="Atkins.Atom.HeapPriorityQueue`2.Clear">Clear()</h4>
+  <div class="markdown level1 summary"><p>Removes all elements from the heap</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Clear()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Atkins.Atom.PriorityQueue&lt;I, T&gt;.Clear()</span></div>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/ATOM?path=Scripts/HeapPriorityQueue.cs&amp;version=GBmaster&amp;line=126">View Source</a>
+  </span>
+  <a id="Atkins_Atom_HeapPriorityQueue_2_Dequeue_" data-uid="Atkins.Atom.HeapPriorityQueue`2.Dequeue*"></a>
+  <h4 id="Atkins_Atom_HeapPriorityQueue_2_Dequeue" data-uid="Atkins.Atom.HeapPriorityQueue`2.Dequeue">Dequeue()</h4>
+  <div class="markdown level1 summary"><p>Removes the element with the highest priority from the heap and returns it. Throws an InvalidOperationException if
+queue is empty.
+Runs in O(logn)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override T Dequeue()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Atkins.Atom.PriorityQueue&lt;I, T&gt;.Dequeue()</span></div>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/ATOM?path=Scripts/HeapPriorityQueue.cs&amp;version=GBmaster&amp;line=137">View Source</a>
+  </span>
+  <a id="Atkins_Atom_HeapPriorityQueue_2_Dequeue_" data-uid="Atkins.Atom.HeapPriorityQueue`2.Dequeue*"></a>
+  <h4 id="Atkins_Atom_HeapPriorityQueue_2_Dequeue__0__" data-uid="Atkins.Atom.HeapPriorityQueue`2.Dequeue(`0@)">Dequeue(out I)</h4>
+  <div class="markdown level1 summary"><p>Removes the element with the highest priority from the heap and returns it. Its priority is given through the
+parameter. Throws an InvalidOperationException if queue is empty.
+Runs in O(logn)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override T Dequeue(out I priority)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">I</span></td>
+        <td><span class="parametername">priority</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Atkins.Atom.PriorityQueue&lt;I, T&gt;.Dequeue(I)</span></div>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/ATOM?path=Scripts/HeapPriorityQueue.cs&amp;version=GBmaster&amp;line=178">View Source</a>
+  </span>
+  <a id="Atkins_Atom_HeapPriorityQueue_2_Enqueue_" data-uid="Atkins.Atom.HeapPriorityQueue`2.Enqueue*"></a>
+  <h4 id="Atkins_Atom_HeapPriorityQueue_2_Enqueue__1__0_" data-uid="Atkins.Atom.HeapPriorityQueue`2.Enqueue(`1,`0)">Enqueue(T, I)</h4>
+  <div class="markdown level1 summary"><p>Inserts an element into the queue.
+Runs in O(logn)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Enqueue(T element, I priority)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">element</span></td>
+        <td><p>Value</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">I</span></td>
+        <td><span class="parametername">priority</span></td>
+        <td><p>Priority</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Atkins.Atom.PriorityQueue&lt;I, T&gt;.Enqueue(T, I)</span></div>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/ATOM?path=Scripts/HeapPriorityQueue.cs&amp;version=GBmaster&amp;line=218">View Source</a>
+  </span>
+  <a id="Atkins_Atom_HeapPriorityQueue_2_GetEnumerator_" data-uid="Atkins.Atom.HeapPriorityQueue`2.GetEnumerator*"></a>
+  <h4 id="Atkins_Atom_HeapPriorityQueue_2_GetEnumerator" data-uid="Atkins.Atom.HeapPriorityQueue`2.GetEnumerator">GetEnumerator()</h4>
+  <div class="markdown level1 summary"><p>Returns an Enumerator, which enables enumerating in priority order through the queue. Changes in the queue after
+calling this function are not seen in the iterator, as the queue is copied.
+This runs in O(n)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override IEnumerator&lt;T&gt; GetEnumerator()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1">IEnumerator</a>&lt;T&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Atkins.Atom.PriorityQueue&lt;I, T&gt;.GetEnumerator()</span></div>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/ATOM?path=Scripts/HeapPriorityQueue.cs&amp;version=GBmaster&amp;line=229">View Source</a>
+  </span>
+  <a id="Atkins_Atom_HeapPriorityQueue_2_IsEmpty_" data-uid="Atkins.Atom.HeapPriorityQueue`2.IsEmpty*"></a>
+  <h4 id="Atkins_Atom_HeapPriorityQueue_2_IsEmpty" data-uid="Atkins.Atom.HeapPriorityQueue`2.IsEmpty">IsEmpty()</h4>
+  <div class="markdown level1 summary"><p>Returns true, iff Count is zero</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsEmpty()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Atkins.Atom.PriorityQueue&lt;I, T&gt;.IsEmpty()</span></div>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/ATOM?path=Scripts/HeapPriorityQueue.cs&amp;version=GBmaster&amp;line=159">View Source</a>
+  </span>
+  <a id="Atkins_Atom_HeapPriorityQueue_2_MaxPriority_" data-uid="Atkins.Atom.HeapPriorityQueue`2.MaxPriority*"></a>
+  <h4 id="Atkins_Atom_HeapPriorityQueue_2_MaxPriority" data-uid="Atkins.Atom.HeapPriorityQueue`2.MaxPriority">MaxPriority()</h4>
+  <div class="markdown level1 summary"><p>Returns the maximum priority in the queue. Throws an InvalidOperationException if the queue is empty</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override I MaxPriority()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">I</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Atkins.Atom.PriorityQueue&lt;I, T&gt;.MaxPriority()</span></div>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/ATOM?path=Scripts/HeapPriorityQueue.cs&amp;version=GBmaster&amp;line=242">View Source</a>
+  </span>
+  <a id="Atkins_Atom_HeapPriorityQueue_2_Peek_" data-uid="Atkins.Atom.HeapPriorityQueue`2.Peek*"></a>
+  <h4 id="Atkins_Atom_HeapPriorityQueue_2_Peek" data-uid="Atkins.Atom.HeapPriorityQueue`2.Peek">Peek()</h4>
+  <div class="markdown level1 summary"><p>Returns the element with the highest priority without removing it. If the queue is empty, an
+InvalidOperationException is thrown.
+Runs in O(1)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override T Peek()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Atkins.Atom.PriorityQueue&lt;I, T&gt;.Peek()</span></div>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/ATOM?path=Scripts/HeapPriorityQueue.cs&amp;version=GBmaster&amp;line=259">View Source</a>
+  </span>
+  <a id="Atkins_Atom_HeapPriorityQueue_2_Remove_" data-uid="Atkins.Atom.HeapPriorityQueue`2.Remove*"></a>
+  <h4 id="Atkins_Atom_HeapPriorityQueue_2_Remove__1_" data-uid="Atkins.Atom.HeapPriorityQueue`2.Remove(`1)">Remove(T)</h4>
+  <div class="markdown level1 summary"><p>Removes the element from the queue, if it exists.
+Runs in O(n)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Remove(T element)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">element</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Atkins.Atom.PriorityQueue&lt;I, T&gt;.Remove(T)</span></div>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/ATOM?path=Scripts/HeapPriorityQueue.cs&amp;version=GBmaster&amp;line=279">View Source</a>
+  </span>
+  <a id="Atkins_Atom_HeapPriorityQueue_2_Remove_" data-uid="Atkins.Atom.HeapPriorityQueue`2.Remove*"></a>
+  <h4 id="Atkins_Atom_HeapPriorityQueue_2_Remove__1__0_" data-uid="Atkins.Atom.HeapPriorityQueue`2.Remove(`1,`0)">Remove(T, I)</h4>
+  <div class="markdown level1 summary"><p>Removes the given element with the given priority from the queue, if it exists. Providing the priority might speed
+up the process.
+Runs in O(n)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Remove(T element, I priority)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">element</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">I</span></td>
+        <td><span class="parametername">priority</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Atkins.Atom.PriorityQueue&lt;I, T&gt;.Remove(T, I)</span></div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Atkins.Core.Extensions.Extensions.html#Atkins_Core_Extensions_Extensions_ForEachAsync__1_System_Collections_Generic_IEnumerable___0__System_Int32_System_Func___0_System_Threading_Tasks_Task__System_IProgress___0__">Extensions.ForEachAsync&lt;T&gt;(IEnumerable&lt;T&gt;, Int32, Func&lt;T, Task&gt;, IProgress&lt;T&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Atkins.Core.Extensions.Extensions.html#Atkins_Core_Extensions_Extensions_ForEachAsync__1_System_Collections_Generic_IEnumerable___0__System_Int32_System_Func___0_System_Int32_System_Threading_Tasks_Task__System_IProgress___0__">Extensions.ForEachAsync&lt;T&gt;(IEnumerable&lt;T&gt;, Int32, Func&lt;T, Int32, Task&gt;, IProgress&lt;T&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Atkins.Core.Extensions.Extensions.html#Atkins_Core_Extensions_Extensions_GetDescription__1___0_">Extensions.GetDescription&lt;T&gt;(T)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://dev.azure.com/atkins-global/ICON/_git/ATOM?path=Scripts/HeapPriorityQueue.cs&amp;version=GBmaster&amp;line=13" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Documentation
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

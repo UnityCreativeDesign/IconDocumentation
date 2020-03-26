@@ -1,0 +1,1173 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class AtkinsNetworkController
+   | Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class AtkinsNetworkController
+   | Documentation ">
+    <meta name="generator" content="docfx 2.51.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Atkins.Multiplayer.AtkinsNetworkController">
+  
+  
+  <h1 id="Atkins_Multiplayer_AtkinsNetworkController" data-uid="Atkins.Multiplayer.AtkinsNetworkController" class="text-break">Class AtkinsNetworkController
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><a class="xref" href="Atkins.Core.UnitySingletonPersistent-1.html">UnitySingletonPersistent</a>&lt;<a class="xref" href="Atkins.Multiplayer.AtkinsNetworkController.html">AtkinsNetworkController</a>&gt;</div>
+    <div class="level2"><span class="xref">AtkinsNetworkController</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Atkins.Core.UnitySingletonPersistent-1.html#Atkins_Core_UnitySingletonPersistent_1_Instance">UnitySingletonPersistent&lt;AtkinsNetworkController&gt;.Instance</a>
+    </div>
+    <div>
+      <a class="xref" href="Atkins.Core.UnitySingletonPersistent-1.html#Atkins_Core_UnitySingletonPersistent_1_ValidateInstance_System_Boolean_">UnitySingletonPersistent&lt;AtkinsNetworkController&gt;.ValidateInstance(Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Atkins.Core.UnitySingletonPersistent-1.html#Atkins_Core_UnitySingletonPersistent_1_Awake">UnitySingletonPersistent&lt;AtkinsNetworkController&gt;.Awake()</a>
+    </div>
+    <div>
+      <a class="xref" href="Atkins.Core.UnitySingletonPersistent-1.html#Atkins_Core_UnitySingletonPersistent_1_Exists">UnitySingletonPersistent&lt;AtkinsNetworkController&gt;.Exists</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Atkins.Multiplayer.html">Atkins.Multiplayer</a></h6>
+  <h6><strong>Assembly</strong>: Atkins.Multiplayer.dll</h6>
+  <h5 id="Atkins_Multiplayer_AtkinsNetworkController_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class AtkinsNetworkController : UnitySingletonPersistent&lt;AtkinsNetworkController&gt;, IConnectionCallbacks, IMatchmakingCallbacks, IPunInstantiateMagicCallback, IInRoomCallbacks</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/Multiplayer?path=Scripts/Network/AtkinsNetworkController.cs&amp;version=GBmaster&amp;line=37">View Source</a>
+  </span>
+  <h4 id="Atkins_Multiplayer_AtkinsNetworkController_voiceEnabled" data-uid="Atkins.Multiplayer.AtkinsNetworkController.voiceEnabled">voiceEnabled</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool voiceEnabled</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/Multiplayer?path=Scripts/Network/AtkinsNetworkController.cs&amp;version=GBmaster&amp;line=26">View Source</a>
+  </span>
+  <a id="Atkins_Multiplayer_AtkinsNetworkController_OnNetwork_" data-uid="Atkins.Multiplayer.AtkinsNetworkController.OnNetwork*"></a>
+  <h4 id="Atkins_Multiplayer_AtkinsNetworkController_OnNetwork" data-uid="Atkins.Multiplayer.AtkinsNetworkController.OnNetwork">OnNetwork</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool OnNetwork { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/Multiplayer?path=Scripts/Network/AtkinsNetworkController.cs&amp;version=GBmaster&amp;line=50">View Source</a>
+  </span>
+  <a id="Atkins_Multiplayer_AtkinsNetworkController_Connect_" data-uid="Atkins.Multiplayer.AtkinsNetworkController.Connect*"></a>
+  <h4 id="Atkins_Multiplayer_AtkinsNetworkController_Connect_Atkins_Core_Utils_IpConfig_ConnectionProfile_" data-uid="Atkins.Multiplayer.AtkinsNetworkController.Connect(Atkins.Core.Utils.IpConfig.ConnectionProfile)">Connect(IpConfig.ConnectionProfile)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Task Connect(IpConfig.ConnectionProfile connectionProfile)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Atkins.Core.Utils.IpConfig.ConnectionProfile.html">IpConfig.ConnectionProfile</a></td>
+        <td><span class="parametername">connectionProfile</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/Multiplayer?path=Scripts/Network/AtkinsNetworkController.cs&amp;version=GBmaster&amp;line=58">View Source</a>
+  </span>
+  <a id="Atkins_Multiplayer_AtkinsNetworkController_Connect_" data-uid="Atkins.Multiplayer.AtkinsNetworkController.Connect*"></a>
+  <h4 id="Atkins_Multiplayer_AtkinsNetworkController_Connect_System_String_System_String_System_Int32_System_String_System_Int32_" data-uid="Atkins.Multiplayer.AtkinsNetworkController.Connect(System.String,System.String,System.Int32,System.String,System.Int32)">Connect(String, String, Int32, String, Int32)</h4>
+  <div class="markdown level1 summary"><p>Start the connection process to photon</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Task Connect(string userName, string ip, int port, string voiceIp = &quot;&quot;, int voicePort = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">userName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">ip</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">port</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">voiceIp</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">voicePort</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/Multiplayer?path=Scripts/Network/AtkinsNetworkController.cs&amp;version=GBmaster&amp;line=114">View Source</a>
+  </span>
+  <a id="Atkins_Multiplayer_AtkinsNetworkController_Disconnect_" data-uid="Atkins.Multiplayer.AtkinsNetworkController.Disconnect*"></a>
+  <h4 id="Atkins_Multiplayer_AtkinsNetworkController_Disconnect" data-uid="Atkins.Multiplayer.AtkinsNetworkController.Disconnect">Disconnect()</h4>
+  <div class="markdown level1 summary"><p>Disconnect from photon server</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Disconnect()</code></pre>
+  </div>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/Multiplayer?path=Scripts/Network/AtkinsNetworkController.cs&amp;version=GBmaster&amp;line=235">View Source</a>
+  </span>
+  <a id="Atkins_Multiplayer_AtkinsNetworkController_Instantiate_" data-uid="Atkins.Multiplayer.AtkinsNetworkController.Instantiate*"></a>
+  <h4 id="Atkins_Multiplayer_AtkinsNetworkController_Instantiate_GameObject_System_String_Vector3_Quaternion_System_Byte_System_Object___" data-uid="Atkins.Multiplayer.AtkinsNetworkController.Instantiate(GameObject,System.String,Vector3,Quaternion,System.Byte,System.Object[])">Instantiate(GameObject, String, Vector3, Quaternion, Byte, Object[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static GameObject Instantiate(GameObject go, string prefabName, Vector3 position, Quaternion rotation, byte group = 0, object[] data = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">GameObject</span></td>
+        <td><span class="parametername">go</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">prefabName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Vector3</span></td>
+        <td><span class="parametername">position</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Quaternion</span></td>
+        <td><span class="parametername">rotation</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a></td>
+        <td><span class="parametername">group</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a>[]</td>
+        <td><span class="parametername">data</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">GameObject</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/Multiplayer?path=Scripts/Network/AtkinsNetworkController.cs&amp;version=GBmaster&amp;line=123">View Source</a>
+  </span>
+  <a id="Atkins_Multiplayer_AtkinsNetworkController_JoinOrCreateRoom_" data-uid="Atkins.Multiplayer.AtkinsNetworkController.JoinOrCreateRoom*"></a>
+  <h4 id="Atkins_Multiplayer_AtkinsNetworkController_JoinOrCreateRoom_System_String_" data-uid="Atkins.Multiplayer.AtkinsNetworkController.JoinOrCreateRoom(System.String)">JoinOrCreateRoom(String)</h4>
+  <div class="markdown level1 summary"><p>Join a room and if needed creates a room with the settings</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void JoinOrCreateRoom(string roomName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">roomName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/Multiplayer?path=Scripts/Network/AtkinsNetworkController.cs&amp;version=GBmaster&amp;line=138">View Source</a>
+  </span>
+  <a id="Atkins_Multiplayer_AtkinsNetworkController_OnConnected_" data-uid="Atkins.Multiplayer.AtkinsNetworkController.OnConnected*"></a>
+  <h4 id="Atkins_Multiplayer_AtkinsNetworkController_OnConnected" data-uid="Atkins.Multiplayer.AtkinsNetworkController.OnConnected">OnConnected()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnConnected()</code></pre>
+  </div>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/Multiplayer?path=Scripts/Network/AtkinsNetworkController.cs&amp;version=GBmaster&amp;line=144">View Source</a>
+  </span>
+  <a id="Atkins_Multiplayer_AtkinsNetworkController_OnConnectedToMaster_" data-uid="Atkins.Multiplayer.AtkinsNetworkController.OnConnectedToMaster*"></a>
+  <h4 id="Atkins_Multiplayer_AtkinsNetworkController_OnConnectedToMaster" data-uid="Atkins.Multiplayer.AtkinsNetworkController.OnConnectedToMaster">OnConnectedToMaster()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnConnectedToMaster()</code></pre>
+  </div>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/Multiplayer?path=Scripts/Network/AtkinsNetworkController.cs&amp;version=GBmaster&amp;line=182">View Source</a>
+  </span>
+  <a id="Atkins_Multiplayer_AtkinsNetworkController_OnCreatedRoom_" data-uid="Atkins.Multiplayer.AtkinsNetworkController.OnCreatedRoom*"></a>
+  <h4 id="Atkins_Multiplayer_AtkinsNetworkController_OnCreatedRoom" data-uid="Atkins.Multiplayer.AtkinsNetworkController.OnCreatedRoom">OnCreatedRoom()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnCreatedRoom()</code></pre>
+  </div>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/Multiplayer?path=Scripts/Network/AtkinsNetworkController.cs&amp;version=GBmaster&amp;line=187">View Source</a>
+  </span>
+  <a id="Atkins_Multiplayer_AtkinsNetworkController_OnCreateRoomFailed_" data-uid="Atkins.Multiplayer.AtkinsNetworkController.OnCreateRoomFailed*"></a>
+  <h4 id="Atkins_Multiplayer_AtkinsNetworkController_OnCreateRoomFailed_System_Int16_System_String_" data-uid="Atkins.Multiplayer.AtkinsNetworkController.OnCreateRoomFailed(System.Int16,System.String)">OnCreateRoomFailed(Int16, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnCreateRoomFailed(short returnCode, string message)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int16">Int16</a></td>
+        <td><span class="parametername">returnCode</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">message</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/Multiplayer?path=Scripts/Network/AtkinsNetworkController.cs&amp;version=GBmaster&amp;line=173">View Source</a>
+  </span>
+  <a id="Atkins_Multiplayer_AtkinsNetworkController_OnCustomAuthenticationFailed_" data-uid="Atkins.Multiplayer.AtkinsNetworkController.OnCustomAuthenticationFailed*"></a>
+  <h4 id="Atkins_Multiplayer_AtkinsNetworkController_OnCustomAuthenticationFailed_System_String_" data-uid="Atkins.Multiplayer.AtkinsNetworkController.OnCustomAuthenticationFailed(System.String)">OnCustomAuthenticationFailed(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnCustomAuthenticationFailed(string debugMessage)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">debugMessage</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/Multiplayer?path=Scripts/Network/AtkinsNetworkController.cs&amp;version=GBmaster&amp;line=168">View Source</a>
+  </span>
+  <a id="Atkins_Multiplayer_AtkinsNetworkController_OnCustomAuthenticationResponse_" data-uid="Atkins.Multiplayer.AtkinsNetworkController.OnCustomAuthenticationResponse*"></a>
+  <h4 id="Atkins_Multiplayer_AtkinsNetworkController_OnCustomAuthenticationResponse_System_Collections_Generic_Dictionary_System_String_System_Object__" data-uid="Atkins.Multiplayer.AtkinsNetworkController.OnCustomAuthenticationResponse(System.Collections.Generic.Dictionary{System.String,System.Object})">OnCustomAuthenticationResponse(Dictionary&lt;String, Object&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnCustomAuthenticationResponse(Dictionary&lt;string, object&gt; data)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a>&gt;</td>
+        <td><span class="parametername">data</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/Multiplayer?path=Scripts/Network/AtkinsNetworkController.cs&amp;version=GBmaster&amp;line=41">View Source</a>
+  </span>
+  <a id="Atkins_Multiplayer_AtkinsNetworkController_OnDestroy_" data-uid="Atkins.Multiplayer.AtkinsNetworkController.OnDestroy*"></a>
+  <h4 id="Atkins_Multiplayer_AtkinsNetworkController_OnDestroy" data-uid="Atkins.Multiplayer.AtkinsNetworkController.OnDestroy">OnDestroy()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnDestroy()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Atkins.Core.UnitySingletonPersistent&lt;Atkins.Multiplayer.AtkinsNetworkController&gt;.OnDestroy()</span></div>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/Multiplayer?path=Scripts/Network/AtkinsNetworkController.cs&amp;version=GBmaster&amp;line=156">View Source</a>
+  </span>
+  <a id="Atkins_Multiplayer_AtkinsNetworkController_OnDisconnected_" data-uid="Atkins.Multiplayer.AtkinsNetworkController.OnDisconnected*"></a>
+  <h4 id="Atkins_Multiplayer_AtkinsNetworkController_OnDisconnected_Photon_Realtime_DisconnectCause_" data-uid="Atkins.Multiplayer.AtkinsNetworkController.OnDisconnected(Photon.Realtime.DisconnectCause)">OnDisconnected(DisconnectCause)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnDisconnected(DisconnectCause cause)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Photon.Realtime.DisconnectCause</span></td>
+        <td><span class="parametername">cause</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/Multiplayer?path=Scripts/Network/AtkinsNetworkController.cs&amp;version=GBmaster&amp;line=178">View Source</a>
+  </span>
+  <a id="Atkins_Multiplayer_AtkinsNetworkController_OnFriendListUpdate_" data-uid="Atkins.Multiplayer.AtkinsNetworkController.OnFriendListUpdate*"></a>
+  <h4 id="Atkins_Multiplayer_AtkinsNetworkController_OnFriendListUpdate_System_Collections_Generic_List_Photon_Realtime_FriendInfo__" data-uid="Atkins.Multiplayer.AtkinsNetworkController.OnFriendListUpdate(System.Collections.Generic.List{Photon.Realtime.FriendInfo})">OnFriendListUpdate(List&lt;FriendInfo&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnFriendListUpdate(List&lt;FriendInfo&gt; friendList)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<span class="xref">Photon.Realtime.FriendInfo</span>&gt;</td>
+        <td><span class="parametername">friendList</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/Multiplayer?path=Scripts/Network/AtkinsNetworkController.cs&amp;version=GBmaster&amp;line=190">View Source</a>
+  </span>
+  <a id="Atkins_Multiplayer_AtkinsNetworkController_OnJoinedRoom_" data-uid="Atkins.Multiplayer.AtkinsNetworkController.OnJoinedRoom*"></a>
+  <h4 id="Atkins_Multiplayer_AtkinsNetworkController_OnJoinedRoom" data-uid="Atkins.Multiplayer.AtkinsNetworkController.OnJoinedRoom">OnJoinedRoom()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnJoinedRoom()</code></pre>
+  </div>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/Multiplayer?path=Scripts/Network/AtkinsNetworkController.cs&amp;version=GBmaster&amp;line=201">View Source</a>
+  </span>
+  <a id="Atkins_Multiplayer_AtkinsNetworkController_OnJoinRandomFailed_" data-uid="Atkins.Multiplayer.AtkinsNetworkController.OnJoinRandomFailed*"></a>
+  <h4 id="Atkins_Multiplayer_AtkinsNetworkController_OnJoinRandomFailed_System_Int16_System_String_" data-uid="Atkins.Multiplayer.AtkinsNetworkController.OnJoinRandomFailed(System.Int16,System.String)">OnJoinRandomFailed(Int16, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnJoinRandomFailed(short returnCode, string message)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int16">Int16</a></td>
+        <td><span class="parametername">returnCode</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">message</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/Multiplayer?path=Scripts/Network/AtkinsNetworkController.cs&amp;version=GBmaster&amp;line=196">View Source</a>
+  </span>
+  <a id="Atkins_Multiplayer_AtkinsNetworkController_OnJoinRoomFailed_" data-uid="Atkins.Multiplayer.AtkinsNetworkController.OnJoinRoomFailed*"></a>
+  <h4 id="Atkins_Multiplayer_AtkinsNetworkController_OnJoinRoomFailed_System_Int16_System_String_" data-uid="Atkins.Multiplayer.AtkinsNetworkController.OnJoinRoomFailed(System.Int16,System.String)">OnJoinRoomFailed(Int16, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnJoinRoomFailed(short returnCode, string message)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int16">Int16</a></td>
+        <td><span class="parametername">returnCode</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">message</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/Multiplayer?path=Scripts/Network/AtkinsNetworkController.cs&amp;version=GBmaster&amp;line=204">View Source</a>
+  </span>
+  <a id="Atkins_Multiplayer_AtkinsNetworkController_OnLeftRoom_" data-uid="Atkins.Multiplayer.AtkinsNetworkController.OnLeftRoom*"></a>
+  <h4 id="Atkins_Multiplayer_AtkinsNetworkController_OnLeftRoom" data-uid="Atkins.Multiplayer.AtkinsNetworkController.OnLeftRoom">OnLeftRoom()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnLeftRoom()</code></pre>
+  </div>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/Multiplayer?path=Scripts/Network/AtkinsNetworkController.cs&amp;version=GBmaster&amp;line=231">View Source</a>
+  </span>
+  <a id="Atkins_Multiplayer_AtkinsNetworkController_OnMasterClientSwitched_" data-uid="Atkins.Multiplayer.AtkinsNetworkController.OnMasterClientSwitched*"></a>
+  <h4 id="Atkins_Multiplayer_AtkinsNetworkController_OnMasterClientSwitched_Photon_Realtime_Player_" data-uid="Atkins.Multiplayer.AtkinsNetworkController.OnMasterClientSwitched(Photon.Realtime.Player)">OnMasterClientSwitched(Player)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnMasterClientSwitched(Player newMasterClient)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Photon.Realtime.Player</span></td>
+        <td><span class="parametername">newMasterClient</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/Multiplayer?path=Scripts/Network/AtkinsNetworkController.cs&amp;version=GBmaster&amp;line=209">View Source</a>
+  </span>
+  <a id="Atkins_Multiplayer_AtkinsNetworkController_OnPhotonInstantiate_" data-uid="Atkins.Multiplayer.AtkinsNetworkController.OnPhotonInstantiate*"></a>
+  <h4 id="Atkins_Multiplayer_AtkinsNetworkController_OnPhotonInstantiate_Photon_Pun_PhotonMessageInfo_" data-uid="Atkins.Multiplayer.AtkinsNetworkController.OnPhotonInstantiate(Photon.Pun.PhotonMessageInfo)">OnPhotonInstantiate(PhotonMessageInfo)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnPhotonInstantiate(PhotonMessageInfo info)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Photon.Pun.PhotonMessageInfo</span></td>
+        <td><span class="parametername">info</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/Multiplayer?path=Scripts/Network/AtkinsNetworkController.cs&amp;version=GBmaster&amp;line=213">View Source</a>
+  </span>
+  <a id="Atkins_Multiplayer_AtkinsNetworkController_OnPlayerEnteredRoom_" data-uid="Atkins.Multiplayer.AtkinsNetworkController.OnPlayerEnteredRoom*"></a>
+  <h4 id="Atkins_Multiplayer_AtkinsNetworkController_OnPlayerEnteredRoom_Photon_Realtime_Player_" data-uid="Atkins.Multiplayer.AtkinsNetworkController.OnPlayerEnteredRoom(Photon.Realtime.Player)">OnPlayerEnteredRoom(Player)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnPlayerEnteredRoom(Player newPlayer)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Photon.Realtime.Player</span></td>
+        <td><span class="parametername">newPlayer</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/Multiplayer?path=Scripts/Network/AtkinsNetworkController.cs&amp;version=GBmaster&amp;line=218">View Source</a>
+  </span>
+  <a id="Atkins_Multiplayer_AtkinsNetworkController_OnPlayerLeftRoom_" data-uid="Atkins.Multiplayer.AtkinsNetworkController.OnPlayerLeftRoom*"></a>
+  <h4 id="Atkins_Multiplayer_AtkinsNetworkController_OnPlayerLeftRoom_Photon_Realtime_Player_" data-uid="Atkins.Multiplayer.AtkinsNetworkController.OnPlayerLeftRoom(Photon.Realtime.Player)">OnPlayerLeftRoom(Player)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnPlayerLeftRoom(Player otherPlayer)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Photon.Realtime.Player</span></td>
+        <td><span class="parametername">otherPlayer</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/Multiplayer?path=Scripts/Network/AtkinsNetworkController.cs&amp;version=GBmaster&amp;line=227">View Source</a>
+  </span>
+  <a id="Atkins_Multiplayer_AtkinsNetworkController_OnPlayerPropertiesUpdate_" data-uid="Atkins.Multiplayer.AtkinsNetworkController.OnPlayerPropertiesUpdate*"></a>
+  <h4 id="Atkins_Multiplayer_AtkinsNetworkController_OnPlayerPropertiesUpdate_Photon_Realtime_Player_Hashtable_" data-uid="Atkins.Multiplayer.AtkinsNetworkController.OnPlayerPropertiesUpdate(Photon.Realtime.Player,Hashtable)">OnPlayerPropertiesUpdate(Player, Hashtable)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnPlayerPropertiesUpdate(Player targetPlayer, Hashtable changedProps)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Photon.Realtime.Player</span></td>
+        <td><span class="parametername">targetPlayer</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Hashtable</span></td>
+        <td><span class="parametername">changedProps</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/Multiplayer?path=Scripts/Network/AtkinsNetworkController.cs&amp;version=GBmaster&amp;line=163">View Source</a>
+  </span>
+  <a id="Atkins_Multiplayer_AtkinsNetworkController_OnRegionListReceived_" data-uid="Atkins.Multiplayer.AtkinsNetworkController.OnRegionListReceived*"></a>
+  <h4 id="Atkins_Multiplayer_AtkinsNetworkController_OnRegionListReceived_Photon_Realtime_RegionHandler_" data-uid="Atkins.Multiplayer.AtkinsNetworkController.OnRegionListReceived(Photon.Realtime.RegionHandler)">OnRegionListReceived(RegionHandler)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnRegionListReceived(RegionHandler regionHandler)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Photon.Realtime.RegionHandler</span></td>
+        <td><span class="parametername">regionHandler</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/Multiplayer?path=Scripts/Network/AtkinsNetworkController.cs&amp;version=GBmaster&amp;line=223">View Source</a>
+  </span>
+  <a id="Atkins_Multiplayer_AtkinsNetworkController_OnRoomPropertiesUpdate_" data-uid="Atkins.Multiplayer.AtkinsNetworkController.OnRoomPropertiesUpdate*"></a>
+  <h4 id="Atkins_Multiplayer_AtkinsNetworkController_OnRoomPropertiesUpdate_Hashtable_" data-uid="Atkins.Multiplayer.AtkinsNetworkController.OnRoomPropertiesUpdate(Hashtable)">OnRoomPropertiesUpdate(Hashtable)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnRoomPropertiesUpdate(Hashtable propertiesThatChanged)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Hashtable</span></td>
+        <td><span class="parametername">propertiesThatChanged</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="events">Events
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/Multiplayer?path=Scripts/Network/AtkinsNetworkController.cs&amp;version=GBmaster&amp;line=27">View Source</a>
+  </span>
+  <h4 id="Atkins_Multiplayer_AtkinsNetworkController_Connected" data-uid="Atkins.Multiplayer.AtkinsNetworkController.Connected">Connected</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event Connected Connected</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Atkins.Multiplayer.Connected.html">Connected</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/Multiplayer?path=Scripts/Network/AtkinsNetworkController.cs&amp;version=GBmaster&amp;line=28">View Source</a>
+  </span>
+  <h4 id="Atkins_Multiplayer_AtkinsNetworkController_ConnectedToMaster" data-uid="Atkins.Multiplayer.AtkinsNetworkController.ConnectedToMaster">ConnectedToMaster</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event ConnectedToMaster ConnectedToMaster</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Atkins.Multiplayer.ConnectedToMaster.html">ConnectedToMaster</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/Multiplayer?path=Scripts/Network/AtkinsNetworkController.cs&amp;version=GBmaster&amp;line=29">View Source</a>
+  </span>
+  <h4 id="Atkins_Multiplayer_AtkinsNetworkController_CreatedRoom" data-uid="Atkins.Multiplayer.AtkinsNetworkController.CreatedRoom">CreatedRoom</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event CreatedRoom CreatedRoom</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Atkins.Multiplayer.CreatedRoom.html">CreatedRoom</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/Multiplayer?path=Scripts/Network/AtkinsNetworkController.cs&amp;version=GBmaster&amp;line=30">View Source</a>
+  </span>
+  <h4 id="Atkins_Multiplayer_AtkinsNetworkController_Disconnected" data-uid="Atkins.Multiplayer.AtkinsNetworkController.Disconnected">Disconnected</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event Disconnected Disconnected</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Atkins.Multiplayer.Disconnected.html">Disconnected</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/Multiplayer?path=Scripts/Network/AtkinsNetworkController.cs&amp;version=GBmaster&amp;line=31">View Source</a>
+  </span>
+  <h4 id="Atkins_Multiplayer_AtkinsNetworkController_JoinRoom" data-uid="Atkins.Multiplayer.AtkinsNetworkController.JoinRoom">JoinRoom</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event JoinRoom JoinRoom</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Atkins.Multiplayer.JoinRoom.html">JoinRoom</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/Multiplayer?path=Scripts/Network/AtkinsNetworkController.cs&amp;version=GBmaster&amp;line=33">View Source</a>
+  </span>
+  <h4 id="Atkins_Multiplayer_AtkinsNetworkController_JoinRoomFailed" data-uid="Atkins.Multiplayer.AtkinsNetworkController.JoinRoomFailed">JoinRoomFailed</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event JoinRoomFailed JoinRoomFailed</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Atkins.Multiplayer.JoinRoomFailed.html">JoinRoomFailed</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/Multiplayer?path=Scripts/Network/AtkinsNetworkController.cs&amp;version=GBmaster&amp;line=32">View Source</a>
+  </span>
+  <h4 id="Atkins_Multiplayer_AtkinsNetworkController_LeftRoom" data-uid="Atkins.Multiplayer.AtkinsNetworkController.LeftRoom">LeftRoom</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event LeftRoom LeftRoom</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Atkins.Multiplayer.LeftRoom.html">LeftRoom</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/Multiplayer?path=Scripts/Network/AtkinsNetworkController.cs&amp;version=GBmaster&amp;line=34">View Source</a>
+  </span>
+  <h4 id="Atkins_Multiplayer_AtkinsNetworkController_PlayerEnteredRoom" data-uid="Atkins.Multiplayer.AtkinsNetworkController.PlayerEnteredRoom">PlayerEnteredRoom</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event PlayerEnteredRoom PlayerEnteredRoom</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Atkins.Multiplayer.PlayerEnteredRoom.html">PlayerEnteredRoom</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/Multiplayer?path=Scripts/Network/AtkinsNetworkController.cs&amp;version=GBmaster&amp;line=35">View Source</a>
+  </span>
+  <h4 id="Atkins_Multiplayer_AtkinsNetworkController_PlayerLeftRoom" data-uid="Atkins.Multiplayer.AtkinsNetworkController.PlayerLeftRoom">PlayerLeftRoom</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event PlayerLeftRoom PlayerLeftRoom</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Atkins.Multiplayer.PlayerLeftRoom.html">PlayerLeftRoom</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Atkins.Core.Extensions.Extensions.html#Atkins_Core_Extensions_Extensions_GetDescription__1___0_">Extensions.GetDescription&lt;T&gt;(T)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://dev.azure.com/atkins-global/ICON/_git/Multiplayer?path=Scripts/Network/AtkinsNetworkController.cs&amp;version=GBmaster&amp;line=23" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Documentation
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,419 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class ClickAndLookViewpoint
+   | Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class ClickAndLookViewpoint
+   | Documentation ">
+    <meta name="generator" content="docfx 2.51.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Atkins.ClickAndLook.ClickAndLookViewpoint">
+  
+  
+  <h1 id="Atkins_ClickAndLook_ClickAndLookViewpoint" data-uid="Atkins.ClickAndLook.ClickAndLookViewpoint" class="text-break">Class ClickAndLookViewpoint
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><a class="xref" href="Atkins.Core.UnitySingleton-1.html">UnitySingleton</a>&lt;<a class="xref" href="Atkins.ClickAndLook.ClickAndLookViewpoint.html">ClickAndLookViewpoint</a>&gt;</div>
+    <div class="level2"><span class="xref">ClickAndLookViewpoint</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Atkins.Core.Utils.IFinishedLoad.html">IFinishedLoad</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Atkins.Core.UnitySingleton-1.html#Atkins_Core_UnitySingleton_1_Instance">UnitySingleton&lt;ClickAndLookViewpoint&gt;.Instance</a>
+    </div>
+    <div>
+      <a class="xref" href="Atkins.Core.UnitySingleton-1.html#Atkins_Core_UnitySingleton_1_ValidateInstance_System_Boolean_">UnitySingleton&lt;ClickAndLookViewpoint&gt;.ValidateInstance(Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Atkins.Core.UnitySingleton-1.html#Atkins_Core_UnitySingleton_1_Exists">UnitySingleton&lt;ClickAndLookViewpoint&gt;.Exists</a>
+    </div>
+    <div>
+      <a class="xref" href="Atkins.Core.UnitySingleton-1.html#Atkins_Core_UnitySingleton_1_OnDestroy">UnitySingleton&lt;ClickAndLookViewpoint&gt;.OnDestroy()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Atkins.ClickAndLook.html">Atkins.ClickAndLook</a></h6>
+  <h6><strong>Assembly</strong>: Atkins.ClickAndLook.dll</h6>
+  <h5 id="Atkins_ClickAndLook_ClickAndLookViewpoint_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class ClickAndLookViewpoint : UnitySingleton&lt;ClickAndLookViewpoint&gt;, IFinishedLoad</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/CombinedDevelopment?path=ICON_Live_App/Assets/Other_Packages/Atkins/Click and look/Scripts/ClickAndLookViewpoint.cs&amp;version=GBmaster&amp;line=67">View Source</a>
+  </span>
+  <h4 id="Atkins_ClickAndLook_ClickAndLookViewpoint_cameraMenuItems" data-uid="Atkins.ClickAndLook.ClickAndLookViewpoint.cameraMenuItems">cameraMenuItems</h4>
+  <div class="markdown level1 summary"><p>The ClickAndLookPrefab</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GameObject cameraMenuItems</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">GameObject</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/CombinedDevelopment?path=ICON_Live_App/Assets/Other_Packages/Atkins/Click and look/Scripts/ClickAndLookViewpoint.cs&amp;version=GBmaster&amp;line=72">View Source</a>
+  </span>
+  <h4 id="Atkins_ClickAndLook_ClickAndLookViewpoint_OnStateChange" data-uid="Atkins.ClickAndLook.ClickAndLookViewpoint.OnStateChange">OnStateChange</h4>
+  <div class="markdown level1 summary"><p>Unity event invoked when the state has been changed</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UnityAction&lt;ClickAndLookViewpoint.State&gt; OnStateChange</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityAction</span>&lt;<a class="xref" href="Atkins.ClickAndLook.ClickAndLookViewpoint.State.html">ClickAndLookViewpoint.State</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/CombinedDevelopment?path=ICON_Live_App/Assets/Other_Packages/Atkins/Click and look/Scripts/ClickAndLookViewpoint.cs&amp;version=GBmaster&amp;line=47">View Source</a>
+  </span>
+  <h4 id="Atkins_ClickAndLook_ClickAndLookViewpoint_pointMarker" data-uid="Atkins.ClickAndLook.ClickAndLookViewpoint.pointMarker">pointMarker</h4>
+  <div class="markdown level1 summary"><p>The Prefab of a viewpoint aka Sphere</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GameObject pointMarker</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">GameObject</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/CombinedDevelopment?path=ICON_Live_App/Assets/Other_Packages/Atkins/Click and look/Scripts/ClickAndLookViewpoint.cs&amp;version=GBmaster&amp;line=27">View Source</a>
+  </span>
+  <h4 id="Atkins_ClickAndLook_ClickAndLookViewpoint_state" data-uid="Atkins.ClickAndLook.ClickAndLookViewpoint.state">state</h4>
+  <div class="markdown level1 summary"><p>The current state</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ClickAndLookViewpoint.State state</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Atkins.ClickAndLook.ClickAndLookViewpoint.State.html">ClickAndLookViewpoint.State</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/CombinedDevelopment?path=ICON_Live_App/Assets/Other_Packages/Atkins/Click and look/Scripts/ClickAndLookViewpoint.cs&amp;version=GBmaster&amp;line=84">View Source</a>
+  </span>
+  <a id="Atkins_ClickAndLook_ClickAndLookViewpoint_Awake_" data-uid="Atkins.ClickAndLook.ClickAndLookViewpoint.Awake*"></a>
+  <h4 id="Atkins_ClickAndLook_ClickAndLookViewpoint_Awake" data-uid="Atkins.ClickAndLook.ClickAndLookViewpoint.Awake">Awake()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void Awake()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Atkins.Core.UnitySingleton&lt;Atkins.ClickAndLook.ClickAndLookViewpoint&gt;.Awake()</span></div>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/CombinedDevelopment?path=ICON_Live_App/Assets/Other_Packages/Atkins/Click and look/Scripts/ClickAndLookViewpoint.cs&amp;version=GBmaster&amp;line=135">View Source</a>
+  </span>
+  <a id="Atkins_ClickAndLook_ClickAndLookViewpoint_CloseTool_" data-uid="Atkins.ClickAndLook.ClickAndLookViewpoint.CloseTool*"></a>
+  <h4 id="Atkins_ClickAndLook_ClickAndLookViewpoint_CloseTool" data-uid="Atkins.ClickAndLook.ClickAndLookViewpoint.CloseTool">CloseTool()</h4>
+  <div class="markdown level1 summary"><p>Clean up the tool and stop any placements</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CloseTool()</code></pre>
+  </div>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/CombinedDevelopment?path=ICON_Live_App/Assets/Other_Packages/Atkins/Click and look/Scripts/ClickAndLookViewpoint.cs&amp;version=GBmaster&amp;line=274">View Source</a>
+  </span>
+  <a id="Atkins_ClickAndLook_ClickAndLookViewpoint_GoToView_" data-uid="Atkins.ClickAndLook.ClickAndLookViewpoint.GoToView*"></a>
+  <h4 id="Atkins_ClickAndLook_ClickAndLookViewpoint_GoToView" data-uid="Atkins.ClickAndLook.ClickAndLookViewpoint.GoToView">GoToView()</h4>
+  <div class="markdown level1 summary"><p>Go to the view location of the set points</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void GoToView()</code></pre>
+  </div>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/CombinedDevelopment?path=ICON_Live_App/Assets/Other_Packages/Atkins/Click and look/Scripts/ClickAndLookViewpoint.cs&amp;version=GBmaster&amp;line=296">View Source</a>
+  </span>
+  <a id="Atkins_ClickAndLook_ClickAndLookViewpoint_OnFinishedLoading_" data-uid="Atkins.ClickAndLook.ClickAndLookViewpoint.OnFinishedLoading*"></a>
+  <h4 id="Atkins_ClickAndLook_ClickAndLookViewpoint_OnFinishedLoading" data-uid="Atkins.ClickAndLook.ClickAndLookViewpoint.OnFinishedLoading">OnFinishedLoading()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnFinishedLoading()</code></pre>
+  </div>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/CombinedDevelopment?path=ICON_Live_App/Assets/Other_Packages/Atkins/Click and look/Scripts/ClickAndLookViewpoint.cs&amp;version=GBmaster&amp;line=150">View Source</a>
+  </span>
+  <a id="Atkins_ClickAndLook_ClickAndLookViewpoint_PlacePoint_" data-uid="Atkins.ClickAndLook.ClickAndLookViewpoint.PlacePoint*"></a>
+  <h4 id="Atkins_ClickAndLook_ClickAndLookViewpoint_PlacePoint_Vector3_Vector3_" data-uid="Atkins.ClickAndLook.ClickAndLookViewpoint.PlacePoint(Vector3,Vector3)">PlacePoint(Vector3, Vector3)</h4>
+  <div class="markdown level1 summary"><p>Place a point for the look at camera</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PlacePoint(Vector3 hitPoint, Vector3 hitNormal)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vector3</span></td>
+        <td><span class="parametername">hitPoint</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Vector3</span></td>
+        <td><span class="parametername">hitNormal</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/CombinedDevelopment?path=ICON_Live_App/Assets/Other_Packages/Atkins/Click and look/Scripts/ClickAndLookViewpoint.cs&amp;version=GBmaster&amp;line=289">View Source</a>
+  </span>
+  <a id="Atkins_ClickAndLook_ClickAndLookViewpoint_ReturnToView_" data-uid="Atkins.ClickAndLook.ClickAndLookViewpoint.ReturnToView*"></a>
+  <h4 id="Atkins_ClickAndLook_ClickAndLookViewpoint_ReturnToView" data-uid="Atkins.ClickAndLook.ClickAndLookViewpoint.ReturnToView">ReturnToView()</h4>
+  <div class="markdown level1 summary"><p>Returns the camera back to the location it was before moving</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ReturnToView()</code></pre>
+  </div>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/CombinedDevelopment?path=ICON_Live_App/Assets/Other_Packages/Atkins/Click and look/Scripts/ClickAndLookViewpoint.cs&amp;version=GBmaster&amp;line=118">View Source</a>
+  </span>
+  <a id="Atkins_ClickAndLook_ClickAndLookViewpoint_StartTool_" data-uid="Atkins.ClickAndLook.ClickAndLookViewpoint.StartTool*"></a>
+  <h4 id="Atkins_ClickAndLook_ClickAndLookViewpoint_StartTool" data-uid="Atkins.ClickAndLook.ClickAndLookViewpoint.StartTool">StartTool()</h4>
+  <div class="markdown level1 summary"><p>Set up and resets the tool when needed</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void StartTool()</code></pre>
+  </div>
+  <h3 id="events">Events
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/CombinedDevelopment?path=ICON_Live_App/Assets/Other_Packages/Atkins/Click and look/Scripts/ClickAndLookViewpoint.cs&amp;version=GBmaster&amp;line=77">View Source</a>
+  </span>
+  <h4 id="Atkins_ClickAndLook_ClickAndLookViewpoint_OnViewReady" data-uid="Atkins.ClickAndLook.ClickAndLookViewpoint.OnViewReady">OnViewReady</h4>
+  <div class="markdown level1 summary"><p>Action invoked when the view is ready</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event Action OnViewReady</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.action">Action</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Atkins.Core.Utils.IFinishedLoad.html">IFinishedLoad</a>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Atkins.Core.Extensions.Extensions.html#Atkins_Core_Extensions_Extensions_GetDescription__1___0_">Extensions.GetDescription&lt;T&gt;(T)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://dev.azure.com/atkins-global/ICON/_git/CombinedDevelopment?path=ICON_Live_App/Assets/Other_Packages/Atkins/Click and look/Scripts/ClickAndLookViewpoint.cs&amp;version=GBmaster&amp;line=15" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Documentation
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

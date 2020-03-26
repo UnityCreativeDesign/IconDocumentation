@@ -1,0 +1,702 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class VrMenuItem&lt;T, TPageController, TElementType&gt;
+   | Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class VrMenuItem&lt;T, TPageController, TElementType&gt;
+   | Documentation ">
+    <meta name="generator" content="docfx 2.51.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Atkins.Vr.Tools.VrMenuItem`3">
+  
+  
+  <h1 id="Atkins_Vr_Tools_VrMenuItem_3" data-uid="Atkins.Vr.Tools.VrMenuItem`3" class="text-break">Class VrMenuItem&lt;T, TPageController, TElementType&gt;
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><a class="xref" href="Atkins.Vr.Tools.VrMenuItem.html">VrMenuItem</a></div>
+    <div class="level2"><span class="xref">VrMenuItem&lt;T, TPageController, TElementType&gt;</span></div>
+      <div class="level3"><a class="xref" href="Atkins.Vr.Tools.ToolManagerCanvas.html">ToolManagerCanvas</a></div>
+      <div class="level3"><a class="xref" href="Atkins.Vr.Tools.VrDrawingCanvas.html">VrDrawingCanvas</a></div>
+      <div class="level3"><a class="xref" href="Atkins.Vr.Tools.VrTapeMeasureCanvas.html">VrTapeMeasureCanvas</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Atkins.Vr.Tools.VrMenuItem.html#Atkins_Vr_Tools_VrMenuItem_onElementStartShow">VrMenuItem.onElementStartShow</a>
+    </div>
+    <div>
+      <a class="xref" href="Atkins.Vr.Tools.VrMenuItem.html#Atkins_Vr_Tools_VrMenuItem_onElementEndShow">VrMenuItem.onElementEndShow</a>
+    </div>
+    <div>
+      <a class="xref" href="Atkins.Vr.Tools.VrMenuItem.html#Atkins_Vr_Tools_VrMenuItem_onElementStartHide">VrMenuItem.onElementStartHide</a>
+    </div>
+    <div>
+      <a class="xref" href="Atkins.Vr.Tools.VrMenuItem.html#Atkins_Vr_Tools_VrMenuItem_onElementEndHide">VrMenuItem.onElementEndHide</a>
+    </div>
+    <div>
+      <a class="xref" href="Atkins.Vr.Tools.VrMenuItem.html#Atkins_Vr_Tools_VrMenuItem_visiableState">VrMenuItem.visiableState</a>
+    </div>
+    <div>
+      <a class="xref" href="Atkins.Vr.Tools.VrMenuItem.html#Atkins_Vr_Tools_VrMenuItem_CanvasGroup">VrMenuItem.CanvasGroup</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Atkins.Vr.Tools.html">Atkins.Vr.Tools</a></h6>
+  <h6><strong>Assembly</strong>: Atkins.Vr.Tools.dll</h6>
+  <h5 id="Atkins_Vr_Tools_VrMenuItem_3_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Serializable]
+public abstract class VrMenuItem&lt;T, TPageController, TElementType&gt; : VrMenuItem where T : Component where TPageController : PageController&lt;TElementType&gt;, new()</code></pre>
+  </div>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TPageController</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TElementType</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/Immersive%20Media%20Unity/_git/Core_Assets?path=Tools/VR/Scripts/VrMenuItem.cs&amp;version=GBmaster&amp;line=71">View Source</a>
+  </span>
+  <h4 id="Atkins_Vr_Tools_VrMenuItem_3_arrows" data-uid="Atkins.Vr.Tools.VrMenuItem`3.arrows">arrows</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CanvasGroup arrows</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">CanvasGroup</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/Immersive%20Media%20Unity/_git/Core_Assets?path=Tools/VR/Scripts/VrMenuItem.cs&amp;version=GBmaster&amp;line=73">View Source</a>
+  </span>
+  <h4 id="Atkins_Vr_Tools_VrMenuItem_3_availableElements" data-uid="Atkins.Vr.Tools.VrMenuItem`3.availableElements">availableElements</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;TElementType&gt; availableElements</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;TElementType&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/Immersive%20Media%20Unity/_git/Core_Assets?path=Tools/VR/Scripts/VrMenuItem.cs&amp;version=GBmaster&amp;line=74">View Source</a>
+  </span>
+  <h4 id="Atkins_Vr_Tools_VrMenuItem_3_BasePanel" data-uid="Atkins.Vr.Tools.VrMenuItem`3.BasePanel">BasePanel</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GameObject BasePanel</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">GameObject</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/Immersive%20Media%20Unity/_git/Core_Assets?path=Tools/VR/Scripts/VrMenuItem.cs&amp;version=GBmaster&amp;line=80">View Source</a>
+  </span>
+  <h4 id="Atkins_Vr_Tools_VrMenuItem_3_pageController" data-uid="Atkins.Vr.Tools.VrMenuItem`3.pageController">pageController</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TPageController pageController</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TPageController</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/Immersive%20Media%20Unity/_git/Core_Assets?path=Tools/VR/Scripts/VrMenuItem.cs&amp;version=GBmaster&amp;line=74">View Source</a>
+  </span>
+  <h4 id="Atkins_Vr_Tools_VrMenuItem_3_PanelContainer" data-uid="Atkins.Vr.Tools.VrMenuItem`3.PanelContainer">PanelContainer</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GameObject PanelContainer</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">GameObject</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/Immersive%20Media%20Unity/_git/Core_Assets?path=Tools/VR/Scripts/VrMenuItem.cs&amp;version=GBmaster&amp;line=69">View Source</a>
+  </span>
+  <a id="Atkins_Vr_Tools_VrMenuItem_3_Instance_" data-uid="Atkins.Vr.Tools.VrMenuItem`3.Instance*"></a>
+  <h4 id="Atkins_Vr_Tools_VrMenuItem_3_Instance" data-uid="Atkins.Vr.Tools.VrMenuItem`3.Instance">Instance</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Singleton&lt;T&gt; Instance { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Atkins.Core.Singleton-1.html">Singleton</a>&lt;T&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/Immersive%20Media%20Unity/_git/Core_Assets?path=Tools/VR/Scripts/VrMenuItem.cs&amp;version=GBmaster&amp;line=82">View Source</a>
+  </span>
+  <a id="Atkins_Vr_Tools_VrMenuItem_3_Awake_" data-uid="Atkins.Vr.Tools.VrMenuItem`3.Awake*"></a>
+  <h4 id="Atkins_Vr_Tools_VrMenuItem_3_Awake" data-uid="Atkins.Vr.Tools.VrMenuItem`3.Awake">Awake()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void Awake()</code></pre>
+  </div>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/Immersive%20Media%20Unity/_git/Core_Assets?path=Tools/VR/Scripts/VrMenuItem.cs&amp;version=GBmaster&amp;line=205">View Source</a>
+  </span>
+  <a id="Atkins_Vr_Tools_VrMenuItem_3_CreatePages_" data-uid="Atkins.Vr.Tools.VrMenuItem`3.CreatePages*"></a>
+  <h4 id="Atkins_Vr_Tools_VrMenuItem_3_CreatePages" data-uid="Atkins.Vr.Tools.VrMenuItem`3.CreatePages">CreatePages()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void CreatePages()</code></pre>
+  </div>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/Immersive%20Media%20Unity/_git/Core_Assets?path=Tools/VR/Scripts/VrMenuItem.cs&amp;version=GBmaster&amp;line=178">View Source</a>
+  </span>
+  <a id="Atkins_Vr_Tools_VrMenuItem_3_CyclePage_" data-uid="Atkins.Vr.Tools.VrMenuItem`3.CyclePage*"></a>
+  <h4 id="Atkins_Vr_Tools_VrMenuItem_3_CyclePage_System_Object_VRTK_ControllerInteractionEventArgs_" data-uid="Atkins.Vr.Tools.VrMenuItem`3.CyclePage(System.Object,VRTK.ControllerInteractionEventArgs)">CyclePage(Object, ControllerInteractionEventArgs)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void CyclePage(object sender, ControllerInteractionEventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td><span class="parametername">sender</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">VRTK.ControllerInteractionEventArgs</span></td>
+        <td><span class="parametername">e</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/Immersive%20Media%20Unity/_git/Core_Assets?path=Tools/VR/Scripts/VrMenuItem.cs&amp;version=GBmaster&amp;line=114">View Source</a>
+  </span>
+  <a id="Atkins_Vr_Tools_VrMenuItem_3_Hide_" data-uid="Atkins.Vr.Tools.VrMenuItem`3.Hide*"></a>
+  <h4 id="Atkins_Vr_Tools_VrMenuItem_3_Hide_Atkins_Vr_Tools_UiSwitchType_System_Single_" data-uid="Atkins.Vr.Tools.VrMenuItem`3.Hide(Atkins.Vr.Tools.UiSwitchType,System.Single)">Hide(UiSwitchType, Single)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Hide(UiSwitchType switchModeType, float fadeTime)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Atkins.Vr.Tools.UiSwitchType.html">UiSwitchType</a></td>
+        <td><span class="parametername">switchModeType</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">fadeTime</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Atkins.Vr.Tools.VrMenuItem.html#Atkins_Vr_Tools_VrMenuItem_Hide_Atkins_Vr_Tools_UiSwitchType_System_Single_">VrMenuItem.Hide(UiSwitchType, Single)</a></div>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/Immersive%20Media%20Unity/_git/Core_Assets?path=Tools/VR/Scripts/VrMenuItem.cs&amp;version=GBmaster&amp;line=146">View Source</a>
+  </span>
+  <a id="Atkins_Vr_Tools_VrMenuItem_3_Init_" data-uid="Atkins.Vr.Tools.VrMenuItem`3.Init*"></a>
+  <h4 id="Atkins_Vr_Tools_VrMenuItem_3_Init__1_System_Collections_Generic_List___0__" data-uid="Atkins.Vr.Tools.VrMenuItem`3.Init``1(System.Collections.Generic.List{``0})">Init&lt;TElement&gt;(List&lt;TElement&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Init&lt;TElement&gt;(List&lt;TElement&gt; elements)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;TElement&gt;</td>
+        <td><span class="parametername">elements</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TElement</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/Immersive%20Media%20Unity/_git/Core_Assets?path=Tools/VR/Scripts/VrMenuItem.cs&amp;version=GBmaster&amp;line=151">View Source</a>
+  </span>
+  <a id="Atkins_Vr_Tools_VrMenuItem_3_Initialize_" data-uid="Atkins.Vr.Tools.VrMenuItem`3.Initialize*"></a>
+  <h4 id="Atkins_Vr_Tools_VrMenuItem_3_Initialize_System_Collections_Generic_List__2__" data-uid="Atkins.Vr.Tools.VrMenuItem`3.Initialize(System.Collections.Generic.List{`2})">Initialize(List&lt;TElementType&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void Initialize(List&lt;TElementType&gt; elements)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;TElementType&gt;</td>
+        <td><span class="parametername">elements</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/Immersive%20Media%20Unity/_git/Core_Assets?path=Tools/VR/Scripts/VrMenuItem.cs&amp;version=GBmaster&amp;line=215">View Source</a>
+  </span>
+  <a id="Atkins_Vr_Tools_VrMenuItem_3_LoadPage_" data-uid="Atkins.Vr.Tools.VrMenuItem`3.LoadPage*"></a>
+  <h4 id="Atkins_Vr_Tools_VrMenuItem_3_LoadPage_System_Int32_" data-uid="Atkins.Vr.Tools.VrMenuItem`3.LoadPage(System.Int32)">LoadPage(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void LoadPage(int index)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">index</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/Immersive%20Media%20Unity/_git/Core_Assets?path=Tools/VR/Scripts/VrMenuItem.cs&amp;version=GBmaster&amp;line=230">View Source</a>
+  </span>
+  <a id="Atkins_Vr_Tools_VrMenuItem_3_OnElementCreated_" data-uid="Atkins.Vr.Tools.VrMenuItem`3.OnElementCreated*"></a>
+  <h4 id="Atkins_Vr_Tools_VrMenuItem_3_OnElementCreated__2_GameObject_" data-uid="Atkins.Vr.Tools.VrMenuItem`3.OnElementCreated(`2,GameObject)">OnElementCreated(TElementType, GameObject)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract void OnElementCreated(TElementType t, GameObject g)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TElementType</span></td>
+        <td><span class="parametername">t</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">GameObject</span></td>
+        <td><span class="parametername">g</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/Immersive%20Media%20Unity/_git/Core_Assets?path=Tools/VR/Scripts/VrMenuItem.cs&amp;version=GBmaster&amp;line=89">View Source</a>
+  </span>
+  <a id="Atkins_Vr_Tools_VrMenuItem_3_Show_" data-uid="Atkins.Vr.Tools.VrMenuItem`3.Show*"></a>
+  <h4 id="Atkins_Vr_Tools_VrMenuItem_3_Show_Atkins_Vr_Tools_UiSwitchType_System_Single_" data-uid="Atkins.Vr.Tools.VrMenuItem`3.Show(Atkins.Vr.Tools.UiSwitchType,System.Single)">Show(UiSwitchType, Single)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Show(UiSwitchType switchModeType, float fadeTime)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Atkins.Vr.Tools.UiSwitchType.html">UiSwitchType</a></td>
+        <td><span class="parametername">switchModeType</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">fadeTime</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Atkins.Vr.Tools.VrMenuItem.html#Atkins_Vr_Tools_VrMenuItem_Show_Atkins_Vr_Tools_UiSwitchType_System_Single_">VrMenuItem.Show(UiSwitchType, Single)</a></div>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/Immersive%20Media%20Unity/_git/Core_Assets?path=Tools/VR/Scripts/VrMenuItem.cs&amp;version=GBmaster&amp;line=190">View Source</a>
+  </span>
+  <a id="Atkins_Vr_Tools_VrMenuItem_3_Switch_" data-uid="Atkins.Vr.Tools.VrMenuItem`3.Switch*"></a>
+  <h4 id="Atkins_Vr_Tools_VrMenuItem_3_Switch_System_Int32_" data-uid="Atkins.Vr.Tools.VrMenuItem`3.Switch(System.Int32)">Switch(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual IEnumerator Switch(int nextIndex)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">nextIndex</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.ienumerator">IEnumerator</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/Immersive%20Media%20Unity/_git/Core_Assets?path=Tools/VR/Scripts/VrMenuItem.cs&amp;version=GBmaster&amp;line=232">View Source</a>
+  </span>
+  <a id="Atkins_Vr_Tools_VrMenuItem_3_ToggleUi_" data-uid="Atkins.Vr.Tools.VrMenuItem`3.ToggleUi*"></a>
+  <h4 id="Atkins_Vr_Tools_VrMenuItem_3_ToggleUi" data-uid="Atkins.Vr.Tools.VrMenuItem`3.ToggleUi">ToggleUi()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void ToggleUi()</code></pre>
+  </div>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/Immersive%20Media%20Unity/_git/Core_Assets?path=Tools/VR/Scripts/VrMenuItem.cs&amp;version=GBmaster&amp;line=250">View Source</a>
+  </span>
+  <a id="Atkins_Vr_Tools_VrMenuItem_3_WaitForChange_" data-uid="Atkins.Vr.Tools.VrMenuItem`3.WaitForChange*"></a>
+  <h4 id="Atkins_Vr_Tools_VrMenuItem_3_WaitForChange" data-uid="Atkins.Vr.Tools.VrMenuItem`3.WaitForChange">WaitForChange()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual IEnumerator WaitForChange()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.ienumerator">IEnumerator</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Atkins.Core.Extensions.Extensions.html#Atkins_Core_Extensions_Extensions_GetDescription__1___0_">Extensions.GetDescription&lt;T&gt;(T)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://dev.azure.com/atkins-global/Immersive%20Media%20Unity/_git/Core_Assets?path=Tools/VR/Scripts/VrMenuItem.cs&amp;version=GBmaster&amp;line=66" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Documentation
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

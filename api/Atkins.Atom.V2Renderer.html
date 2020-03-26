@@ -1,0 +1,582 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class V2Renderer
+   | Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class V2Renderer
+   | Documentation ">
+    <meta name="generator" content="docfx 2.51.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Atkins.Atom.V2Renderer">
+  
+  
+  <h1 id="Atkins_Atom_V2Renderer" data-uid="Atkins.Atom.V2Renderer" class="text-break">Class V2Renderer
+  </h1>
+  <div class="markdown level0 summary"><p>The multithreaded Real-Time-Renderer as described in the Bachelor Thesis in chapter 3.2.2 - 3.2.7</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><span class="xref">V2Renderer</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Atkins.Atom.IAbstractRenderer.html">IAbstractRenderer</a></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Atkins.Atom.html">Atkins.Atom</a></h6>
+  <h6><strong>Assembly</strong>: Atkins.Atom.dll</h6>
+  <h5 id="Atkins_Atom_V2Renderer_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class V2Renderer : IAbstractRenderer</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/ATOM?path=Scripts/Renderers/V2Renderer.cs&amp;version=GBmaster&amp;line=44">View Source</a>
+  </span>
+  <a id="Atkins_Atom_V2Renderer__ctor_" data-uid="Atkins.Atom.V2Renderer.#ctor*"></a>
+  <h4 id="Atkins_Atom_V2Renderer__ctor_System_Int32_System_UInt32_System_UInt32_System_UInt32_Camera___Atkins_Atom_MeshConfiguration_System_UInt32_Atkins_Atom_CloudType_" data-uid="Atkins.Atom.V2Renderer.#ctor(System.Int32,System.UInt32,System.UInt32,System.UInt32,Camera[],Atkins.Atom.MeshConfiguration,System.UInt32,Atkins.Atom.CloudType)">V2Renderer(Int32, UInt32, UInt32, UInt32, Camera[], MeshConfiguration, UInt32, CloudType)</h4>
+  <div class="markdown level1 summary"><p>Creates a new V2Renderer and starts all the threads</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public V2Renderer(int minNodeSize, uint pointBudget, uint nodesLoadedPerFrame, uint nodesGOsperFrame, Camera[] cameras, MeshConfiguration config, uint cacheSize, CloudType cloudType)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">minNodeSize</span></td>
+        <td><p>Minimum Node Size</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint32">UInt32</a></td>
+        <td><span class="parametername">pointBudget</span></td>
+        <td><p>Point Budget</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint32">UInt32</a></td>
+        <td><span class="parametername">nodesLoadedPerFrame</span></td>
+        <td><p>Maximum number of nodes loaded per frame</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint32">UInt32</a></td>
+        <td><span class="parametername">nodesGOsperFrame</span></td>
+        <td><p>Maximum number of nodes for which GameObjects should be created per frame</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Camera</span>[]</td>
+        <td><span class="parametername">cameras</span></td>
+        <td><p>User Cameras</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Atkins.Atom.MeshConfiguration.html">MeshConfiguration</a></td>
+        <td><span class="parametername">config</span></td>
+        <td><p>MeshConfiguration, defining how the points should be rendered</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint32">UInt32</a></td>
+        <td><span class="parametername">cacheSize</span></td>
+        <td><p>Size of cache in points</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Atkins.Atom.CloudType.html">CloudType</a></td>
+        <td><span class="parametername">cloudType</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/ATOM?path=Scripts/Renderers/V2Renderer.cs&amp;version=GBmaster&amp;line=126">View Source</a>
+  </span>
+  <a id="Atkins_Atom_V2Renderer_AddRootNode_" data-uid="Atkins.Atom.V2Renderer.AddRootNode*"></a>
+  <h4 id="Atkins_Atom_V2Renderer_AddRootNode_Atkins_Atom_Node_" data-uid="Atkins.Atom.V2Renderer.AddRootNode(Atkins.Atom.Node)">AddRootNode(Node)</h4>
+  <div class="markdown level1 summary"><p>Registers the root node of a point cloud in the renderer.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddRootNode(Node rootNode)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Atkins.Atom.Node.html">Node</a></td>
+        <td><span class="parametername">rootNode</span></td>
+        <td><p>not null</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/ATOM?path=Scripts/Renderers/V2Renderer.cs&amp;version=GBmaster&amp;line=92">View Source</a>
+  </span>
+  <a id="Atkins_Atom_V2Renderer_DisableCameraThread_" data-uid="Atkins.Atom.V2Renderer.DisableCameraThread*"></a>
+  <h4 id="Atkins_Atom_V2Renderer_DisableCameraThread_Camera_" data-uid="Atkins.Atom.V2Renderer.DisableCameraThread(Camera)">DisableCameraThread(Camera)</h4>
+  <div class="markdown level1 summary"><p>Disable the camera thread if the camera exists and is running.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DisableCameraThread(Camera camera)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Camera</span></td>
+        <td><span class="parametername">camera</span></td>
+        <td><p>The camera to disable the traversal thread for.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/ATOM?path=Scripts/Renderers/V2Renderer.cs&amp;version=GBmaster&amp;line=73">View Source</a>
+  </span>
+  <a id="Atkins_Atom_V2Renderer_EnableCameraThread_" data-uid="Atkins.Atom.V2Renderer.EnableCameraThread*"></a>
+  <h4 id="Atkins_Atom_V2Renderer_EnableCameraThread_Camera_" data-uid="Atkins.Atom.V2Renderer.EnableCameraThread(Camera)">EnableCameraThread(Camera)</h4>
+  <div class="markdown level1 summary"><p>Enable the camera thread if the camera exists and is not running.
+TODO: Update this so that you can dynamically add camera during running.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void EnableCameraThread(Camera camera)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Camera</span></td>
+        <td><span class="parametername">camera</span></td>
+        <td><p>The camera to enable the traversal thread for.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/ATOM?path=Scripts/Renderers/V2Renderer.cs&amp;version=GBmaster&amp;line=145">View Source</a>
+  </span>
+  <a id="Atkins_Atom_V2Renderer_GetNearbyPositions_" data-uid="Atkins.Atom.V2Renderer.GetNearbyPositions*"></a>
+  <h4 id="Atkins_Atom_V2Renderer_GetNearbyPositions_Ray_System_Single_" data-uid="Atkins.Atom.V2Renderer.GetNearbyPositions(Ray,System.Single)">GetNearbyPositions(Ray, Single)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;Vector3&gt; GetNearbyPositions(Ray ray, float maxDistance)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Ray</span></td>
+        <td><span class="parametername">ray</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">maxDistance</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<span class="xref">Vector3</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/ATOM?path=Scripts/Renderers/V2Renderer.cs&amp;version=GBmaster&amp;line=247">View Source</a>
+  </span>
+  <a id="Atkins_Atom_V2Renderer_GetPointCount_" data-uid="Atkins.Atom.V2Renderer.GetPointCount*"></a>
+  <h4 id="Atkins_Atom_V2Renderer_GetPointCount" data-uid="Atkins.Atom.V2Renderer.GetPointCount">GetPointCount()</h4>
+  <div class="markdown level1 summary"><p>Returns the current PointCount, so how many points are loaded / visible</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public uint GetPointCount()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint32">UInt32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/ATOM?path=Scripts/Renderers/V2Renderer.cs&amp;version=GBmaster&amp;line=135">View Source</a>
+  </span>
+  <a id="Atkins_Atom_V2Renderer_GetRootNodeCount_" data-uid="Atkins.Atom.V2Renderer.GetRootNodeCount*"></a>
+  <h4 id="Atkins_Atom_V2Renderer_GetRootNodeCount" data-uid="Atkins.Atom.V2Renderer.GetRootNodeCount">GetRootNodeCount()</h4>
+  <div class="markdown level1 summary"><p>Returns how many root nodes have been added</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetRootNodeCount()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/ATOM?path=Scripts/Renderers/V2Renderer.cs&amp;version=GBmaster&amp;line=140">View Source</a>
+  </span>
+  <a id="Atkins_Atom_V2Renderer_GetRootNodes_" data-uid="Atkins.Atom.V2Renderer.GetRootNodes*"></a>
+  <h4 id="Atkins_Atom_V2Renderer_GetRootNodes" data-uid="Atkins.Atom.V2Renderer.GetRootNodes">GetRootNodes()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;Node&gt; GetRootNodes()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Atkins.Atom.Node.html">Node</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/ATOM?path=Scripts/Renderers/V2Renderer.cs&amp;version=GBmaster&amp;line=345">View Source</a>
+  </span>
+  <a id="Atkins_Atom_V2Renderer_SetQueues_" data-uid="Atkins.Atom.V2Renderer.SetQueues*"></a>
+  <h4 id="Atkins_Atom_V2Renderer_SetQueues_System_Collections_Generic_Queue_Atkins_Atom_Node__System_Collections_Generic_Queue_Atkins_Atom_Node__System_UInt32_System_Int32_" data-uid="Atkins.Atom.V2Renderer.SetQueues(System.Collections.Generic.Queue{Atkins.Atom.Node},System.Collections.Generic.Queue{Atkins.Atom.Node},System.UInt32,System.Int32)">SetQueues(Queue&lt;Node&gt;, Queue&lt;Node&gt;, UInt32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Sets the new GO-update-queues. Called from the TraversalThread.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetQueues(Queue&lt;Node&gt; render, Queue&lt;Node&gt; delete, uint pointcount, int index)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.queue-1">Queue</a>&lt;<a class="xref" href="Atkins.Atom.Node.html">Node</a>&gt;</td>
+        <td><span class="parametername">render</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.queue-1">Queue</a>&lt;<a class="xref" href="Atkins.Atom.Node.html">Node</a>&gt;</td>
+        <td><span class="parametername">delete</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint32">UInt32</a></td>
+        <td><span class="parametername">pointcount</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">index</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/ATOM?path=Scripts/Renderers/V2Renderer.cs&amp;version=GBmaster&amp;line=228">View Source</a>
+  </span>
+  <a id="Atkins_Atom_V2Renderer_ShutDown_" data-uid="Atkins.Atom.V2Renderer.ShutDown*"></a>
+  <h4 id="Atkins_Atom_V2Renderer_ShutDown" data-uid="Atkins.Atom.V2Renderer.ShutDown">ShutDown()</h4>
+  <div class="markdown level1 summary"><p>Stops the rendering process and all threads</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ShutDown()</code></pre>
+  </div>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/ATOM?path=Scripts/Renderers/V2Renderer.cs&amp;version=GBmaster&amp;line=355">View Source</a>
+  </span>
+  <a id="Atkins_Atom_V2Renderer_StartQueue_" data-uid="Atkins.Atom.V2Renderer.StartQueue*"></a>
+  <h4 id="Atkins_Atom_V2Renderer_StartQueue_System_Int32_" data-uid="Atkins.Atom.V2Renderer.StartQueue(System.Int32)">StartQueue(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void StartQueue(int index)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">index</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/ATOM?path=Scripts/Renderers/V2Renderer.cs&amp;version=GBmaster&amp;line=360">View Source</a>
+  </span>
+  <a id="Atkins_Atom_V2Renderer_StopQueue_" data-uid="Atkins.Atom.V2Renderer.StopQueue*"></a>
+  <h4 id="Atkins_Atom_V2Renderer_StopQueue_System_Int32_" data-uid="Atkins.Atom.V2Renderer.StopQueue(System.Int32)">StopQueue(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void StopQueue(int index)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">index</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/ATOM?path=Scripts/Renderers/V2Renderer.cs&amp;version=GBmaster&amp;line=162">View Source</a>
+  </span>
+  <a id="Atkins_Atom_V2Renderer_Update_" data-uid="Atkins.Atom.V2Renderer.Update*"></a>
+  <h4 id="Atkins_Atom_V2Renderer_Update" data-uid="Atkins.Atom.V2Renderer.Update">Update()</h4>
+  <div class="markdown level1 summary"><p>Gives the current camera data to the traversal thread and updates the GameObjects. Called from the MainThread. As
+described in the Bachelor Thesis in chapter 3.1.3 &quot;Main Thread&quot;</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Update()</code></pre>
+  </div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Atkins.Atom.IAbstractRenderer.html">IAbstractRenderer</a>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Atkins.Core.Extensions.Extensions.html#Atkins_Core_Extensions_Extensions_GetDescription__1___0_">Extensions.GetDescription&lt;T&gt;(T)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://dev.azure.com/atkins-global/ICON/_git/ATOM?path=Scripts/Renderers/V2Renderer.cs&amp;version=GBmaster&amp;line=15" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Documentation
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

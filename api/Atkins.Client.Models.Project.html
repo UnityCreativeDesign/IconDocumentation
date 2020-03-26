@@ -1,0 +1,692 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class Project
+   | Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class Project
+   | Documentation ">
+    <meta name="generator" content="docfx 2.51.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Atkins.Client.Models.Project">
+  
+  
+  <h1 id="Atkins_Client_Models_Project" data-uid="Atkins.Client.Models.Project" class="text-break">Class Project
+  </h1>
+  <div class="markdown level0 summary"><p>Data store for the project data</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><a class="xref" href="Atkins.Client.Models.WebApiObject.html">WebApiObject</a></div>
+    <div class="level2"><span class="xref">Project</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Atkins.Client.Models.html">Atkins.Client.Models</a></h6>
+  <h6><strong>Assembly</strong>: Atkins.Client.dll</h6>
+  <h5 id="Atkins_Client_Models_Project_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Serializable]
+public class Project : WebApiObject</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/Client?path=Scripts/Models/Project.cs&amp;version=GBmaster&amp;line=56">View Source</a>
+  </span>
+  <a id="Atkins_Client_Models_Project__ctor_" data-uid="Atkins.Client.Models.Project.#ctor*"></a>
+  <h4 id="Atkins_Client_Models_Project__ctor_System_String_System_String_System_String_System_Int32_System_Int32_System_String_System_String_Atkins_Client_Models_Project_ApplicationTypeEnum_" data-uid="Atkins.Client.Models.Project.#ctor(System.String,System.String,System.String,System.Int32,System.Int32,System.String,System.String,Atkins.Client.Models.Project.ApplicationTypeEnum)">Project(String, String, String, Int32, Int32, String, String, Project.ApplicationTypeEnum)</h4>
+  <div class="markdown level1 summary"><p>Partial Constructor to pass through to Web Call</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Project(string title, string subtitle, string description, int marketId, int purposeId, string fileGuid, string client, Project.ApplicationTypeEnum applicationTypeEnum)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">title</span></td>
+        <td><p>The Project Title</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">subtitle</span></td>
+        <td><p>The Project Subtitle</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">description</span></td>
+        <td><p>The Description</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">marketId</span></td>
+        <td><p>The Market Id</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">purposeId</span></td>
+        <td><p>The Purpose Id</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">fileGuid</span></td>
+        <td><p>File GUID</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">client</span></td>
+        <td><p>The Client</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Atkins.Client.Models.Project.ApplicationTypeEnum.html">Project.ApplicationTypeEnum</a></td>
+        <td><span class="parametername">applicationTypeEnum</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/Client?path=Scripts/Models/Project.cs&amp;version=GBmaster&amp;line=138">View Source</a>
+  </span>
+  <a id="Atkins_Client_Models_Project_ApplicationType_" data-uid="Atkins.Client.Models.Project.ApplicationType*"></a>
+  <h4 id="Atkins_Client_Models_Project_ApplicationType" data-uid="Atkins.Client.Models.Project.ApplicationType">ApplicationType</h4>
+  <div class="markdown level1 summary"><p>The application type</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Project.ApplicationTypeEnum ApplicationType { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Atkins.Client.Models.Project.ApplicationTypeEnum.html">Project.ApplicationTypeEnum</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/Client?path=Scripts/Models/Project.cs&amp;version=GBmaster&amp;line=160">View Source</a>
+  </span>
+  <a id="Atkins_Client_Models_Project_Archived_" data-uid="Atkins.Client.Models.Project.Archived*"></a>
+  <h4 id="Atkins_Client_Models_Project_Archived" data-uid="Atkins.Client.Models.Project.Archived">Archived</h4>
+  <div class="markdown level1 summary"><p>Has the project been archived? 0 for no, 1 for yes</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Archived { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/Client?path=Scripts/Models/Project.cs&amp;version=GBmaster&amp;line=145">View Source</a>
+  </span>
+  <a id="Atkins_Client_Models_Project_Client_" data-uid="Atkins.Client.Models.Project.Client*"></a>
+  <h4 id="Atkins_Client_Models_Project_Client" data-uid="Atkins.Client.Models.Project.Client">Client</h4>
+  <div class="markdown level1 summary"><p>The Client</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Client { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/Client?path=Scripts/Models/Project.cs&amp;version=GBmaster&amp;line=150">View Source</a>
+  </span>
+  <a id="Atkins_Client_Models_Project_CostMultiplier_" data-uid="Atkins.Client.Models.Project.CostMultiplier*"></a>
+  <h4 id="Atkins_Client_Models_Project_CostMultiplier" data-uid="Atkins.Client.Models.Project.CostMultiplier">CostMultiplier</h4>
+  <div class="markdown level1 summary"><p>Cost multiplier (typically x1)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float CostMultiplier { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/Client?path=Scripts/Models/Project.cs&amp;version=GBmaster&amp;line=162">View Source</a>
+  </span>
+  <a id="Atkins_Client_Models_Project_Created_" data-uid="Atkins.Client.Models.Project.Created*"></a>
+  <h4 id="Atkins_Client_Models_Project_Created" data-uid="Atkins.Client.Models.Project.Created">Created</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DateTime Created { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.datetime">DateTime</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/Client?path=Scripts/Models/Project.cs&amp;version=GBmaster&amp;line=86">View Source</a>
+  </span>
+  <a id="Atkins_Client_Models_Project_Description_" data-uid="Atkins.Client.Models.Project.Description*"></a>
+  <h4 id="Atkins_Client_Models_Project_Description" data-uid="Atkins.Client.Models.Project.Description">Description</h4>
+  <div class="markdown level1 summary"><p>The Description of the project</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Description { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/Client?path=Scripts/Models/Project.cs&amp;version=GBmaster&amp;line=101">View Source</a>
+  </span>
+  <a id="Atkins_Client_Models_Project_FileGuid_" data-uid="Atkins.Client.Models.Project.FileGuid*"></a>
+  <h4 id="Atkins_Client_Models_Project_FileGuid" data-uid="Atkins.Client.Models.Project.FileGuid">FileGuid</h4>
+  <div class="markdown level1 summary"><p>The file GUID</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string FileGuid { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/Client?path=Scripts/Models/Project.cs&amp;version=GBmaster&amp;line=71">View Source</a>
+  </span>
+  <a id="Atkins_Client_Models_Project_Id_" data-uid="Atkins.Client.Models.Project.Id*"></a>
+  <h4 id="Atkins_Client_Models_Project_Id" data-uid="Atkins.Client.Models.Project.Id">Id</h4>
+  <div class="markdown level1 summary"><p>The Id of the project</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Id { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/Client?path=Scripts/Models/Project.cs&amp;version=GBmaster&amp;line=165">View Source</a>
+  </span>
+  <a id="Atkins_Client_Models_Project_IsGlobal_" data-uid="Atkins.Client.Models.Project.IsGlobal*"></a>
+  <h4 id="Atkins_Client_Models_Project_IsGlobal" data-uid="Atkins.Client.Models.Project.IsGlobal">IsGlobal</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsGlobal { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/Client?path=Scripts/Models/Project.cs&amp;version=GBmaster&amp;line=163">View Source</a>
+  </span>
+  <a id="Atkins_Client_Models_Project_LastModified_" data-uid="Atkins.Client.Models.Project.LastModified*"></a>
+  <h4 id="Atkins_Client_Models_Project_LastModified" data-uid="Atkins.Client.Models.Project.LastModified">LastModified</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DateTime LastModified { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.datetime">DateTime</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/Client?path=Scripts/Models/Project.cs&amp;version=GBmaster&amp;line=91">View Source</a>
+  </span>
+  <a id="Atkins_Client_Models_Project_MarketId_" data-uid="Atkins.Client.Models.Project.MarketId*"></a>
+  <h4 id="Atkins_Client_Models_Project_MarketId" data-uid="Atkins.Client.Models.Project.MarketId">MarketId</h4>
+  <div class="markdown level1 summary"><p>The Market Id</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int MarketId { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/Client?path=Scripts/Models/Project.cs&amp;version=GBmaster&amp;line=155">View Source</a>
+  </span>
+  <a id="Atkins_Client_Models_Project_OpenedUserId_" data-uid="Atkins.Client.Models.Project.OpenedUserId*"></a>
+  <h4 id="Atkins_Client_Models_Project_OpenedUserId" data-uid="Atkins.Client.Models.Project.OpenedUserId">OpenedUserId</h4>
+  <div class="markdown level1 summary"><p>Is the project currently locked? 0 for no, 1 for yes</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string OpenedUserId { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/Client?path=Scripts/Models/Project.cs&amp;version=GBmaster&amp;line=140">View Source</a>
+  </span>
+  <a id="Atkins_Client_Models_Project_Platform_" data-uid="Atkins.Client.Models.Project.Platform*"></a>
+  <h4 id="Atkins_Client_Models_Project_Platform" data-uid="Atkins.Client.Models.Project.Platform">Platform</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Project.PlatformEnum Platform { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Atkins.Client.Models.Project.PlatformEnum.html">Project.PlatformEnum</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/Client?path=Scripts/Models/Project.cs&amp;version=GBmaster&amp;line=106">View Source</a>
+  </span>
+  <a id="Atkins_Client_Models_Project_ProjectArchType_" data-uid="Atkins.Client.Models.Project.ProjectArchType*"></a>
+  <h4 id="Atkins_Client_Models_Project_ProjectArchType" data-uid="Atkins.Client.Models.Project.ProjectArchType">ProjectArchType</h4>
+  <div class="markdown level1 summary"><p>the ArchType of a project ICON,ENGAGE,ETC</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Project.ProjectArchTypeEnum ProjectArchType { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Atkins.Client.Models.Project.ProjectArchTypeEnum.html">Project.ProjectArchTypeEnum</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/Client?path=Scripts/Models/Project.cs&amp;version=GBmaster&amp;line=96">View Source</a>
+  </span>
+  <a id="Atkins_Client_Models_Project_PurposeId_" data-uid="Atkins.Client.Models.Project.PurposeId*"></a>
+  <h4 id="Atkins_Client_Models_Project_PurposeId" data-uid="Atkins.Client.Models.Project.PurposeId">PurposeId</h4>
+  <div class="markdown level1 summary"><p>The purpose id</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int PurposeId { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/Client?path=Scripts/Models/Project.cs&amp;version=GBmaster&amp;line=81">View Source</a>
+  </span>
+  <a id="Atkins_Client_Models_Project_Subtitle_" data-uid="Atkins.Client.Models.Project.Subtitle*"></a>
+  <h4 id="Atkins_Client_Models_Project_Subtitle" data-uid="Atkins.Client.Models.Project.Subtitle">Subtitle</h4>
+  <div class="markdown level1 summary"><p>The subtitle of the project</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Subtitle { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/Client?path=Scripts/Models/Project.cs&amp;version=GBmaster&amp;line=76">View Source</a>
+  </span>
+  <a id="Atkins_Client_Models_Project_Title_" data-uid="Atkins.Client.Models.Project.Title*"></a>
+  <h4 id="Atkins_Client_Models_Project_Title" data-uid="Atkins.Client.Models.Project.Title">Title</h4>
+  <div class="markdown level1 summary"><p>The Title of the project</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Title { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Atkins.Core.Extensions.Extensions.html#Atkins_Core_Extensions_Extensions_GetDescription__1___0_">Extensions.GetDescription&lt;T&gt;(T)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://dev.azure.com/atkins-global/ICON/_git/Client?path=Scripts/Models/Project.cs&amp;version=GBmaster&amp;line=17" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Documentation
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

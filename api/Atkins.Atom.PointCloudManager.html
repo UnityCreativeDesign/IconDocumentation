@@ -1,0 +1,951 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class PointCloudManager
+   | Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class PointCloudManager
+   | Documentation ">
+    <meta name="generator" content="docfx 2.51.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Atkins.Atom.PointCloudManager">
+  
+  
+  <h1 id="Atkins_Atom_PointCloudManager" data-uid="Atkins.Atom.PointCloudManager" class="text-break">Class PointCloudManager
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><a class="xref" href="Atkins.Core.UnitySingleton-1.html">UnitySingleton</a>&lt;<a class="xref" href="Atkins.Atom.PointCloudManager.html">PointCloudManager</a>&gt;</div>
+    <div class="level2"><span class="xref">PointCloudManager</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Atkins.Core.Utils.IFinishedLoad.html">IFinishedLoad</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Atkins.Core.UnitySingleton-1.html#Atkins_Core_UnitySingleton_1_Instance">UnitySingleton&lt;PointCloudManager&gt;.Instance</a>
+    </div>
+    <div>
+      <a class="xref" href="Atkins.Core.UnitySingleton-1.html#Atkins_Core_UnitySingleton_1_ValidateInstance_System_Boolean_">UnitySingleton&lt;PointCloudManager&gt;.ValidateInstance(Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Atkins.Core.UnitySingleton-1.html#Atkins_Core_UnitySingleton_1_Exists">UnitySingleton&lt;PointCloudManager&gt;.Exists</a>
+    </div>
+    <div>
+      <a class="xref" href="Atkins.Core.UnitySingleton-1.html#Atkins_Core_UnitySingleton_1_OnDestroy">UnitySingleton&lt;PointCloudManager&gt;.OnDestroy()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Atkins.Atom.html">Atkins.Atom</a></h6>
+  <h6><strong>Assembly</strong>: Atkins.Atom.dll</h6>
+  <h5 id="Atkins_Atom_PointCloudManager_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class PointCloudManager : UnitySingleton&lt;PointCloudManager&gt;, IFinishedLoad</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/ATOM?path=Scripts/PointCloudManager.cs&amp;version=GBmaster&amp;line=50">View Source</a>
+  </span>
+  <h4 id="Atkins_Atom_PointCloudManager_cameraAPointClouds" data-uid="Atkins.Atom.PointCloudManager.cameraAPointClouds">cameraAPointClouds</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;AbstractLoader&gt; cameraAPointClouds</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Atkins.Atom.AbstractLoader.html">AbstractLoader</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/ATOM?path=Scripts/PointCloudManager.cs&amp;version=GBmaster&amp;line=51">View Source</a>
+  </span>
+  <h4 id="Atkins_Atom_PointCloudManager_cameraBPointClouds" data-uid="Atkins.Atom.PointCloudManager.cameraBPointClouds">cameraBPointClouds</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;AbstractLoader&gt; cameraBPointClouds</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Atkins.Atom.AbstractLoader.html">AbstractLoader</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/ATOM?path=Scripts/PointCloudManager.cs&amp;version=GBmaster&amp;line=43">View Source</a>
+  </span>
+  <h4 id="Atkins_Atom_PointCloudManager_cloudSetPointClouds" data-uid="Atkins.Atom.PointCloudManager.cloudSetPointClouds">cloudSetPointClouds</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GameObject cloudSetPointClouds</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">GameObject</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/ATOM?path=Scripts/PointCloudManager.cs&amp;version=GBmaster&amp;line=78">View Source</a>
+  </span>
+  <h4 id="Atkins_Atom_PointCloudManager_defaultAllButOneOff" data-uid="Atkins.Atom.PointCloudManager.defaultAllButOneOff">defaultAllButOneOff</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool defaultAllButOneOff</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/ATOM?path=Scripts/PointCloudManager.cs&amp;version=GBmaster&amp;line=40">View Source</a>
+  </span>
+  <h4 id="Atkins_Atom_PointCloudManager_fileLocation" data-uid="Atkins.Atom.PointCloudManager.fileLocation">fileLocation</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PointCloudManager.FileLocation fileLocation</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Atkins.Atom.PointCloudManager.FileLocation.html">PointCloudManager.FileLocation</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/ATOM?path=Scripts/PointCloudManager.cs&amp;version=GBmaster&amp;line=47">View Source</a>
+  </span>
+  <h4 id="Atkins_Atom_PointCloudManager_leftCamera" data-uid="Atkins.Atom.PointCloudManager.leftCamera">leftCamera</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Camera leftCamera</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Camera</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/ATOM?path=Scripts/PointCloudManager.cs&amp;version=GBmaster&amp;line=76">View Source</a>
+  </span>
+  <h4 id="Atkins_Atom_PointCloudManager_MaxPercentage" data-uid="Atkins.Atom.PointCloudManager.MaxPercentage">MaxPercentage</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const float MaxPercentage = 0.15F</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/ATOM?path=Scripts/PointCloudManager.cs&amp;version=GBmaster&amp;line=75">View Source</a>
+  </span>
+  <h4 id="Atkins_Atom_PointCloudManager_MinPercentage" data-uid="Atkins.Atom.PointCloudManager.MinPercentage">MinPercentage</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const float MinPercentage = 0.001F</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/ATOM?path=Scripts/PointCloudManager.cs&amp;version=GBmaster&amp;line=45">View Source</a>
+  </span>
+  <h4 id="Atkins_Atom_PointCloudManager_offset" data-uid="Atkins.Atom.PointCloudManager.offset">offset</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3 offset</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vector3</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/ATOM?path=Scripts/PointCloudManager.cs&amp;version=GBmaster&amp;line=30">View Source</a>
+  </span>
+  <h4 id="Atkins_Atom_PointCloudManager_onCompareToggled" data-uid="Atkins.Atom.PointCloudManager.onCompareToggled">onCompareToggled</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static UnityAction&lt;bool&gt; onCompareToggled</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityAction</span>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/ATOM?path=Scripts/PointCloudManager.cs&amp;version=GBmaster&amp;line=41">View Source</a>
+  </span>
+  <h4 id="Atkins_Atom_PointCloudManager_pointCloudPath" data-uid="Atkins.Atom.PointCloudManager.pointCloudPath">pointCloudPath</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string pointCloudPath</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/ATOM?path=Scripts/PointCloudManager.cs&amp;version=GBmaster&amp;line=55">View Source</a>
+  </span>
+  <h4 id="Atkins_Atom_PointCloudManager_pointClouds" data-uid="Atkins.Atom.PointCloudManager.pointClouds">pointClouds</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;PointCloudSetRealTimeController&gt; pointClouds</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Atkins.Atom.PointCloudSetRealTimeController.html">PointCloudSetRealTimeController</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/ATOM?path=Scripts/PointCloudManager.cs&amp;version=GBmaster&amp;line=48">View Source</a>
+  </span>
+  <h4 id="Atkins_Atom_PointCloudManager_rightCamera" data-uid="Atkins.Atom.PointCloudManager.rightCamera">rightCamera</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Camera rightCamera</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Camera</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/ATOM?path=Scripts/PointCloudManager.cs&amp;version=GBmaster&amp;line=53">View Source</a>
+  </span>
+  <h4 id="Atkins_Atom_PointCloudManager_sideBySideUi" data-uid="Atkins.Atom.PointCloudManager.sideBySideUi">sideBySideUi</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GameObject sideBySideUi</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">GameObject</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/ATOM?path=Scripts/PointCloudManager.cs&amp;version=GBmaster&amp;line=62">View Source</a>
+  </span>
+  <h4 id="Atkins_Atom_PointCloudManager_userCameras" data-uid="Atkins.Atom.PointCloudManager.userCameras">userCameras</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;Camera&gt; userCameras</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<span class="xref">Camera</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/ATOM?path=Scripts/PointCloudManager.cs&amp;version=GBmaster&amp;line=59">View Source</a>
+  </span>
+  <a id="Atkins_Atom_PointCloudManager_IsCompare_" data-uid="Atkins.Atom.PointCloudManager.IsCompare*"></a>
+  <h4 id="Atkins_Atom_PointCloudManager_IsCompare" data-uid="Atkins.Atom.PointCloudManager.IsCompare">IsCompare</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsCompare { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/ATOM?path=Scripts/PointCloudManager.cs&amp;version=GBmaster&amp;line=65">View Source</a>
+  </span>
+  <a id="Atkins_Atom_PointCloudManager_PointCount_" data-uid="Atkins.Atom.PointCloudManager.PointCount*"></a>
+  <h4 id="Atkins_Atom_PointCloudManager_PointCount" data-uid="Atkins.Atom.PointCloudManager.PointCount">PointCount</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static uint PointCount { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint32">UInt32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/ATOM?path=Scripts/PointCloudManager.cs&amp;version=GBmaster&amp;line=80">View Source</a>
+  </span>
+  <a id="Atkins_Atom_PointCloudManager_Awake_" data-uid="Atkins.Atom.PointCloudManager.Awake*"></a>
+  <h4 id="Atkins_Atom_PointCloudManager_Awake" data-uid="Atkins.Atom.PointCloudManager.Awake">Awake()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void Awake()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Atkins.Core.UnitySingleton&lt;Atkins.Atom.PointCloudManager&gt;.Awake()</span></div>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/ATOM?path=Scripts/PointCloudManager.cs&amp;version=GBmaster&amp;line=401">View Source</a>
+  </span>
+  <a id="Atkins_Atom_PointCloudManager_CheckWhichSet_" data-uid="Atkins.Atom.PointCloudManager.CheckWhichSet*"></a>
+  <h4 id="Atkins_Atom_PointCloudManager_CheckWhichSet_Atkins_Atom_AbstractLoader_" data-uid="Atkins.Atom.PointCloudManager.CheckWhichSet(Atkins.Atom.AbstractLoader)">CheckWhichSet(AbstractLoader)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PointCloudManager.PointSet CheckWhichSet(AbstractLoader pc)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Atkins.Atom.AbstractLoader.html">AbstractLoader</a></td>
+        <td><span class="parametername">pc</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Atkins.Atom.PointCloudManager.PointSet.html">PointCloudManager.PointSet</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/ATOM?path=Scripts/PointCloudManager.cs&amp;version=GBmaster&amp;line=128">View Source</a>
+  </span>
+  <a id="Atkins_Atom_PointCloudManager_GetNearbyPositionsSum_" data-uid="Atkins.Atom.PointCloudManager.GetNearbyPositionsSum*"></a>
+  <h4 id="Atkins_Atom_PointCloudManager_GetNearbyPositionsSum_Ray_System_Single_" data-uid="Atkins.Atom.PointCloudManager.GetNearbyPositionsSum(Ray,System.Single)">GetNearbyPositionsSum(Ray, Single)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;Vector3&gt; GetNearbyPositionsSum(Ray ray, float maxDistance)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Ray</span></td>
+        <td><span class="parametername">ray</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">maxDistance</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<span class="xref">Vector3</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/ATOM?path=Scripts/PointCloudManager.cs&amp;version=GBmaster&amp;line=114">View Source</a>
+  </span>
+  <a id="Atkins_Atom_PointCloudManager_GetTotalPointCountSum_" data-uid="Atkins.Atom.PointCloudManager.GetTotalPointCountSum*"></a>
+  <h4 id="Atkins_Atom_PointCloudManager_GetTotalPointCountSum" data-uid="Atkins.Atom.PointCloudManager.GetTotalPointCountSum">GetTotalPointCountSum()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static uint GetTotalPointCountSum()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint32">UInt32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/ATOM?path=Scripts/PointCloudManager.cs&amp;version=GBmaster&amp;line=101">View Source</a>
+  </span>
+  <a id="Atkins_Atom_PointCloudManager_Init_" data-uid="Atkins.Atom.PointCloudManager.Init*"></a>
+  <h4 id="Atkins_Atom_PointCloudManager_Init" data-uid="Atkins.Atom.PointCloudManager.Init">Init()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Init()</code></pre>
+  </div>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/ATOM?path=Scripts/PointCloudManager.cs&amp;version=GBmaster&amp;line=96">View Source</a>
+  </span>
+  <a id="Atkins_Atom_PointCloudManager_OnFinishedLoading_" data-uid="Atkins.Atom.PointCloudManager.OnFinishedLoading*"></a>
+  <h4 id="Atkins_Atom_PointCloudManager_OnFinishedLoading" data-uid="Atkins.Atom.PointCloudManager.OnFinishedLoading">OnFinishedLoading()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnFinishedLoading()</code></pre>
+  </div>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/ATOM?path=Scripts/PointCloudManager.cs&amp;version=GBmaster&amp;line=192">View Source</a>
+  </span>
+  <a id="Atkins_Atom_PointCloudManager_PointCloudLoaded_" data-uid="Atkins.Atom.PointCloudManager.PointCloudLoaded*"></a>
+  <h4 id="Atkins_Atom_PointCloudManager_PointCloudLoaded_Atkins_Atom_AbstractLoader_" data-uid="Atkins.Atom.PointCloudManager.PointCloudLoaded(Atkins.Atom.AbstractLoader)">PointCloudLoaded(AbstractLoader)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PointCloudLoaded(AbstractLoader spawnedCloud)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Atkins.Atom.AbstractLoader.html">AbstractLoader</a></td>
+        <td><span class="parametername">spawnedCloud</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/ATOM?path=Scripts/PointCloudManager.cs&amp;version=GBmaster&amp;line=331">View Source</a>
+  </span>
+  <a id="Atkins_Atom_PointCloudManager_SetPointCloudOff_" data-uid="Atkins.Atom.PointCloudManager.SetPointCloudOff*"></a>
+  <h4 id="Atkins_Atom_PointCloudManager_SetPointCloudOff_Atkins_Atom_AbstractLoader_" data-uid="Atkins.Atom.PointCloudManager.SetPointCloudOff(Atkins.Atom.AbstractLoader)">SetPointCloudOff(AbstractLoader)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetPointCloudOff(AbstractLoader pc)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Atkins.Atom.AbstractLoader.html">AbstractLoader</a></td>
+        <td><span class="parametername">pc</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/ATOM?path=Scripts/PointCloudManager.cs&amp;version=GBmaster&amp;line=284">View Source</a>
+  </span>
+  <a id="Atkins_Atom_PointCloudManager_SetPointCloudOnA_" data-uid="Atkins.Atom.PointCloudManager.SetPointCloudOnA*"></a>
+  <h4 id="Atkins_Atom_PointCloudManager_SetPointCloudOnA_Atkins_Atom_AbstractLoader_" data-uid="Atkins.Atom.PointCloudManager.SetPointCloudOnA(Atkins.Atom.AbstractLoader)">SetPointCloudOnA(AbstractLoader)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetPointCloudOnA(AbstractLoader pc)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Atkins.Atom.AbstractLoader.html">AbstractLoader</a></td>
+        <td><span class="parametername">pc</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/ATOM?path=Scripts/PointCloudManager.cs&amp;version=GBmaster&amp;line=308">View Source</a>
+  </span>
+  <a id="Atkins_Atom_PointCloudManager_SetPointCloudOnB_" data-uid="Atkins.Atom.PointCloudManager.SetPointCloudOnB*"></a>
+  <h4 id="Atkins_Atom_PointCloudManager_SetPointCloudOnB_Atkins_Atom_AbstractLoader_" data-uid="Atkins.Atom.PointCloudManager.SetPointCloudOnB(Atkins.Atom.AbstractLoader)">SetPointCloudOnB(AbstractLoader)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetPointCloudOnB(AbstractLoader pc)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Atkins.Atom.AbstractLoader.html">AbstractLoader</a></td>
+        <td><span class="parametername">pc</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/ATOM?path=Scripts/PointCloudManager.cs&amp;version=GBmaster&amp;line=261">View Source</a>
+  </span>
+  <a id="Atkins_Atom_PointCloudManager_Subscribe_" data-uid="Atkins.Atom.PointCloudManager.Subscribe*"></a>
+  <h4 id="Atkins_Atom_PointCloudManager_Subscribe_Atkins_Atom_ICloudSettings_" data-uid="Atkins.Atom.PointCloudManager.Subscribe(Atkins.Atom.ICloudSettings)">Subscribe(ICloudSettings)</h4>
+  <div class="markdown level1 summary"><p>Subscribe to events</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Subscribe(ICloudSettings sub)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Atkins.Atom.ICloudSettings.html">ICloudSettings</a></td>
+        <td><span class="parametername">sub</span></td>
+        <td><p>The subscriber</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/ATOM?path=Scripts/PointCloudManager.cs&amp;version=GBmaster&amp;line=275">View Source</a>
+  </span>
+  <a id="Atkins_Atom_PointCloudManager_Unsubscribe_" data-uid="Atkins.Atom.PointCloudManager.Unsubscribe*"></a>
+  <h4 id="Atkins_Atom_PointCloudManager_Unsubscribe_Atkins_Atom_ICloudSettings_" data-uid="Atkins.Atom.PointCloudManager.Unsubscribe(Atkins.Atom.ICloudSettings)">Unsubscribe(ICloudSettings)</h4>
+  <div class="markdown level1 summary"><p>Unsubscribe from events</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Unsubscribe(ICloudSettings sub)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Atkins.Atom.ICloudSettings.html">ICloudSettings</a></td>
+        <td><span class="parametername">sub</span></td>
+        <td><p>The subscriber</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Atkins.Core.Utils.IFinishedLoad.html">IFinishedLoad</a>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Atkins.Core.Extensions.Extensions.html#Atkins_Core_Extensions_Extensions_GetDescription__1___0_">Extensions.GetDescription&lt;T&gt;(T)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://dev.azure.com/atkins-global/ICON/_git/ATOM?path=Scripts/PointCloudManager.cs&amp;version=GBmaster&amp;line=17" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Documentation
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

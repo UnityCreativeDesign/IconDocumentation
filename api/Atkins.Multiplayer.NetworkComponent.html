@@ -1,0 +1,668 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class NetworkComponent
+   | Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class NetworkComponent
+   | Documentation ">
+    <meta name="generator" content="docfx 2.51.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Atkins.Multiplayer.NetworkComponent">
+  
+  
+  <h1 id="Atkins_Multiplayer_NetworkComponent" data-uid="Atkins.Multiplayer.NetworkComponent" class="text-break">Class NetworkComponent
+  </h1>
+  <div class="markdown level0 summary"><p>base network object component</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><span class="xref">NetworkComponent</span></div>
+      <div class="level2"><a class="xref" href="Atkins.Icon.Core.Multiplayer.LayerControllerNetworker.html">LayerControllerNetworker</a></div>
+      <div class="level2"><a class="xref" href="Atkins.Multiplayer.NetworkPlayer.html">NetworkPlayer</a></div>
+      <div class="level2"><a class="xref" href="Atkins.Multiplayer.NetworkPlayerController.html">NetworkPlayerController</a></div>
+      <div class="level2"><a class="xref" href="Atkins.Multiplayer.NetworkVisiable.html">NetworkVisiable</a></div>
+      <div class="level2"><a class="xref" href="Atkins.Multiplayer.Tools.DrawingNetworkManager.html">DrawingNetworkManager</a></div>
+      <div class="level2"><a class="xref" href="Atkins.Multiplayer.Tools.DrawingObjectNetwork.html">DrawingObjectNetwork</a></div>
+      <div class="level2"><a class="xref" href="Atkins.Multiplayer.Tools.TapeMeasureNetworkManager.html">TapeMeasureNetworkManager</a></div>
+      <div class="level2"><a class="xref" href="Atkins.Multiplayer.Tools.TapeMeasureObjectNetwork.html">TapeMeasureObjectNetwork</a></div>
+      <div class="level2"><a class="xref" href="Atkins.Multiplayer.Tools.TapeMeasurePointNetwork.html">TapeMeasurePointNetwork</a></div>
+      <div class="level2"><a class="xref" href="Atkins.Multiplayer.Vr.NetworkPointer.html">NetworkPointer</a></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Atkins.Multiplayer.html">Atkins.Multiplayer</a></h6>
+  <h6><strong>Assembly</strong>: Atkins.Multiplayer.dll</h6>
+  <h5 id="Atkins_Multiplayer_NetworkComponent_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class NetworkComponent : MonoBehaviour</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/Multiplayer?path=Scripts/NetworkComponent.cs&amp;version=GBmaster&amp;line=16">View Source</a>
+  </span>
+  <h4 id="Atkins_Multiplayer_NetworkComponent_persistAfterPlayer" data-uid="Atkins.Multiplayer.NetworkComponent.persistAfterPlayer">persistAfterPlayer</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool persistAfterPlayer</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/Multiplayer?path=Scripts/NetworkComponent.cs&amp;version=GBmaster&amp;line=21">View Source</a>
+  </span>
+  <a id="Atkins_Multiplayer_NetworkComponent_Owner_" data-uid="Atkins.Multiplayer.NetworkComponent.Owner*"></a>
+  <h4 id="Atkins_Multiplayer_NetworkComponent_Owner" data-uid="Atkins.Multiplayer.NetworkComponent.Owner">Owner</h4>
+  <div class="markdown level1 summary"><p>quick ref for the owner</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Player Owner { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Photon.Realtime.Player</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/Multiplayer?path=Scripts/NetworkComponent.cs&amp;version=GBmaster&amp;line=26">View Source</a>
+  </span>
+  <a id="Atkins_Multiplayer_NetworkComponent_View_" data-uid="Atkins.Multiplayer.NetworkComponent.View*"></a>
+  <h4 id="Atkins_Multiplayer_NetworkComponent_View" data-uid="Atkins.Multiplayer.NetworkComponent.View">View</h4>
+  <div class="markdown level1 summary"><p>quick ref for the view</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PhotonView View { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Photon.Pun.PhotonView</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/Multiplayer?path=Scripts/NetworkComponent.cs&amp;version=GBmaster&amp;line=75">View Source</a>
+  </span>
+  <a id="Atkins_Multiplayer_NetworkComponent_AddNetworkView_" data-uid="Atkins.Multiplayer.NetworkComponent.AddNetworkView*"></a>
+  <h4 id="Atkins_Multiplayer_NetworkComponent_AddNetworkView_GameObject_" data-uid="Atkins.Multiplayer.NetworkComponent.AddNetworkView(GameObject)">AddNetworkView(GameObject)</h4>
+  <div class="markdown level1 summary"><p>Add a generic network view to the object and returns the assigned viewId</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static PhotonView AddNetworkView(GameObject go)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">GameObject</span></td>
+        <td><span class="parametername">go</span></td>
+        <td><p>gameobject to add view id to</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Photon.Pun.PhotonView</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/Multiplayer?path=Scripts/NetworkComponent.cs&amp;version=GBmaster&amp;line=95">View Source</a>
+  </span>
+  <a id="Atkins_Multiplayer_NetworkComponent_AddNetworkView_" data-uid="Atkins.Multiplayer.NetworkComponent.AddNetworkView*"></a>
+  <h4 id="Atkins_Multiplayer_NetworkComponent_AddNetworkView_GameObject_System_Int32_" data-uid="Atkins.Multiplayer.NetworkComponent.AddNetworkView(GameObject,System.Int32)">AddNetworkView(GameObject, Int32)</h4>
+  <div class="markdown level1 summary"><p>adds a generic network view to the object using the provide view id</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static PhotonView AddNetworkView(GameObject go, int viewId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">GameObject</span></td>
+        <td><span class="parametername">go</span></td>
+        <td><p>gameobject to add view id to</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">viewId</span></td>
+        <td><p>view id to link to</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Photon.Pun.PhotonView</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/Multiplayer?path=Scripts/NetworkComponent.cs&amp;version=GBmaster&amp;line=115">View Source</a>
+  </span>
+  <a id="Atkins_Multiplayer_NetworkComponent_AddTransformView_" data-uid="Atkins.Multiplayer.NetworkComponent.AddTransformView*"></a>
+  <h4 id="Atkins_Multiplayer_NetworkComponent_AddTransformView_GameObject_System_Boolean_System_Boolean_System_Boolean_" data-uid="Atkins.Multiplayer.NetworkComponent.AddTransformView(GameObject,System.Boolean,System.Boolean,System.Boolean)">AddTransformView(GameObject, Boolean, Boolean, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Adds a photon transform view to the desired gameobject and returns the assigned network view id</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static PhotonView AddTransformView(GameObject go, bool trackPosition, bool trackRotation, bool trackScale)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">GameObject</span></td>
+        <td><span class="parametername">go</span></td>
+        <td><p>Game object to add transform view to</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">trackPosition</span></td>
+        <td><p>if to track position</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">trackRotation</span></td>
+        <td><p>if to track rotation</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">trackScale</span></td>
+        <td><p>if to track scale</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Photon.Pun.PhotonView</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/Multiplayer?path=Scripts/NetworkComponent.cs&amp;version=GBmaster&amp;line=167">View Source</a>
+  </span>
+  <a id="Atkins_Multiplayer_NetworkComponent_AddTransformView_" data-uid="Atkins.Multiplayer.NetworkComponent.AddTransformView*"></a>
+  <h4 id="Atkins_Multiplayer_NetworkComponent_AddTransformView_GameObject_System_Boolean_System_Boolean_System_Boolean_System_Int32_" data-uid="Atkins.Multiplayer.NetworkComponent.AddTransformView(GameObject,System.Boolean,System.Boolean,System.Boolean,System.Int32)">AddTransformView(GameObject, Boolean, Boolean, Boolean, Int32)</h4>
+  <div class="markdown level1 summary"><p>adds a photon transform component to the game object and sets its network view id</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static void AddTransformView(GameObject go, bool trackPosition, bool trackRotation, bool trackScale, int viewId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">GameObject</span></td>
+        <td><span class="parametername">go</span></td>
+        <td><p>Game object to add transform view to</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">trackPosition</span></td>
+        <td><p>if to track position</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">trackRotation</span></td>
+        <td><p>if to track rotation</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">trackScale</span></td>
+        <td><p>if to track scale</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">viewId</span></td>
+        <td><p>linked view id</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/Multiplayer?path=Scripts/NetworkComponent.cs&amp;version=GBmaster&amp;line=219">View Source</a>
+  </span>
+  <a id="Atkins_Multiplayer_NetworkComponent_CleanUp_" data-uid="Atkins.Multiplayer.NetworkComponent.CleanUp*"></a>
+  <h4 id="Atkins_Multiplayer_NetworkComponent_CleanUp_GameObject_" data-uid="Atkins.Multiplayer.NetworkComponent.CleanUp(GameObject)">CleanUp(GameObject)</h4>
+  <div class="markdown level1 summary"><p>Clean up all RPC&apos;s for this object when it has been destroyed</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static void CleanUp(GameObject viewObject)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">GameObject</span></td>
+        <td><span class="parametername">viewObject</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/Multiplayer?path=Scripts/NetworkComponent.cs&amp;version=GBmaster&amp;line=208">View Source</a>
+  </span>
+  <a id="Atkins_Multiplayer_NetworkComponent_CleanUp_" data-uid="Atkins.Multiplayer.NetworkComponent.CleanUp*"></a>
+  <h4 id="Atkins_Multiplayer_NetworkComponent_CleanUp_Photon_Pun_PhotonView_" data-uid="Atkins.Multiplayer.NetworkComponent.CleanUp(Photon.Pun.PhotonView)">CleanUp(PhotonView)</h4>
+  <div class="markdown level1 summary"><p>Clean up all RPC&apos;s for this object when it has been destroyed</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static void CleanUp(PhotonView view)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Photon.Pun.PhotonView</span></td>
+        <td><span class="parametername">view</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/Multiplayer?path=Scripts/NetworkComponent.cs&amp;version=GBmaster&amp;line=34">View Source</a>
+  </span>
+  <a id="Atkins_Multiplayer_NetworkComponent_GetObjectBelongingToOwner_" data-uid="Atkins.Multiplayer.NetworkComponent.GetObjectBelongingToOwner*"></a>
+  <h4 id="Atkins_Multiplayer_NetworkComponent_GetObjectBelongingToOwner__1_Photon_Realtime_Player_" data-uid="Atkins.Multiplayer.NetworkComponent.GetObjectBelongingToOwner``1(Photon.Realtime.Player)">GetObjectBelongingToOwner&lt;T&gt;(Player)</h4>
+  <div class="markdown level1 summary"><p>goes through and returns the first object of type that is owned by a particular player</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static T GetObjectBelongingToOwner&lt;T&gt;(Player player)
+    where T : Component</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Photon.Realtime.Player</span></td>
+        <td><span class="parametername">player</span></td>
+        <td><p>The player who objects need to be searched</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The type of object to find</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/Multiplayer?path=Scripts/NetworkComponent.cs&amp;version=GBmaster&amp;line=55">View Source</a>
+  </span>
+  <a id="Atkins_Multiplayer_NetworkComponent_GetObjectsBelongingToOwner_" data-uid="Atkins.Multiplayer.NetworkComponent.GetObjectsBelongingToOwner*"></a>
+  <h4 id="Atkins_Multiplayer_NetworkComponent_GetObjectsBelongingToOwner__1_Photon_Realtime_Player_" data-uid="Atkins.Multiplayer.NetworkComponent.GetObjectsBelongingToOwner``1(Photon.Realtime.Player)">GetObjectsBelongingToOwner&lt;T&gt;(Player)</h4>
+  <div class="markdown level1 summary"><p>Get the objects of T that belongs to an owner</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;T&gt; GetObjectsBelongingToOwner&lt;T&gt;(Player player)
+    where T : Component</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Photon.Realtime.Player</span></td>
+        <td><span class="parametername">player</span></td>
+        <td><p>The player who objects need to be searched</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;T&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The type of object to find</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/Multiplayer?path=Scripts/NetworkComponent.cs&amp;version=GBmaster&amp;line=250">View Source</a>
+  </span>
+  <a id="Atkins_Multiplayer_NetworkComponent_InformUnclaimObject_" data-uid="Atkins.Multiplayer.NetworkComponent.InformUnclaimObject*"></a>
+  <h4 id="Atkins_Multiplayer_NetworkComponent_InformUnclaimObject" data-uid="Atkins.Multiplayer.NetworkComponent.InformUnclaimObject">InformUnclaimObject()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void InformUnclaimObject()</code></pre>
+  </div>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/ICON/_git/Multiplayer?path=Scripts/NetworkComponent.cs&amp;version=GBmaster&amp;line=232">View Source</a>
+  </span>
+  <a id="Atkins_Multiplayer_NetworkComponent_TransferOwnership_" data-uid="Atkins.Multiplayer.NetworkComponent.TransferOwnership*"></a>
+  <h4 id="Atkins_Multiplayer_NetworkComponent_TransferOwnership" data-uid="Atkins.Multiplayer.NetworkComponent.TransferOwnership">TransferOwnership()</h4>
+  <div class="markdown level1 summary"><p>Sends a transferownership notification to all players</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void TransferOwnership()</code></pre>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Atkins.Core.Extensions.Extensions.html#Atkins_Core_Extensions_Extensions_GetDescription__1___0_">Extensions.GetDescription&lt;T&gt;(T)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://dev.azure.com/atkins-global/ICON/_git/Multiplayer?path=Scripts/NetworkComponent.cs&amp;version=GBmaster&amp;line=14" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Documentation
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

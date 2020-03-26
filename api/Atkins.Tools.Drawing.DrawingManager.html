@@ -1,0 +1,849 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class DrawingManager
+   | Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class DrawingManager
+   | Documentation ">
+    <meta name="generator" content="docfx 2.51.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Atkins.Tools.Drawing.DrawingManager">
+  
+  
+  <h1 id="Atkins_Tools_Drawing_DrawingManager" data-uid="Atkins.Tools.Drawing.DrawingManager" class="text-break">Class DrawingManager
+  </h1>
+  <div class="markdown level0 summary"><p>Central manager for the drawing tool, all drawing tool behaviours should exist in here</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><a class="xref" href="Atkins.Tools.Tool.html">Tool</a></div>
+    <div class="level2"><span class="xref">DrawingManager</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Atkins.Core.Utils.IFinishedLoad.html">IFinishedLoad</a></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Atkins.Tools.Drawing.html">Atkins.Tools.Drawing</a></h6>
+  <h6><strong>Assembly</strong>: Atkins.Tools.dll</h6>
+  <h5 id="Atkins_Tools_Drawing_DrawingManager_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class DrawingManager : Tool, IFinishedLoad</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/Immersive%20Media%20Unity/_git/Core_Assets?path=Tools/Scripts/Drawing/DrawingManager.cs&amp;version=GBmaster&amp;line=36">View Source</a>
+  </span>
+  <h4 id="Atkins_Tools_Drawing_DrawingManager__currentColor" data-uid="Atkins.Tools.Drawing.DrawingManager._currentColor">_currentColor</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Color _currentColor</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Color</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/Immersive%20Media%20Unity/_git/Core_Assets?path=Tools/Scripts/Drawing/DrawingManager.cs&amp;version=GBmaster&amp;line=37">View Source</a>
+  </span>
+  <h4 id="Atkins_Tools_Drawing_DrawingManager__currentSize" data-uid="Atkins.Tools.Drawing.DrawingManager._currentSize">_currentSize</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float _currentSize</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/Immersive%20Media%20Unity/_git/Core_Assets?path=Tools/Scripts/Drawing/DrawingManager.cs&amp;version=GBmaster&amp;line=34">View Source</a>
+  </span>
+  <h4 id="Atkins_Tools_Drawing_DrawingManager_allDrawings" data-uid="Atkins.Tools.Drawing.DrawingManager.allDrawings">allDrawings</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;DrawingObject&gt; allDrawings</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Atkins.Tools.Drawing.DrawingObject.html">DrawingObject</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/Immersive%20Media%20Unity/_git/Core_Assets?path=Tools/Scripts/Drawing/DrawingManager.cs&amp;version=GBmaster&amp;line=47">View Source</a>
+  </span>
+  <h4 id="Atkins_Tools_Drawing_DrawingManager_avaiableColours" data-uid="Atkins.Tools.Drawing.DrawingManager.avaiableColours">avaiableColours</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;Color&gt; avaiableColours</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<span class="xref">Color</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/Immersive%20Media%20Unity/_git/Core_Assets?path=Tools/Scripts/Drawing/DrawingManager.cs&amp;version=GBmaster&amp;line=41">View Source</a>
+  </span>
+  <h4 id="Atkins_Tools_Drawing_DrawingManager_brushCrosshair" data-uid="Atkins.Tools.Drawing.DrawingManager.brushCrosshair">brushCrosshair</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GameObject brushCrosshair</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">GameObject</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/Immersive%20Media%20Unity/_git/Core_Assets?path=Tools/Scripts/Drawing/DrawingManager.cs&amp;version=GBmaster&amp;line=43">View Source</a>
+  </span>
+  <h4 id="Atkins_Tools_Drawing_DrawingManager_brushType" data-uid="Atkins.Tools.Drawing.DrawingManager.brushType">brushType</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DrawingManager.BrushType brushType</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Atkins.Tools.Drawing.DrawingManager.BrushType.html">DrawingManager.BrushType</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/Immersive%20Media%20Unity/_git/Core_Assets?path=Tools/Scripts/Drawing/DrawingManager.cs&amp;version=GBmaster&amp;line=69">View Source</a>
+  </span>
+  <h4 id="Atkins_Tools_Drawing_DrawingManager_lifeSpan" data-uid="Atkins.Tools.Drawing.DrawingManager.lifeSpan">lifeSpan</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float lifeSpan</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/Immersive%20Media%20Unity/_git/Core_Assets?path=Tools/Scripts/Drawing/DrawingManager.cs&amp;version=GBmaster&amp;line=72">View Source</a>
+  </span>
+  <h4 id="Atkins_Tools_Drawing_DrawingManager_onCreateDrawing" data-uid="Atkins.Tools.Drawing.DrawingManager.onCreateDrawing">onCreateDrawing</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DrawingManager.OnCreateDrawing onCreateDrawing</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Atkins.Tools.Drawing.DrawingManager.OnCreateDrawing.html">DrawingManager.OnCreateDrawing</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/Immersive%20Media%20Unity/_git/Core_Assets?path=Tools/Scripts/Drawing/DrawingManager.cs&amp;version=GBmaster&amp;line=76">View Source</a>
+  </span>
+  <h4 id="Atkins_Tools_Drawing_DrawingManager_onDeleteDrawing" data-uid="Atkins.Tools.Drawing.DrawingManager.onDeleteDrawing">onDeleteDrawing</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static UnityAction&lt;DrawingObject, bool&gt; onDeleteDrawing</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityAction</span>&lt;<a class="xref" href="Atkins.Tools.Drawing.DrawingObject.html">DrawingObject</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/Immersive%20Media%20Unity/_git/Core_Assets?path=Tools/Scripts/Drawing/DrawingManager.cs&amp;version=GBmaster&amp;line=75">View Source</a>
+  </span>
+  <h4 id="Atkins_Tools_Drawing_DrawingManager_onFinaliseDrawing" data-uid="Atkins.Tools.Drawing.DrawingManager.onFinaliseDrawing">onFinaliseDrawing</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static UnityAction&lt;GameObject&gt; onFinaliseDrawing</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityAction</span>&lt;<span class="xref">GameObject</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/Immersive%20Media%20Unity/_git/Core_Assets?path=Tools/Scripts/Drawing/DrawingManager.cs&amp;version=GBmaster&amp;line=74">View Source</a>
+  </span>
+  <h4 id="Atkins_Tools_Drawing_DrawingManager_onUpdateDrawing" data-uid="Atkins.Tools.Drawing.DrawingManager.onUpdateDrawing">onUpdateDrawing</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static UnityAction&lt;DrawingObject, Vector3&gt; onUpdateDrawing</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityAction</span>&lt;<a class="xref" href="Atkins.Tools.Drawing.DrawingObject.html">DrawingObject</a>, <span class="xref">Vector3</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/Immersive%20Media%20Unity/_git/Core_Assets?path=Tools/Scripts/Drawing/DrawingManager.cs&amp;version=GBmaster&amp;line=50">View Source</a>
+  </span>
+  <a id="Atkins_Tools_Drawing_DrawingManager_DrawingShader_" data-uid="Atkins.Tools.Drawing.DrawingManager.DrawingShader*"></a>
+  <h4 id="Atkins_Tools_Drawing_DrawingManager_DrawingShader" data-uid="Atkins.Tools.Drawing.DrawingManager.DrawingShader">DrawingShader</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Shader DrawingShader { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Shader</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/Immersive%20Media%20Unity/_git/Core_Assets?path=Tools/Scripts/Drawing/DrawingManager.cs&amp;version=GBmaster&amp;line=32">View Source</a>
+  </span>
+  <a id="Atkins_Tools_Drawing_DrawingManager_Instance_" data-uid="Atkins.Tools.Drawing.DrawingManager.Instance*"></a>
+  <h4 id="Atkins_Tools_Drawing_DrawingManager_Instance" data-uid="Atkins.Tools.Drawing.DrawingManager.Instance">Instance</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Singleton&lt;DrawingManager&gt; Instance { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Atkins.Core.Singleton-1.html">Singleton</a>&lt;<a class="xref" href="Atkins.Tools.Drawing.DrawingManager.html">DrawingManager</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/Immersive%20Media%20Unity/_git/Core_Assets?path=Tools/Scripts/Drawing/DrawingManager.cs&amp;version=GBmaster&amp;line=178">View Source</a>
+  </span>
+  <a id="Atkins_Tools_Drawing_DrawingManager_CreateDrawing_" data-uid="Atkins.Tools.Drawing.DrawingManager.CreateDrawing*"></a>
+  <h4 id="Atkins_Tools_Drawing_DrawingManager_CreateDrawing_System_Boolean_" data-uid="Atkins.Tools.Drawing.DrawingManager.CreateDrawing(System.Boolean)">CreateDrawing(Boolean)</h4>
+  <div class="markdown level1 summary"><p>Create a new drawing</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GameObject CreateDrawing(bool networkCall = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">networkCall</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">GameObject</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/Immersive%20Media%20Unity/_git/Core_Assets?path=Tools/Scripts/Drawing/DrawingManager.cs&amp;version=GBmaster&amp;line=200">View Source</a>
+  </span>
+  <a id="Atkins_Tools_Drawing_DrawingManager_DeleteDrawing_" data-uid="Atkins.Tools.Drawing.DrawingManager.DeleteDrawing*"></a>
+  <h4 id="Atkins_Tools_Drawing_DrawingManager_DeleteDrawing_Atkins_Tools_Drawing_DrawingObject_System_Boolean_" data-uid="Atkins.Tools.Drawing.DrawingManager.DeleteDrawing(Atkins.Tools.Drawing.DrawingObject,System.Boolean)">DeleteDrawing(DrawingObject, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Delete a Drawing</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DeleteDrawing(DrawingObject drawing, bool networkCall = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Atkins.Tools.Drawing.DrawingObject.html">DrawingObject</a></td>
+        <td><span class="parametername">drawing</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">networkCall</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/Immersive%20Media%20Unity/_git/Core_Assets?path=Tools/Scripts/Drawing/DrawingManager.cs&amp;version=GBmaster&amp;line=228">View Source</a>
+  </span>
+  <a id="Atkins_Tools_Drawing_DrawingManager_DrawLine_" data-uid="Atkins.Tools.Drawing.DrawingManager.DrawLine*"></a>
+  <h4 id="Atkins_Tools_Drawing_DrawingManager_DrawLine_Vector3___Color_System_Single_" data-uid="Atkins.Tools.Drawing.DrawingManager.DrawLine(Vector3[],Color,System.Single)">DrawLine(Vector3[], Color, Single)</h4>
+  <div class="markdown level1 summary"><p>Draw a line from the given points</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GameObject DrawLine(Vector3[] points, Color color, float width)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vector3</span>[]</td>
+        <td><span class="parametername">points</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Color</span></td>
+        <td><span class="parametername">color</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">width</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">GameObject</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/Immersive%20Media%20Unity/_git/Core_Assets?path=Tools/Scripts/Drawing/DrawingManager.cs&amp;version=GBmaster&amp;line=209">View Source</a>
+  </span>
+  <a id="Atkins_Tools_Drawing_DrawingManager_FinaliseLine_" data-uid="Atkins.Tools.Drawing.DrawingManager.FinaliseLine*"></a>
+  <h4 id="Atkins_Tools_Drawing_DrawingManager_FinaliseLine" data-uid="Atkins.Tools.Drawing.DrawingManager.FinaliseLine">FinaliseLine()</h4>
+  <div class="markdown level1 summary"><p>Finish drawing a line</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void FinaliseLine()</code></pre>
+  </div>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/Immersive%20Media%20Unity/_git/Core_Assets?path=Tools/Scripts/Drawing/DrawingManager.cs&amp;version=GBmaster&amp;line=150">View Source</a>
+  </span>
+  <a id="Atkins_Tools_Drawing_DrawingManager_FinishDrawing_" data-uid="Atkins.Tools.Drawing.DrawingManager.FinishDrawing*"></a>
+  <h4 id="Atkins_Tools_Drawing_DrawingManager_FinishDrawing" data-uid="Atkins.Tools.Drawing.DrawingManager.FinishDrawing">FinishDrawing()</h4>
+  <div class="markdown level1 summary"><p>CAllback for trigger released on vr controllers</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void FinishDrawing()</code></pre>
+  </div>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/Immersive%20Media%20Unity/_git/Core_Assets?path=Tools/Scripts/Drawing/DrawingManager.cs&amp;version=GBmaster&amp;line=263">View Source</a>
+  </span>
+  <a id="Atkins_Tools_Drawing_DrawingManager_GetBrushSize_" data-uid="Atkins.Tools.Drawing.DrawingManager.GetBrushSize*"></a>
+  <h4 id="Atkins_Tools_Drawing_DrawingManager_GetBrushSize_Atkins_Tools_Drawing_DrawingManager_BrushSize_" data-uid="Atkins.Tools.Drawing.DrawingManager.GetBrushSize(Atkins.Tools.Drawing.DrawingManager.BrushSize)">GetBrushSize(DrawingManager.BrushSize)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float GetBrushSize(DrawingManager.BrushSize size)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Atkins.Tools.Drawing.DrawingManager.BrushSize.html">DrawingManager.BrushSize</a></td>
+        <td><span class="parametername">size</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/Immersive%20Media%20Unity/_git/Core_Assets?path=Tools/Scripts/Drawing/DrawingManager.cs&amp;version=GBmaster&amp;line=80">View Source</a>
+  </span>
+  <a id="Atkins_Tools_Drawing_DrawingManager_OnFinishedLoading_" data-uid="Atkins.Tools.Drawing.DrawingManager.OnFinishedLoading*"></a>
+  <h4 id="Atkins_Tools_Drawing_DrawingManager_OnFinishedLoading" data-uid="Atkins.Tools.Drawing.DrawingManager.OnFinishedLoading">OnFinishedLoading()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnFinishedLoading()</code></pre>
+  </div>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/Immersive%20Media%20Unity/_git/Core_Assets?path=Tools/Scripts/Drawing/DrawingManager.cs&amp;version=GBmaster&amp;line=132">View Source</a>
+  </span>
+  <a id="Atkins_Tools_Drawing_DrawingManager_SelectEraser_" data-uid="Atkins.Tools.Drawing.DrawingManager.SelectEraser*"></a>
+  <h4 id="Atkins_Tools_Drawing_DrawingManager_SelectEraser_System_Single_GameObject_" data-uid="Atkins.Tools.Drawing.DrawingManager.SelectEraser(System.Single,GameObject)">SelectEraser(Single, GameObject)</h4>
+  <div class="markdown level1 summary"><p>Select the eraser tool</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SelectEraser(float size, GameObject brush)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">size</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">GameObject</span></td>
+        <td><span class="parametername">brush</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/Immersive%20Media%20Unity/_git/Core_Assets?path=Tools/Scripts/Drawing/DrawingManager.cs&amp;version=GBmaster&amp;line=113">View Source</a>
+  </span>
+  <a id="Atkins_Tools_Drawing_DrawingManager_SetBrushSize_" data-uid="Atkins.Tools.Drawing.DrawingManager.SetBrushSize*"></a>
+  <h4 id="Atkins_Tools_Drawing_DrawingManager_SetBrushSize_System_Single_GameObject_" data-uid="Atkins.Tools.Drawing.DrawingManager.SetBrushSize(System.Single,GameObject)">SetBrushSize(Single, GameObject)</h4>
+  <div class="markdown level1 summary"><p>Set the size of the brush</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetBrushSize(float size, GameObject brush)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">size</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">GameObject</span></td>
+        <td><span class="parametername">brush</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/Immersive%20Media%20Unity/_git/Core_Assets?path=Tools/Scripts/Drawing/DrawingManager.cs&amp;version=GBmaster&amp;line=89">View Source</a>
+  </span>
+  <a id="Atkins_Tools_Drawing_DrawingManager_SetColor_" data-uid="Atkins.Tools.Drawing.DrawingManager.SetColor*"></a>
+  <h4 id="Atkins_Tools_Drawing_DrawingManager_SetColor_Color_GameObject_" data-uid="Atkins.Tools.Drawing.DrawingManager.SetColor(Color,GameObject)">SetColor(Color, GameObject)</h4>
+  <div class="markdown level1 summary"><p>Set the color of the brush</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetColor(Color col, GameObject brush)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Color</span></td>
+        <td><span class="parametername">col</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">GameObject</span></td>
+        <td><span class="parametername">brush</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/atkins-global/Immersive%20Media%20Unity/_git/Core_Assets?path=Tools/Scripts/Drawing/DrawingManager.cs&amp;version=GBmaster&amp;line=165">View Source</a>
+  </span>
+  <a id="Atkins_Tools_Drawing_DrawingManager_StartDrawing_" data-uid="Atkins.Tools.Drawing.DrawingManager.StartDrawing*"></a>
+  <h4 id="Atkins_Tools_Drawing_DrawingManager_StartDrawing_GameObject_" data-uid="Atkins.Tools.Drawing.DrawingManager.StartDrawing(GameObject)">StartDrawing(GameObject)</h4>
+  <div class="markdown level1 summary"><p>Callback for trigger pressed on vr controllers</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void StartDrawing(GameObject brush)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">GameObject</span></td>
+        <td><span class="parametername">brush</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Atkins.Core.Utils.IFinishedLoad.html">IFinishedLoad</a>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Atkins.Core.Extensions.Extensions.html#Atkins_Core_Extensions_Extensions_GetDescription__1___0_">Extensions.GetDescription&lt;T&gt;(T)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://dev.azure.com/atkins-global/Immersive%20Media%20Unity/_git/Core_Assets?path=Tools/Scripts/Drawing/DrawingManager.cs&amp;version=GBmaster&amp;line=15" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Documentation
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
