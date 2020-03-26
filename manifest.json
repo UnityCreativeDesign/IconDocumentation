@@ -2,11 +2,11 @@
   "sitemap": {
     "fileOptions": {
       "api/*": {
-        "baseUrl": "https://reddevildragg.github.io/Tester/",
+        "baseUrl": "https://unitycreativedesign.github.io/IconDocumentation/",
         "changefreq": "daily"
       }
     },
-    "baseUrl": "https://reddevildragg.github.io/Tester/",
+    "baseUrl": "https://unitycreativedesign.github.io/IconDocumentation/",
     "changefreq": "weekly"
   },
   "homepages": [],

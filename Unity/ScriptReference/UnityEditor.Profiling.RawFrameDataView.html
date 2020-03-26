@@ -1,0 +1,1157 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class RawFrameDataView
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class RawFrameDataView
+   ">
+    <meta name="generator" content="docfx 2.51.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="UnityEditor.Profiling.RawFrameDataView">
+  
+  
+  <h1 id="UnityEditor_Profiling_RawFrameDataView" data-uid="UnityEditor.Profiling.RawFrameDataView" class="text-break">Class RawFrameDataView
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><a class="xref" href="UnityEditor.Profiling.FrameDataView.html">FrameDataView</a></div>
+    <div class="level2"><span class="xref">RawFrameDataView</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="UnityEditor.Profiling.FrameDataView.html#UnityEditor_Profiling_FrameDataView_m_Ptr">FrameDataView.m_Ptr</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEditor.Profiling.FrameDataView.html#UnityEditor_Profiling_FrameDataView_invalidMarkerId">FrameDataView.invalidMarkerId</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEditor.Profiling.FrameDataView.html#UnityEditor_Profiling_FrameDataView_Dispose">FrameDataView.Dispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEditor.Profiling.FrameDataView.html#UnityEditor_Profiling_FrameDataView_valid">FrameDataView.valid</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEditor.Profiling.FrameDataView.html#UnityEditor_Profiling_FrameDataView_frameIndex">FrameDataView.frameIndex</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEditor.Profiling.FrameDataView.html#UnityEditor_Profiling_FrameDataView_threadIndex">FrameDataView.threadIndex</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEditor.Profiling.FrameDataView.html#UnityEditor_Profiling_FrameDataView_threadGroupName">FrameDataView.threadGroupName</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEditor.Profiling.FrameDataView.html#UnityEditor_Profiling_FrameDataView_threadName">FrameDataView.threadName</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEditor.Profiling.FrameDataView.html#UnityEditor_Profiling_FrameDataView_threadId">FrameDataView.threadId</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEditor.Profiling.FrameDataView.html#UnityEditor_Profiling_FrameDataView_frameStartTimeMs">FrameDataView.frameStartTimeMs</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEditor.Profiling.FrameDataView.html#UnityEditor_Profiling_FrameDataView_frameStartTimeNs">FrameDataView.frameStartTimeNs</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEditor.Profiling.FrameDataView.html#UnityEditor_Profiling_FrameDataView_frameTimeMs">FrameDataView.frameTimeMs</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEditor.Profiling.FrameDataView.html#UnityEditor_Profiling_FrameDataView_frameTimeNs">FrameDataView.frameTimeNs</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEditor.Profiling.FrameDataView.html#UnityEditor_Profiling_FrameDataView_frameGpuTimeMs">FrameDataView.frameGpuTimeMs</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEditor.Profiling.FrameDataView.html#UnityEditor_Profiling_FrameDataView_frameGpuTimeNs">FrameDataView.frameGpuTimeNs</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEditor.Profiling.FrameDataView.html#UnityEditor_Profiling_FrameDataView_frameFps">FrameDataView.frameFps</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEditor.Profiling.FrameDataView.html#UnityEditor_Profiling_FrameDataView_sampleCount">FrameDataView.sampleCount</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEditor.Profiling.FrameDataView.html#UnityEditor_Profiling_FrameDataView_maxDepth">FrameDataView.maxDepth</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEditor.Profiling.FrameDataView.html#UnityEditor_Profiling_FrameDataView_GetMarkerCategoryIndex_System_Int32_">FrameDataView.GetMarkerCategoryIndex(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEditor.Profiling.FrameDataView.html#UnityEditor_Profiling_FrameDataView_GetMarkerFlags_System_Int32_">FrameDataView.GetMarkerFlags(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEditor.Profiling.FrameDataView.html#UnityEditor_Profiling_FrameDataView_GetMarkerName_System_Int32_">FrameDataView.GetMarkerName(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEditor.Profiling.FrameDataView.html#UnityEditor_Profiling_FrameDataView_GetMarkerId_System_String_">FrameDataView.GetMarkerId(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEditor.Profiling.FrameDataView.html#UnityEditor_Profiling_FrameDataView_GetMarkers_System_Collections_Generic_List_UnityEditor_Profiling_FrameDataView_MarkerInfo__">FrameDataView.GetMarkers(List&lt;FrameDataView.MarkerInfo&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEditor.Profiling.FrameDataView.html#UnityEditor_Profiling_FrameDataView_GetFrameMetaData__1_System_Guid_System_Int32_">FrameDataView.GetFrameMetaData&lt;T&gt;(Guid, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEditor.Profiling.FrameDataView.html#UnityEditor_Profiling_FrameDataView_GetFrameMetaData__1_System_Guid_System_Int32_System_Int32_">FrameDataView.GetFrameMetaData&lt;T&gt;(Guid, Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEditor.Profiling.FrameDataView.html#UnityEditor_Profiling_FrameDataView_GetFrameMetaDataCount_System_Guid_System_Int32_">FrameDataView.GetFrameMetaDataCount(Guid, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEditor.Profiling.FrameDataView.html#UnityEditor_Profiling_FrameDataView_ResolveMethodInfo_System_UInt64_">FrameDataView.ResolveMethodInfo(UInt64)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEditor.Profiling.FrameDataView.html#UnityEditor_Profiling_FrameDataView_GetCounterValuePtr_System_Int32_">FrameDataView.GetCounterValuePtr(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEditor.Profiling.FrameDataView.html#UnityEditor_Profiling_FrameDataView_HasCounterValue_System_Int32_">FrameDataView.HasCounterValue(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEditor.Profiling.FrameDataView.html#UnityEditor_Profiling_FrameDataView_GetCounterValueAsInt_System_Int32_">FrameDataView.GetCounterValueAsInt(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEditor.Profiling.FrameDataView.html#UnityEditor_Profiling_FrameDataView_GetCounterValueAsLong_System_Int32_">FrameDataView.GetCounterValueAsLong(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEditor.Profiling.FrameDataView.html#UnityEditor_Profiling_FrameDataView_GetCounterValueAsFloat_System_Int32_">FrameDataView.GetCounterValueAsFloat(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEditor.Profiling.FrameDataView.html#UnityEditor_Profiling_FrameDataView_GetCounterValueAsDouble_System_Int32_">FrameDataView.GetCounterValueAsDouble(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_System_Object_">Object.Equals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.referenceequals#System_Object_ReferenceEquals_System_Object_System_Object_">Object.ReferenceEquals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gettype#System_Object_GetType">Object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Object.MemberwiseClone()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="UnityEditor.Profiling.html">UnityEditor.Profiling</a></h6>
+  <h6><strong>Assembly</strong>: UnityEditor.dll</h6>
+  <h5 id="UnityEditor_Profiling_RawFrameDataView_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class RawFrameDataView : FrameDataView, IDisposable</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Unity-Technologies/UnityCsReference/new/master/apiSpec/new?filename=UnityEditor_Profiling_RawFrameDataView_Equals_System_Object_.md&amp;value=---%0Auid%3A%20UnityEditor.Profiling.RawFrameDataView.Equals(System.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Unity-Technologies/UnityCsReference/blob/master/Modules/ProfilerEditor/Public/RawFrameDataView.bindings.cs/#L104">View Source</a>
+  </span>
+  <a id="UnityEditor_Profiling_RawFrameDataView_Equals_" data-uid="UnityEditor.Profiling.RawFrameDataView.Equals*"></a>
+  <h4 id="UnityEditor_Profiling_RawFrameDataView_Equals_System_Object_" data-uid="UnityEditor.Profiling.RawFrameDataView.Equals(System.Object)">Equals(Object)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Equals(object obj)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td><span class="parametername">obj</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_">Object.Equals(Object)</a></div>
+  
+  
+  <a id="UnityEditor_Profiling_RawFrameDataView_GetFlowEvents_" data-uid="UnityEditor.Profiling.RawFrameDataView.GetFlowEvents*"></a>
+  <h4 id="UnityEditor_Profiling_RawFrameDataView_GetFlowEvents_System_Collections_Generic_List_UnityEditor_Profiling_RawFrameDataView_FlowEvent__" data-uid="UnityEditor.Profiling.RawFrameDataView.GetFlowEvents(System.Collections.Generic.List{UnityEditor.Profiling.RawFrameDataView.FlowEvent})">GetFlowEvents(List&lt;RawFrameDataView.FlowEvent&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void GetFlowEvents(List&lt;RawFrameDataView.FlowEvent&gt; outFlowEvents)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="UnityEditor.Profiling.RawFrameDataView.FlowEvent.html">RawFrameDataView.FlowEvent</a>&gt;</td>
+        <td><span class="parametername">outFlowEvents</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Unity-Technologies/UnityCsReference/new/master/apiSpec/new?filename=UnityEditor_Profiling_RawFrameDataView_GetHashCode.md&amp;value=---%0Auid%3A%20UnityEditor.Profiling.RawFrameDataView.GetHashCode%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Unity-Technologies/UnityCsReference/blob/master/Modules/ProfilerEditor/Public/RawFrameDataView.bindings.cs/#L119">View Source</a>
+  </span>
+  <a id="UnityEditor_Profiling_RawFrameDataView_GetHashCode_" data-uid="UnityEditor.Profiling.RawFrameDataView.GetHashCode*"></a>
+  <h4 id="UnityEditor_Profiling_RawFrameDataView_GetHashCode" data-uid="UnityEditor.Profiling.RawFrameDataView.GetHashCode">GetHashCode()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gethashcode#System_Object_GetHashCode">Object.GetHashCode()</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Unity-Technologies/UnityCsReference/new/master/apiSpec/new?filename=UnityEditor_Profiling_RawFrameDataView_GetSampleCallstack_System_Int32_System_Collections_Generic_List_System_UInt64__.md&amp;value=---%0Auid%3A%20UnityEditor.Profiling.RawFrameDataView.GetSampleCallstack(System.Int32%2CSystem.Collections.Generic.List%7BSystem.UInt64%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Unity-Technologies/UnityCsReference/blob/master/Modules/ProfilerEditor/Public/RawFrameDataView.bindings.cs/#L78">View Source</a>
+  </span>
+  <a id="UnityEditor_Profiling_RawFrameDataView_GetSampleCallstack_" data-uid="UnityEditor.Profiling.RawFrameDataView.GetSampleCallstack*"></a>
+  <h4 id="UnityEditor_Profiling_RawFrameDataView_GetSampleCallstack_System_Int32_System_Collections_Generic_List_System_UInt64__" data-uid="UnityEditor.Profiling.RawFrameDataView.GetSampleCallstack(System.Int32,System.Collections.Generic.List{System.UInt64})">GetSampleCallstack(Int32, List&lt;UInt64&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void GetSampleCallstack(int sampleIndex, List&lt;ulong&gt; outCallstack)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">sampleIndex</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint64">UInt64</a>&gt;</td>
+        <td><span class="parametername">outCallstack</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEditor_Profiling_RawFrameDataView_GetSampleCategoryIndex_" data-uid="UnityEditor.Profiling.RawFrameDataView.GetSampleCategoryIndex*"></a>
+  <h4 id="UnityEditor_Profiling_RawFrameDataView_GetSampleCategoryIndex_System_Int32_" data-uid="UnityEditor.Profiling.RawFrameDataView.GetSampleCategoryIndex(System.Int32)">GetSampleCategoryIndex(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ushort GetSampleCategoryIndex(int sampleIndex)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">sampleIndex</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint16">UInt16</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEditor_Profiling_RawFrameDataView_GetSampleChildrenCount_" data-uid="UnityEditor.Profiling.RawFrameDataView.GetSampleChildrenCount*"></a>
+  <h4 id="UnityEditor_Profiling_RawFrameDataView_GetSampleChildrenCount_System_Int32_" data-uid="UnityEditor.Profiling.RawFrameDataView.GetSampleChildrenCount(System.Int32)">GetSampleChildrenCount(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetSampleChildrenCount(int sampleIndex)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">sampleIndex</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEditor_Profiling_RawFrameDataView_GetSampleChildrenCountRecursive_" data-uid="UnityEditor.Profiling.RawFrameDataView.GetSampleChildrenCountRecursive*"></a>
+  <h4 id="UnityEditor_Profiling_RawFrameDataView_GetSampleChildrenCountRecursive_System_Int32_" data-uid="UnityEditor.Profiling.RawFrameDataView.GetSampleChildrenCountRecursive(System.Int32)">GetSampleChildrenCountRecursive(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetSampleChildrenCountRecursive(int sampleIndex)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">sampleIndex</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEditor_Profiling_RawFrameDataView_GetSampleFlags_" data-uid="UnityEditor.Profiling.RawFrameDataView.GetSampleFlags*"></a>
+  <h4 id="UnityEditor_Profiling_RawFrameDataView_GetSampleFlags_System_Int32_" data-uid="UnityEditor.Profiling.RawFrameDataView.GetSampleFlags(System.Int32)">GetSampleFlags(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MarkerFlags GetSampleFlags(int sampleIndex)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">sampleIndex</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">MarkerFlags</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEditor_Profiling_RawFrameDataView_GetSampleFlowEvents_" data-uid="UnityEditor.Profiling.RawFrameDataView.GetSampleFlowEvents*"></a>
+  <h4 id="UnityEditor_Profiling_RawFrameDataView_GetSampleFlowEvents_System_Int32_System_Collections_Generic_List_UnityEditor_Profiling_RawFrameDataView_FlowEvent__" data-uid="UnityEditor.Profiling.RawFrameDataView.GetSampleFlowEvents(System.Int32,System.Collections.Generic.List{UnityEditor.Profiling.RawFrameDataView.FlowEvent})">GetSampleFlowEvents(Int32, List&lt;RawFrameDataView.FlowEvent&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void GetSampleFlowEvents(int sampleIndex, List&lt;RawFrameDataView.FlowEvent&gt; outFlowEvents)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">sampleIndex</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="UnityEditor.Profiling.RawFrameDataView.FlowEvent.html">RawFrameDataView.FlowEvent</a>&gt;</td>
+        <td><span class="parametername">outFlowEvents</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEditor_Profiling_RawFrameDataView_GetSampleMarkerId_" data-uid="UnityEditor.Profiling.RawFrameDataView.GetSampleMarkerId*"></a>
+  <h4 id="UnityEditor_Profiling_RawFrameDataView_GetSampleMarkerId_System_Int32_" data-uid="UnityEditor.Profiling.RawFrameDataView.GetSampleMarkerId(System.Int32)">GetSampleMarkerId(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetSampleMarkerId(int sampleIndex)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">sampleIndex</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEditor_Profiling_RawFrameDataView_GetSampleMetadataAsDouble_" data-uid="UnityEditor.Profiling.RawFrameDataView.GetSampleMetadataAsDouble*"></a>
+  <h4 id="UnityEditor_Profiling_RawFrameDataView_GetSampleMetadataAsDouble_System_Int32_System_Int32_" data-uid="UnityEditor.Profiling.RawFrameDataView.GetSampleMetadataAsDouble(System.Int32,System.Int32)">GetSampleMetadataAsDouble(Int32, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double GetSampleMetadataAsDouble(int sampleIndex, int metadataIndex)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">sampleIndex</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">metadataIndex</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEditor_Profiling_RawFrameDataView_GetSampleMetadataAsFloat_" data-uid="UnityEditor.Profiling.RawFrameDataView.GetSampleMetadataAsFloat*"></a>
+  <h4 id="UnityEditor_Profiling_RawFrameDataView_GetSampleMetadataAsFloat_System_Int32_System_Int32_" data-uid="UnityEditor.Profiling.RawFrameDataView.GetSampleMetadataAsFloat(System.Int32,System.Int32)">GetSampleMetadataAsFloat(Int32, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float GetSampleMetadataAsFloat(int sampleIndex, int metadataIndex)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">sampleIndex</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">metadataIndex</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEditor_Profiling_RawFrameDataView_GetSampleMetadataAsInt_" data-uid="UnityEditor.Profiling.RawFrameDataView.GetSampleMetadataAsInt*"></a>
+  <h4 id="UnityEditor_Profiling_RawFrameDataView_GetSampleMetadataAsInt_System_Int32_System_Int32_" data-uid="UnityEditor.Profiling.RawFrameDataView.GetSampleMetadataAsInt(System.Int32,System.Int32)">GetSampleMetadataAsInt(Int32, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetSampleMetadataAsInt(int sampleIndex, int metadataIndex)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">sampleIndex</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">metadataIndex</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEditor_Profiling_RawFrameDataView_GetSampleMetadataAsLong_" data-uid="UnityEditor.Profiling.RawFrameDataView.GetSampleMetadataAsLong*"></a>
+  <h4 id="UnityEditor_Profiling_RawFrameDataView_GetSampleMetadataAsLong_System_Int32_System_Int32_" data-uid="UnityEditor.Profiling.RawFrameDataView.GetSampleMetadataAsLong(System.Int32,System.Int32)">GetSampleMetadataAsLong(Int32, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long GetSampleMetadataAsLong(int sampleIndex, int metadataIndex)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">sampleIndex</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">metadataIndex</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int64">Int64</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEditor_Profiling_RawFrameDataView_GetSampleMetadataAsString_" data-uid="UnityEditor.Profiling.RawFrameDataView.GetSampleMetadataAsString*"></a>
+  <h4 id="UnityEditor_Profiling_RawFrameDataView_GetSampleMetadataAsString_System_Int32_System_Int32_" data-uid="UnityEditor.Profiling.RawFrameDataView.GetSampleMetadataAsString(System.Int32,System.Int32)">GetSampleMetadataAsString(Int32, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetSampleMetadataAsString(int sampleIndex, int metadataIndex)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">sampleIndex</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">metadataIndex</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEditor_Profiling_RawFrameDataView_GetSampleMetadataCount_" data-uid="UnityEditor.Profiling.RawFrameDataView.GetSampleMetadataCount*"></a>
+  <h4 id="UnityEditor_Profiling_RawFrameDataView_GetSampleMetadataCount_System_Int32_" data-uid="UnityEditor.Profiling.RawFrameDataView.GetSampleMetadataCount(System.Int32)">GetSampleMetadataCount(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetSampleMetadataCount(int sampleIndex)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">sampleIndex</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEditor_Profiling_RawFrameDataView_GetSampleName_" data-uid="UnityEditor.Profiling.RawFrameDataView.GetSampleName*"></a>
+  <h4 id="UnityEditor_Profiling_RawFrameDataView_GetSampleName_System_Int32_" data-uid="UnityEditor.Profiling.RawFrameDataView.GetSampleName(System.Int32)">GetSampleName(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetSampleName(int sampleIndex)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">sampleIndex</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEditor_Profiling_RawFrameDataView_GetSampleStartTimeMs_" data-uid="UnityEditor.Profiling.RawFrameDataView.GetSampleStartTimeMs*"></a>
+  <h4 id="UnityEditor_Profiling_RawFrameDataView_GetSampleStartTimeMs_System_Int32_" data-uid="UnityEditor.Profiling.RawFrameDataView.GetSampleStartTimeMs(System.Int32)">GetSampleStartTimeMs(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double GetSampleStartTimeMs(int sampleIndex)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">sampleIndex</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEditor_Profiling_RawFrameDataView_GetSampleStartTimeNs_" data-uid="UnityEditor.Profiling.RawFrameDataView.GetSampleStartTimeNs*"></a>
+  <h4 id="UnityEditor_Profiling_RawFrameDataView_GetSampleStartTimeNs_System_Int32_" data-uid="UnityEditor.Profiling.RawFrameDataView.GetSampleStartTimeNs(System.Int32)">GetSampleStartTimeNs(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ulong GetSampleStartTimeNs(int sampleIndex)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">sampleIndex</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint64">UInt64</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEditor_Profiling_RawFrameDataView_GetSampleTimeMs_" data-uid="UnityEditor.Profiling.RawFrameDataView.GetSampleTimeMs*"></a>
+  <h4 id="UnityEditor_Profiling_RawFrameDataView_GetSampleTimeMs_System_Int32_" data-uid="UnityEditor.Profiling.RawFrameDataView.GetSampleTimeMs(System.Int32)">GetSampleTimeMs(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float GetSampleTimeMs(int sampleIndex)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">sampleIndex</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEditor_Profiling_RawFrameDataView_GetSampleTimeNs_" data-uid="UnityEditor.Profiling.RawFrameDataView.GetSampleTimeNs*"></a>
+  <h4 id="UnityEditor_Profiling_RawFrameDataView_GetSampleTimeNs_System_Int32_" data-uid="UnityEditor.Profiling.RawFrameDataView.GetSampleTimeNs(System.Int32)">GetSampleTimeNs(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ulong GetSampleTimeNs(int sampleIndex)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">sampleIndex</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint64">UInt64</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.idisposable">System.IDisposable</a>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustBeEqual__1___0___0_">MustExtensions.MustBeEqual&lt;T&gt;(T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustBeEqual__1___0___0_System_String_">MustExtensions.MustBeEqual&lt;T&gt;(T, T, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustNotBeEqual__1___0___0_">MustExtensions.MustNotBeEqual&lt;T&gt;(T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustNotBeEqual__1___0___0_System_String_">MustExtensions.MustNotBeEqual&lt;T&gt;(T, T, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustBeNull__1___0_">MustExtensions.MustBeNull&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustBeNull__1___0_System_String_">MustExtensions.MustBeNull&lt;T&gt;(T, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustNotBeNull__1___0_">MustExtensions.MustNotBeNull&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustNotBeNull__1___0_System_String_">MustExtensions.MustNotBeNull&lt;T&gt;(T, String)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/Unity-Technologies/UnityCsReference/new/master/apiSpec/new?filename=UnityEditor_Profiling_RawFrameDataView.md&amp;value=---%0Auid%3A%20UnityEditor.Profiling.RawFrameDataView%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/Unity-Technologies/UnityCsReference/blob/master/Modules/ProfilerEditor/Public/RawFrameDataView.bindings.cs/#L15" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

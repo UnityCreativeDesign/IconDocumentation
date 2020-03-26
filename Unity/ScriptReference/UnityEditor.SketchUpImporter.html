@@ -1,0 +1,580 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class SketchUpImporter
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class SketchUpImporter
+   ">
+    <meta name="generator" content="docfx 2.51.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="UnityEditor.SketchUpImporter">
+  
+  
+  <h1 id="UnityEditor_SketchUpImporter" data-uid="UnityEditor.SketchUpImporter" class="text-break">Class SketchUpImporter
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><a class="xref" href="UnityEditor.AssetImporter.html">AssetImporter</a></div>
+    <div class="level2"><a class="xref" href="UnityEditor.ModelImporter.html">ModelImporter</a></div>
+    <div class="level3"><span class="xref">SketchUpImporter</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="UnityEditor.ModelImporter.html#UnityEditor_ModelImporter_generateMaterials">ModelImporter.generateMaterials</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEditor.ModelImporter.html#UnityEditor_ModelImporter_importMaterials">ModelImporter.importMaterials</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEditor.ModelImporter.html#UnityEditor_ModelImporter_materialName">ModelImporter.materialName</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEditor.ModelImporter.html#UnityEditor_ModelImporter_materialSearch">ModelImporter.materialSearch</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEditor.ModelImporter.html#UnityEditor_ModelImporter_materialLocation">ModelImporter.materialLocation</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEditor.ModelImporter.html#UnityEditor_ModelImporter_globalScale">ModelImporter.globalScale</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEditor.ModelImporter.html#UnityEditor_ModelImporter_isUseFileUnitsSupported">ModelImporter.isUseFileUnitsSupported</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEditor.ModelImporter.html#UnityEditor_ModelImporter_importVisibility">ModelImporter.importVisibility</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEditor.ModelImporter.html#UnityEditor_ModelImporter_useFileUnits">ModelImporter.useFileUnits</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEditor.ModelImporter.html#UnityEditor_ModelImporter_fileScale">ModelImporter.fileScale</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEditor.ModelImporter.html#UnityEditor_ModelImporter_useFileScale">ModelImporter.useFileScale</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEditor.ModelImporter.html#UnityEditor_ModelImporter_isFileScaleUsed">ModelImporter.isFileScaleUsed</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEditor.ModelImporter.html#UnityEditor_ModelImporter_importBlendShapes">ModelImporter.importBlendShapes</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEditor.ModelImporter.html#UnityEditor_ModelImporter_importCameras">ModelImporter.importCameras</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEditor.ModelImporter.html#UnityEditor_ModelImporter_importLights">ModelImporter.importLights</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEditor.ModelImporter.html#UnityEditor_ModelImporter_addCollider">ModelImporter.addCollider</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEditor.ModelImporter.html#UnityEditor_ModelImporter_normalSmoothingAngle">ModelImporter.normalSmoothingAngle</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEditor.ModelImporter.html#UnityEditor_ModelImporter_splitTangentsAcrossSeams">ModelImporter.splitTangentsAcrossSeams</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEditor.ModelImporter.html#UnityEditor_ModelImporter_swapUVChannels">ModelImporter.swapUVChannels</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEditor.ModelImporter.html#UnityEditor_ModelImporter_weldVertices">ModelImporter.weldVertices</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEditor.ModelImporter.html#UnityEditor_ModelImporter_bakeAxisConversion">ModelImporter.bakeAxisConversion</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEditor.ModelImporter.html#UnityEditor_ModelImporter_keepQuads">ModelImporter.keepQuads</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEditor.ModelImporter.html#UnityEditor_ModelImporter_indexFormat">ModelImporter.indexFormat</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEditor.ModelImporter.html#UnityEditor_ModelImporter_preserveHierarchy">ModelImporter.preserveHierarchy</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEditor.ModelImporter.html#UnityEditor_ModelImporter_generateSecondaryUV">ModelImporter.generateSecondaryUV</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEditor.ModelImporter.html#UnityEditor_ModelImporter_secondaryUVAngleDistortion">ModelImporter.secondaryUVAngleDistortion</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEditor.ModelImporter.html#UnityEditor_ModelImporter_secondaryUVAreaDistortion">ModelImporter.secondaryUVAreaDistortion</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEditor.ModelImporter.html#UnityEditor_ModelImporter_secondaryUVHardAngle">ModelImporter.secondaryUVHardAngle</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEditor.ModelImporter.html#UnityEditor_ModelImporter_secondaryUVMarginMethod">ModelImporter.secondaryUVMarginMethod</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEditor.ModelImporter.html#UnityEditor_ModelImporter_secondaryUVPackMargin">ModelImporter.secondaryUVPackMargin</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEditor.ModelImporter.html#UnityEditor_ModelImporter_secondaryUVMinLightmapResolution">ModelImporter.secondaryUVMinLightmapResolution</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEditor.ModelImporter.html#UnityEditor_ModelImporter_secondaryUVMinObjectScale">ModelImporter.secondaryUVMinObjectScale</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEditor.ModelImporter.html#UnityEditor_ModelImporter_generateAnimations">ModelImporter.generateAnimations</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEditor.ModelImporter.html#UnityEditor_ModelImporter_importedTakeInfos">ModelImporter.importedTakeInfos</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEditor.ModelImporter.html#UnityEditor_ModelImporter_transformPaths">ModelImporter.transformPaths</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEditor.ModelImporter.html#UnityEditor_ModelImporter_referencedClips">ModelImporter.referencedClips</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEditor.ModelImporter.html#UnityEditor_ModelImporter_isReadable">ModelImporter.isReadable</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEditor.ModelImporter.html#UnityEditor_ModelImporter_meshOptimizationFlags">ModelImporter.meshOptimizationFlags</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEditor.ModelImporter.html#UnityEditor_ModelImporter_optimizeMeshPolygons">ModelImporter.optimizeMeshPolygons</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEditor.ModelImporter.html#UnityEditor_ModelImporter_optimizeMeshVertices">ModelImporter.optimizeMeshVertices</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEditor.ModelImporter.html#UnityEditor_ModelImporter_optimizeMesh">ModelImporter.optimizeMesh</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEditor.ModelImporter.html#UnityEditor_ModelImporter_skinWeights">ModelImporter.skinWeights</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEditor.ModelImporter.html#UnityEditor_ModelImporter_maxBonesPerVertex">ModelImporter.maxBonesPerVertex</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEditor.ModelImporter.html#UnityEditor_ModelImporter_minBoneWeight">ModelImporter.minBoneWeight</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEditor.ModelImporter.html#UnityEditor_ModelImporter_normalImportMode">ModelImporter.normalImportMode</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEditor.ModelImporter.html#UnityEditor_ModelImporter_tangentImportMode">ModelImporter.tangentImportMode</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEditor.ModelImporter.html#UnityEditor_ModelImporter_importNormals">ModelImporter.importNormals</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEditor.ModelImporter.html#UnityEditor_ModelImporter_normalSmoothingSource">ModelImporter.normalSmoothingSource</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEditor.ModelImporter.html#UnityEditor_ModelImporter_importBlendShapeNormals">ModelImporter.importBlendShapeNormals</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEditor.ModelImporter.html#UnityEditor_ModelImporter_normalCalculationMode">ModelImporter.normalCalculationMode</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEditor.ModelImporter.html#UnityEditor_ModelImporter_importTangents">ModelImporter.importTangents</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEditor.ModelImporter.html#UnityEditor_ModelImporter_bakeIK">ModelImporter.bakeIK</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEditor.ModelImporter.html#UnityEditor_ModelImporter_isBakeIKSupported">ModelImporter.isBakeIKSupported</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEditor.ModelImporter.html#UnityEditor_ModelImporter_resampleRotations">ModelImporter.resampleRotations</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEditor.ModelImporter.html#UnityEditor_ModelImporter_resampleCurves">ModelImporter.resampleCurves</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEditor.ModelImporter.html#UnityEditor_ModelImporter_isTangentImportSupported">ModelImporter.isTangentImportSupported</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEditor.ModelImporter.html#UnityEditor_ModelImporter_meshCompression">ModelImporter.meshCompression</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEditor.ModelImporter.html#UnityEditor_ModelImporter_importAnimation">ModelImporter.importAnimation</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEditor.ModelImporter.html#UnityEditor_ModelImporter_optimizeGameObjects">ModelImporter.optimizeGameObjects</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEditor.ModelImporter.html#UnityEditor_ModelImporter_extraExposedTransformPaths">ModelImporter.extraExposedTransformPaths</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEditor.ModelImporter.html#UnityEditor_ModelImporter_extraUserProperties">ModelImporter.extraUserProperties</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEditor.ModelImporter.html#UnityEditor_ModelImporter_animationCompression">ModelImporter.animationCompression</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEditor.ModelImporter.html#UnityEditor_ModelImporter_importAnimatedCustomProperties">ModelImporter.importAnimatedCustomProperties</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEditor.ModelImporter.html#UnityEditor_ModelImporter_importConstraints">ModelImporter.importConstraints</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEditor.ModelImporter.html#UnityEditor_ModelImporter_animationRotationError">ModelImporter.animationRotationError</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEditor.ModelImporter.html#UnityEditor_ModelImporter_animationPositionError">ModelImporter.animationPositionError</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEditor.ModelImporter.html#UnityEditor_ModelImporter_animationScaleError">ModelImporter.animationScaleError</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEditor.ModelImporter.html#UnityEditor_ModelImporter_animationWrapMode">ModelImporter.animationWrapMode</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEditor.ModelImporter.html#UnityEditor_ModelImporter_animationType">ModelImporter.animationType</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEditor.ModelImporter.html#UnityEditor_ModelImporter_humanoidOversampling">ModelImporter.humanoidOversampling</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEditor.ModelImporter.html#UnityEditor_ModelImporter_motionNodeName">ModelImporter.motionNodeName</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEditor.ModelImporter.html#UnityEditor_ModelImporter_avatarSetup">ModelImporter.avatarSetup</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEditor.ModelImporter.html#UnityEditor_ModelImporter_sourceAvatar">ModelImporter.sourceAvatar</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEditor.ModelImporter.html#UnityEditor_ModelImporter_humanDescription">ModelImporter.humanDescription</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEditor.ModelImporter.html#UnityEditor_ModelImporter_splitAnimations">ModelImporter.splitAnimations</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEditor.ModelImporter.html#UnityEditor_ModelImporter_clipAnimations">ModelImporter.clipAnimations</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEditor.ModelImporter.html#UnityEditor_ModelImporter_defaultClipAnimations">ModelImporter.defaultClipAnimations</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEditor.ModelImporter.html#UnityEditor_ModelImporter_CreateDefaultMaskForClip_UnityEditor_ModelImporterClipAnimation_">ModelImporter.CreateDefaultMaskForClip(ModelImporterClipAnimation)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEditor.ModelImporter.html#UnityEditor_ModelImporter_ExtractTextures_System_String_">ModelImporter.ExtractTextures(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEditor.ModelImporter.html#UnityEditor_ModelImporter_SearchAndRemapMaterials_UnityEditor_ModelImporterMaterialName_UnityEditor_ModelImporterMaterialSearch_">ModelImporter.SearchAndRemapMaterials(ModelImporterMaterialName, ModelImporterMaterialSearch)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEditor.ModelImporter.html#UnityEditor_ModelImporter_useSRGBMaterialColor">ModelImporter.useSRGBMaterialColor</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEditor.ModelImporter.html#UnityEditor_ModelImporter_sortHierarchyByName">ModelImporter.sortHierarchyByName</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEditor.ModelImporter.html#UnityEditor_ModelImporter_materialImportMode">ModelImporter.materialImportMode</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEditor.ModelImporter.html#UnityEditor_ModelImporter_autoGenerateAvatarMappingIfUnspecified">ModelImporter.autoGenerateAvatarMappingIfUnspecified</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEditor.AssetImporter.html#UnityEditor_AssetImporter_assetPath">AssetImporter.assetPath</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEditor.AssetImporter.html#UnityEditor_AssetImporter_importSettingsMissing">AssetImporter.importSettingsMissing</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEditor.AssetImporter.html#UnityEditor_AssetImporter_assetTimeStamp">AssetImporter.assetTimeStamp</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEditor.AssetImporter.html#UnityEditor_AssetImporter_userData">AssetImporter.userData</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEditor.AssetImporter.html#UnityEditor_AssetImporter_assetBundleName">AssetImporter.assetBundleName</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEditor.AssetImporter.html#UnityEditor_AssetImporter_assetBundleVariant">AssetImporter.assetBundleVariant</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEditor.AssetImporter.html#UnityEditor_AssetImporter_SetAssetBundleNameAndVariant_System_String_System_String_">AssetImporter.SetAssetBundleNameAndVariant(String, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEditor.AssetImporter.html#UnityEditor_AssetImporter_GetAtPath_System_String_">AssetImporter.GetAtPath(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEditor.AssetImporter.html#UnityEditor_AssetImporter_SaveAndReimport">AssetImporter.SaveAndReimport()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEditor.AssetImporter.html#UnityEditor_AssetImporter_AddRemap_UnityEditor_AssetImporter_SourceAssetIdentifier_UnityEngine_Object_">AssetImporter.AddRemap(AssetImporter.SourceAssetIdentifier, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEditor.AssetImporter.html#UnityEditor_AssetImporter_RemoveRemap_UnityEditor_AssetImporter_SourceAssetIdentifier_">AssetImporter.RemoveRemap(AssetImporter.SourceAssetIdentifier)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEditor.AssetImporter.html#UnityEditor_AssetImporter_GetExternalObjectMap">AssetImporter.GetExternalObjectMap()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEditor.AssetImporter.html#UnityEditor_AssetImporter_SupportsRemappedAssetType_System_Type_">AssetImporter.SupportsRemappedAssetType(Type)</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="UnityEditor.html">UnityEditor</a></h6>
+  <h6><strong>Assembly</strong>: UnityEditor.dll</h6>
+  <h5 id="UnityEditor_SketchUpImporter_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class SketchUpImporter : ModelImporter</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="UnityEditor_SketchUpImporter_latitude_" data-uid="UnityEditor.SketchUpImporter.latitude*"></a>
+  <h4 id="UnityEditor_SketchUpImporter_latitude" data-uid="UnityEditor.SketchUpImporter.latitude">latitude</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double latitude { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEditor_SketchUpImporter_longitude_" data-uid="UnityEditor.SketchUpImporter.longitude*"></a>
+  <h4 id="UnityEditor_SketchUpImporter_longitude" data-uid="UnityEditor.SketchUpImporter.longitude">longitude</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double longitude { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEditor_SketchUpImporter_northCorrection_" data-uid="UnityEditor.SketchUpImporter.northCorrection*"></a>
+  <h4 id="UnityEditor_SketchUpImporter_northCorrection" data-uid="UnityEditor.SketchUpImporter.northCorrection">northCorrection</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double northCorrection { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="UnityEditor_SketchUpImporter_GetDefaultCamera_" data-uid="UnityEditor.SketchUpImporter.GetDefaultCamera*"></a>
+  <h4 id="UnityEditor_SketchUpImporter_GetDefaultCamera" data-uid="UnityEditor.SketchUpImporter.GetDefaultCamera">GetDefaultCamera()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SketchUpImportCamera GetDefaultCamera()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEditor.SketchUpImportCamera.html">SketchUpImportCamera</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnityEditor_SketchUpImporter_GetScenes_" data-uid="UnityEditor.SketchUpImporter.GetScenes*"></a>
+  <h4 id="UnityEditor_SketchUpImporter_GetScenes" data-uid="UnityEditor.SketchUpImporter.GetScenes">GetScenes()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SketchUpImportScene[] GetScenes()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEditor.SketchUpImportScene.html">SketchUpImportScene</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustBeEqual__1___0___0_">MustExtensions.MustBeEqual&lt;T&gt;(T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustBeEqual__1___0___0_System_String_">MustExtensions.MustBeEqual&lt;T&gt;(T, T, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustNotBeEqual__1___0___0_">MustExtensions.MustNotBeEqual&lt;T&gt;(T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustNotBeEqual__1___0___0_System_String_">MustExtensions.MustNotBeEqual&lt;T&gt;(T, T, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustBeNull__1___0_">MustExtensions.MustBeNull&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustBeNull__1___0_System_String_">MustExtensions.MustBeNull&lt;T&gt;(T, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustNotBeNull__1___0_">MustExtensions.MustNotBeNull&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustNotBeNull__1___0_System_String_">MustExtensions.MustNotBeNull&lt;T&gt;(T, String)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/Unity-Technologies/UnityCsReference/new/master/apiSpec/new?filename=UnityEditor_SketchUpImporter.md&amp;value=---%0Auid%3A%20UnityEditor.SketchUpImporter%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/Unity-Technologies/UnityCsReference/blob/master/Modules/SketchUpEditor/Mono/SketchUp.bindings.cs/#L47" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
