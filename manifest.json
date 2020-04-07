@@ -9444,18 +9444,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Global.AssetModificationProcessor.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Global.AssetModificationProcessor.html",
-          "hash": "Bb+9/RKQnZQJ706U+aPoyQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/Global.AwaitExtensions.yml",
       "output": {
         ".html": {
@@ -11980,7 +11968,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Global.html",
-          "hash": "9POfZp5jDzhKYHduRNiBbg=="
+          "hash": "7giBdpRwMa+dusc+opNL4w=="
         }
       },
       "is_incremental": false,
@@ -11992,7 +11980,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "UNK9mAeAOJEA1N4Fsl4HiA=="
+          "hash": "hWuGuMyBtHPOmPWdMT9zSw=="
         }
       },
       "is_incremental": false,
@@ -12101,7 +12089,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 993,
+          "total_file_count": 992,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {

@@ -48861,12 +48861,6 @@ references:
   isSpec: "True"
   fullName: AssemblyChecker.Test
   nameWithType: AssemblyChecker.Test
-- uid: Global.AssetModificationProcessor
-  name: AssetModificationProcessor
-  href: api/Global.AssetModificationProcessor.html
-  commentId: T:Global.AssetModificationProcessor
-  fullName: AssetModificationProcessor
-  nameWithType: AssetModificationProcessor
 - uid: Global.Awaiters
   name: Awaiters
   href: api/Global.Awaiters.html
